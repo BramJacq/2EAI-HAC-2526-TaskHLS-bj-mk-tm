@@ -5,8 +5,9 @@ void vitis_convolution(
     volatile char *output_img,
     char kernel[KERNEL_SIZE][KERNEL_SIZE]) 
 {
-    #pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in
-    #pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out
+    // FIX: Depth toegevoegd aan de m_axi poorten zodat C/RTL Co-simulatie de buffergrootte weet
+    #pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=IMG_ROWS*IMG_COLS
+    #pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=IMG_ROWS*IMG_COLS
     #pragma HLS INTERFACE s_axilite port=kernel bundle=control
     #pragma HLS INTERFACE s_axilite port=return bundle=control
 

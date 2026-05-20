@@ -203,7 +203,7 @@
 						<name>output_img_read</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -219,7 +219,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -260,7 +260,7 @@
 						<name>input_img_read</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -276,7 +276,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -317,7 +317,7 @@
 						<name>kernel_addr</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -333,7 +333,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -375,7 +375,7 @@
 						<name>kernel_addr_1</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -391,7 +391,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -433,7 +433,7 @@
 						<name>kernel_addr_2</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -449,7 +449,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -491,7 +491,7 @@
 						<name>kernel_addr_3</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -507,7 +507,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -549,7 +549,7 @@
 						<name>kernel_addr_4</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -565,7 +565,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -607,7 +607,7 @@
 						<name>kernel_addr_5</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -623,7 +623,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -665,7 +665,7 @@
 						<name>kernel_addr_6</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -681,7 +681,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -723,7 +723,7 @@
 						<name>kernel_addr_7</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -739,7 +739,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -781,7 +781,7 @@
 						<name>kernel_addr_8</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -797,7 +797,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -836,10 +836,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>_ln31</name>
+						<name>_ln32</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -855,7 +855,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -906,7 +906,7 @@
 						<name>kernel_load</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -922,7 +922,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -962,7 +962,7 @@
 						<name>kernel_load_1</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -978,7 +978,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1018,7 +1018,7 @@
 						<name>kernel_load_2</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1034,7 +1034,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1074,7 +1074,7 @@
 						<name>kernel_load_3</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1090,7 +1090,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1130,7 +1130,7 @@
 						<name>kernel_load_4</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1146,7 +1146,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1186,7 +1186,7 @@
 						<name>kernel_load_5</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1202,7 +1202,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1242,7 +1242,7 @@
 						<name>kernel_load_6</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1258,7 +1258,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1298,7 +1298,7 @@
 						<name>kernel_load_7</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1314,7 +1314,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1354,7 +1354,7 @@
 						<name>kernel_load_8</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1370,7 +1370,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1407,10 +1407,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>_ln31</name>
+						<name>_ln32</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1426,7 +1426,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1467,8 +1467,8 @@
 					<item>140</item>
 					<item>141</item>
 					<item>142</item>
-					<item>373</item>
 					<item>374</item>
+					<item>375</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1484,10 +1484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>_ln31</name>
+						<name>_ln32</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1503,7 +1503,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1528,8 +1528,8 @@
 					<item>122</item>
 					<item>123</item>
 					<item>143</item>
-					<item>372</item>
-					<item>375</item>
+					<item>373</item>
+					<item>376</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1545,10 +1545,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>_ln44</name>
+						<name>_ln45</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1564,7 +1564,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -2552,28 +2552,28 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_117">
-				<id>372</id>
+				<id>373</id>
 				<edge_type>4</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_118">
-				<id>373</id>
-				<edge_type>4</edge_type>
-				<source_obj>41</source_obj>
-				<sink_obj>51</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_119">
 				<id>374</id>
 				<edge_type>4</edge_type>
 				<source_obj>41</source_obj>
 				<sink_obj>51</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_120">
+			<item class_id_reference="20" object_id="_119">
 				<id>375</id>
+				<edge_type>4</edge_type>
+				<source_obj>41</source_obj>
+				<sink_obj>51</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_120">
+				<id>376</id>
 				<edge_type>4</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>
@@ -3331,7 +3331,7 @@
 		<count>15</count>
 		<item_version>0</item_version>
 		<item class_id="43" tracking_level="0" version="0">
-			<first>106</first>
+			<first>108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3339,7 +3339,7 @@
 			</second>
 		</item>
 		<item>
-			<first>112</first>
+			<first>114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3347,7 +3347,7 @@
 			</second>
 		</item>
 		<item>
-			<first>118</first>
+			<first>120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3355,7 +3355,7 @@
 			</second>
 		</item>
 		<item>
-			<first>126</first>
+			<first>128</first>
 			<second>
 				<count>18</count>
 				<item_version>0</item_version>
@@ -3380,7 +3380,7 @@
 			</second>
 		</item>
 		<item>
-			<first>132</first>
+			<first>134</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3388,7 +3388,7 @@
 			</second>
 		</item>
 		<item>
-			<first>141</first>
+			<first>143</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3396,7 +3396,7 @@
 			</second>
 		</item>
 		<item>
-			<first>150</first>
+			<first>152</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3404,7 +3404,7 @@
 			</second>
 		</item>
 		<item>
-			<first>159</first>
+			<first>161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3412,7 +3412,7 @@
 			</second>
 		</item>
 		<item>
-			<first>168</first>
+			<first>170</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3420,7 +3420,7 @@
 			</second>
 		</item>
 		<item>
-			<first>177</first>
+			<first>179</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3428,7 +3428,7 @@
 			</second>
 		</item>
 		<item>
-			<first>186</first>
+			<first>188</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3436,7 +3436,7 @@
 			</second>
 		</item>
 		<item>
-			<first>195</first>
+			<first>197</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3444,7 +3444,7 @@
 			</second>
 		</item>
 		<item>
-			<first>204</first>
+			<first>206</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3453,7 +3453,7 @@
 			</second>
 		</item>
 		<item>
-			<first>230</first>
+			<first>232</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3462,7 +3462,7 @@
 			</second>
 		</item>
 		<item>
-			<first>264</first>
+			<first>266</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3475,7 +3475,7 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item class_id="46" tracking_level="0" version="0">
-			<first>kernel_addr_1_gep_fu_132</first>
+			<first>kernel_addr_1_gep_fu_134</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3483,7 +3483,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_2_gep_fu_141</first>
+			<first>kernel_addr_2_gep_fu_143</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3491,7 +3491,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_3_gep_fu_150</first>
+			<first>kernel_addr_3_gep_fu_152</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3499,7 +3499,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_4_gep_fu_159</first>
+			<first>kernel_addr_4_gep_fu_161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3507,7 +3507,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_5_gep_fu_168</first>
+			<first>kernel_addr_5_gep_fu_170</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3515,7 +3515,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_6_gep_fu_177</first>
+			<first>kernel_addr_6_gep_fu_179</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3523,7 +3523,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_7_gep_fu_186</first>
+			<first>kernel_addr_7_gep_fu_188</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3531,7 +3531,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_8_gep_fu_195</first>
+			<first>kernel_addr_8_gep_fu_197</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3539,7 +3539,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_gep_fu_118</first>
+			<first>kernel_addr_gep_fu_120</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3551,7 +3551,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230</first>
+			<first>grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_232</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3560,7 +3560,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204</first>
+			<first>grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_206</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3569,7 +3569,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264</first>
+			<first>grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_266</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3582,7 +3582,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>input_img_read_read_fu_112</first>
+			<first>input_img_read_read_fu_114</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3590,7 +3590,7 @@
 			</second>
 		</item>
 		<item>
-			<first>output_img_read_read_fu_106</first>
+			<first>output_img_read_read_fu_108</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3758,7 +3758,7 @@
 		<count>20</count>
 		<item_version>0</item_version>
 		<item>
-			<first>273</first>
+			<first>275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3766,7 +3766,7 @@
 			</second>
 		</item>
 		<item>
-			<first>278</first>
+			<first>280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3774,7 +3774,7 @@
 			</second>
 		</item>
 		<item>
-			<first>283</first>
+			<first>285</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3782,7 +3782,7 @@
 			</second>
 		</item>
 		<item>
-			<first>288</first>
+			<first>290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3790,7 +3790,7 @@
 			</second>
 		</item>
 		<item>
-			<first>293</first>
+			<first>295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3798,7 +3798,7 @@
 			</second>
 		</item>
 		<item>
-			<first>298</first>
+			<first>300</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3806,7 +3806,7 @@
 			</second>
 		</item>
 		<item>
-			<first>303</first>
+			<first>305</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3814,7 +3814,7 @@
 			</second>
 		</item>
 		<item>
-			<first>308</first>
+			<first>310</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3822,7 +3822,7 @@
 			</second>
 		</item>
 		<item>
-			<first>313</first>
+			<first>315</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3830,7 +3830,7 @@
 			</second>
 		</item>
 		<item>
-			<first>318</first>
+			<first>320</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3838,7 +3838,7 @@
 			</second>
 		</item>
 		<item>
-			<first>323</first>
+			<first>325</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3846,7 +3846,7 @@
 			</second>
 		</item>
 		<item>
-			<first>328</first>
+			<first>330</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3854,7 +3854,7 @@
 			</second>
 		</item>
 		<item>
-			<first>333</first>
+			<first>335</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3862,7 +3862,7 @@
 			</second>
 		</item>
 		<item>
-			<first>338</first>
+			<first>340</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3870,7 +3870,7 @@
 			</second>
 		</item>
 		<item>
-			<first>343</first>
+			<first>345</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3878,7 +3878,7 @@
 			</second>
 		</item>
 		<item>
-			<first>348</first>
+			<first>350</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3886,7 +3886,7 @@
 			</second>
 		</item>
 		<item>
-			<first>353</first>
+			<first>355</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3894,7 +3894,7 @@
 			</second>
 		</item>
 		<item>
-			<first>358</first>
+			<first>360</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3902,7 +3902,7 @@
 			</second>
 		</item>
 		<item>
-			<first>363</first>
+			<first>365</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3910,7 +3910,7 @@
 			</second>
 		</item>
 		<item>
-			<first>368</first>
+			<first>370</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3922,7 +3922,7 @@
 		<count>20</count>
 		<item_version>0</item_version>
 		<item>
-			<first>input_img_read_reg_343</first>
+			<first>input_img_read_reg_345</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3930,7 +3930,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_1_reg_278</first>
+			<first>kernel_addr_1_reg_280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3938,7 +3938,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_2_reg_288</first>
+			<first>kernel_addr_2_reg_290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3946,7 +3946,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_3_reg_298</first>
+			<first>kernel_addr_3_reg_300</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3954,7 +3954,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_4_reg_308</first>
+			<first>kernel_addr_4_reg_310</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3962,7 +3962,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_5_reg_318</first>
+			<first>kernel_addr_5_reg_320</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3970,7 +3970,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_6_reg_328</first>
+			<first>kernel_addr_6_reg_330</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3978,7 +3978,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_7_reg_348</first>
+			<first>kernel_addr_7_reg_350</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3986,7 +3986,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_8_reg_358</first>
+			<first>kernel_addr_8_reg_360</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3994,7 +3994,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_addr_reg_273</first>
+			<first>kernel_addr_reg_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4002,7 +4002,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_1_reg_293</first>
+			<first>kernel_load_1_reg_295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4010,7 +4010,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_2_reg_303</first>
+			<first>kernel_load_2_reg_305</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4018,7 +4018,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_3_reg_313</first>
+			<first>kernel_load_3_reg_315</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4026,7 +4026,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_4_reg_323</first>
+			<first>kernel_load_4_reg_325</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4034,7 +4034,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_5_reg_333</first>
+			<first>kernel_load_5_reg_335</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4042,7 +4042,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_6_reg_353</first>
+			<first>kernel_load_6_reg_355</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4050,7 +4050,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_7_reg_363</first>
+			<first>kernel_load_7_reg_365</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4058,7 +4058,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_8_reg_368</first>
+			<first>kernel_load_8_reg_370</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4066,7 +4066,7 @@
 			</second>
 		</item>
 		<item>
-			<first>kernel_load_reg_283</first>
+			<first>kernel_load_reg_285</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4074,7 +4074,7 @@
 			</second>
 		</item>
 		<item>
-			<first>output_img_read_reg_338</first>
+			<first>output_img_read_reg_340</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

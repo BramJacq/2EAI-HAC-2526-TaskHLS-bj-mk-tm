@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\Edges\\Edges.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "05/20/26 16:40:05",
+ "timestampMillis": "1779288005462",
+ "buildStep": {
+  "cmdId": "5d985696-b21f-434e-980e-f7f4c9d33b35",
+  "name": "vitis-run",
+  "logFile": "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\Edges\\logs\\Edges.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\hls_config.cfg --work_dir Edges ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\hls_config.cfg",
+   "--work_dir",
+   "Edges"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/20/26 16:40:05",
+ "timestampMillis": "1779288005464",
+ "status": {
+  "cmdId": "5d985696-b21f-434e-980e-f7f4c9d33b35",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "05/20/26 16:40:15",
+ "timestampMillis": "1779288015067",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "vitis_convolution",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\vitis_convolution.h",
+     "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\vitis_convolution.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "05/20/26 16:40:15",
+ "timestampMillis": "1779288015070",
+ "buildStep": {
+  "cmdId": "b042e807-3f5e-4090-aa71-1c595a1144d6",
+  "name": "",
+  "logFile": "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\Edges\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/20/26 16:40:15",
+ "timestampMillis": "1779288015071",
+ "status": {
+  "cmdId": "b042e807-3f5e-4090-aa71-1c595a1144d6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/20/26 16:40:18",
+ "timestampMillis": "1779288018540",
+ "status": {
+  "cmdId": "b042e807-3f5e-4090-aa71-1c595a1144d6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "05/20/26 16:40:18",
+ "timestampMillis": "1779288018730",
+ "status": {
+  "cmdId": "5d985696-b21f-434e-980e-f7f4c9d33b35",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/20/26 16:40:18",
+ "timestampMillis": "1779288018733",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "05/20/26 16:40:18",
+ "timestampMillis": "1779288018734",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

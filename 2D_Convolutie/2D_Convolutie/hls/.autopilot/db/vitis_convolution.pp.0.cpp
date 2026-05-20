@@ -49486,8 +49486,9 @@ __attribute__((sdx_kernel("vitis_convolution", 0))) void vitis_convolution(
 #pragma HLSDIRECTIVE TOP name=vitis_convolution
 # 7 "vitis_convolution.cpp"
 
-#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in
-#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out
+
+#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=128*128
+#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=128*128
 #pragma HLS INTERFACE s_axilite port=kernel bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 

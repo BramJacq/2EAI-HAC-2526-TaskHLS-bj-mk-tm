@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=vitis_convolution",
+      "-c",
+      "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\vitis_convolution.cpp"
+    ],
+    "file": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\vitis_convolution.cpp"
+  },
+  {
+    "directory": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\vitis_convolution_tb.cpp"
+    ],
+    "file": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Edges\\vitis_convolution_tb.cpp"
+  }
+]

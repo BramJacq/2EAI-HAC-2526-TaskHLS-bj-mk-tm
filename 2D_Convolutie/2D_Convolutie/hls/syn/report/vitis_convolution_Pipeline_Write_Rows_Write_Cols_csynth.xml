@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>vitis_convolution.cpp:39</SourceLocation>
+<SourceLocation>vitis_convolution.cpp:40</SourceLocation>
 <SummaryOfLoopViolations>
 <Write_Rows_Write_Cols>
 <Name>Write_Rows_Write_Cols</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>vitis_convolution.cpp:38</SourceLocation>
+<SourceLocation>vitis_convolution.cpp:39</SourceLocation>
 </Write_Rows_Write_Cols>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

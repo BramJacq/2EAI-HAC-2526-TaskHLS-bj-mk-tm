@@ -203,7 +203,7 @@
 						<name>output_img_read</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -219,7 +219,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -260,7 +260,7 @@
 						<name>input_img_read</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -276,7 +276,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -317,7 +317,7 @@
 						<name>kernel_addr</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -333,7 +333,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -375,7 +375,7 @@
 						<name>kernel_addr_1</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -391,7 +391,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -433,7 +433,7 @@
 						<name>kernel_addr_2</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -449,7 +449,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -491,7 +491,7 @@
 						<name>kernel_addr_3</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -507,7 +507,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -549,7 +549,7 @@
 						<name>kernel_addr_4</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -565,7 +565,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -607,7 +607,7 @@
 						<name>kernel_addr_5</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -623,7 +623,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -665,7 +665,7 @@
 						<name>kernel_addr_6</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -681,7 +681,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -723,7 +723,7 @@
 						<name>kernel_addr_7</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -739,7 +739,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -781,7 +781,7 @@
 						<name>kernel_addr_8</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -797,7 +797,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -836,10 +836,10 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>_ln31</name>
+						<name>_ln32</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -855,7 +855,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -906,7 +906,7 @@
 						<name>kernel_load</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -922,7 +922,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -962,7 +962,7 @@
 						<name>kernel_load_1</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -978,7 +978,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1018,7 +1018,7 @@
 						<name>kernel_load_2</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1034,7 +1034,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1074,7 +1074,7 @@
 						<name>kernel_load_3</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1090,7 +1090,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1130,7 +1130,7 @@
 						<name>kernel_load_4</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1146,7 +1146,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1186,7 +1186,7 @@
 						<name>kernel_load_5</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1202,7 +1202,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1242,7 +1242,7 @@
 						<name>kernel_load_6</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1258,7 +1258,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1298,7 +1298,7 @@
 						<name>kernel_load_7</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1314,7 +1314,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1354,7 +1354,7 @@
 						<name>kernel_load_8</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1370,7 +1370,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1407,10 +1407,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>_ln31</name>
+						<name>_ln32</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1426,7 +1426,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1467,8 +1467,8 @@
 					<item>140</item>
 					<item>141</item>
 					<item>142</item>
-					<item>373</item>
 					<item>374</item>
+					<item>375</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1484,10 +1484,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>_ln31</name>
+						<name>_ln32</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>31</lineNumber>
+						<lineNumber>32</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1503,7 +1503,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>31</second>
+										<second>32</second>
 									</item>
 								</second>
 							</item>
@@ -1528,8 +1528,8 @@
 					<item>122</item>
 					<item>123</item>
 					<item>143</item>
-					<item>372</item>
-					<item>375</item>
+					<item>373</item>
+					<item>376</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1545,10 +1545,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>_ln44</name>
+						<name>_ln45</name>
 						<fileName>vitis_convolution.cpp</fileName>
 						<fileDirectory>C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>45</lineNumber>
 						<contextFuncName>vitis_convolution</contextFuncName>
 						<contextNormFuncName>vitis_convolution</contextNormFuncName>
 						<inlineStackInfo>
@@ -1564,7 +1564,7 @@
 											<first>vitis_convolution.cpp</first>
 											<second>vitis_convolution</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 								</second>
 							</item>
@@ -2552,28 +2552,28 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_117">
-				<id>372</id>
+				<id>373</id>
 				<edge_type>4</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_118">
-				<id>373</id>
-				<edge_type>4</edge_type>
-				<source_obj>41</source_obj>
-				<sink_obj>51</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_119">
 				<id>374</id>
 				<edge_type>4</edge_type>
 				<source_obj>41</source_obj>
 				<sink_obj>51</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_120">
+			<item class_id_reference="20" object_id="_119">
 				<id>375</id>
+				<edge_type>4</edge_type>
+				<source_obj>41</source_obj>
+				<sink_obj>51</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_120">
+				<id>376</id>
 				<edge_type>4</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>

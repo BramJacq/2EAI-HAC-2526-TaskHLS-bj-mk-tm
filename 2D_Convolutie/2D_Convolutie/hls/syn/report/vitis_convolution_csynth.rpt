@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'vitis_convolution'
 ================================================================
-* Date:           Wed May 20 02:51:46 2026
+* Date:           Wed May 20 13:51:37 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        2D_Convolutie
@@ -38,9 +38,9 @@
         |                                                             |                                                  |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
         |                           Instance                          |                      Module                      |   min   |   max   |    min   |    max   | min | max |        Type       |
         +-------------------------------------------------------------+--------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
-        |grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204    |vitis_convolution_Pipeline_Read_Rows_Read_Cols    |    16399|    16399|  0.164 ms|  0.164 ms|    0|    0|  loop pipeline stp|
-        |grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230    |vitis_convolution_Pipeline_Conv_Rows_Conv_Cols    |    15896|    15896|  0.159 ms|  0.159 ms|    0|    0|  loop pipeline stp|
-        |grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264  |vitis_convolution_Pipeline_Write_Rows_Write_Cols  |    16394|    16394|  0.164 ms|  0.164 ms|    0|    0|  loop pipeline stp|
+        |grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_206    |vitis_convolution_Pipeline_Read_Rows_Read_Cols    |    16399|    16399|  0.164 ms|  0.164 ms|    0|    0|  loop pipeline stp|
+        |grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_232    |vitis_convolution_Pipeline_Conv_Rows_Conv_Cols    |    15896|    15896|  0.159 ms|  0.159 ms|    0|    0|  loop pipeline stp|
+        |grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_266  |vitis_convolution_Pipeline_Write_Rows_Write_Cols  |    16394|    16394|  0.164 ms|  0.164 ms|    0|    0|  loop pipeline stp|
         +-------------------------------------------------------------+--------------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
 
         * Loop: 
@@ -79,9 +79,9 @@
     |control_s_axi_U                                              |control_s_axi                                     |        0|   0|  132|   112|    0|
     |gmem_in_m_axi_U                                              |gmem_in_m_axi                                     |        2|   0|  707|   777|    0|
     |gmem_out_m_axi_U                                             |gmem_out_m_axi                                    |        0|   0|  647|   768|    0|
-    |grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230    |vitis_convolution_Pipeline_Conv_Rows_Conv_Cols    |        0|   5|  937|  1874|    0|
-    |grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204    |vitis_convolution_Pipeline_Read_Rows_Read_Cols    |        0|   1|  703|   749|    0|
-    |grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264  |vitis_convolution_Pipeline_Write_Rows_Write_Cols  |        0|   0|  137|   335|    0|
+    |grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_232    |vitis_convolution_Pipeline_Conv_Rows_Conv_Cols    |        0|   5|  937|  1874|    0|
+    |grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_206    |vitis_convolution_Pipeline_Read_Rows_Read_Cols    |        0|   1|  703|   749|    0|
+    |grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_266  |vitis_convolution_Pipeline_Write_Rows_Write_Cols  |        0|   0|  137|   335|    0|
     +-------------------------------------------------------------+--------------------------------------------------+---------+----+-----+------+-----+
     |Total                                                        |                                                  |        2|   6| 3433|  4911|    0|
     +-------------------------------------------------------------+--------------------------------------------------+---------+----+-----+------+-----+
@@ -163,20 +163,20 @@
     |                                   Name                                   | FF | LUT| Bits| Const Bits|
     +--------------------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                                 |  13|   0|   13|          0|
-    |grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230_ap_start_reg    |   1|   0|    1|          0|
-    |grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204_ap_start_reg    |   1|   0|    1|          0|
-    |grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264_ap_start_reg  |   1|   0|    1|          0|
-    |input_img_read_reg_343                                                    |  64|   0|   64|          0|
-    |kernel_load_1_reg_293                                                     |   8|   0|    8|          0|
-    |kernel_load_2_reg_303                                                     |   8|   0|    8|          0|
-    |kernel_load_3_reg_313                                                     |   8|   0|    8|          0|
-    |kernel_load_4_reg_323                                                     |   8|   0|    8|          0|
-    |kernel_load_5_reg_333                                                     |   8|   0|    8|          0|
-    |kernel_load_6_reg_353                                                     |   8|   0|    8|          0|
-    |kernel_load_7_reg_363                                                     |   8|   0|    8|          0|
-    |kernel_load_8_reg_368                                                     |   8|   0|    8|          0|
-    |kernel_load_reg_283                                                       |   8|   0|    8|          0|
-    |output_img_read_reg_338                                                   |  64|   0|   64|          0|
+    |grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_232_ap_start_reg    |   1|   0|    1|          0|
+    |grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_206_ap_start_reg    |   1|   0|    1|          0|
+    |grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_266_ap_start_reg  |   1|   0|    1|          0|
+    |input_img_read_reg_345                                                    |  64|   0|   64|          0|
+    |kernel_load_1_reg_295                                                     |   8|   0|    8|          0|
+    |kernel_load_2_reg_305                                                     |   8|   0|    8|          0|
+    |kernel_load_3_reg_315                                                     |   8|   0|    8|          0|
+    |kernel_load_4_reg_325                                                     |   8|   0|    8|          0|
+    |kernel_load_5_reg_335                                                     |   8|   0|    8|          0|
+    |kernel_load_6_reg_355                                                     |   8|   0|    8|          0|
+    |kernel_load_7_reg_365                                                     |   8|   0|    8|          0|
+    |kernel_load_8_reg_370                                                     |   8|   0|    8|          0|
+    |kernel_load_reg_285                                                       |   8|   0|    8|          0|
+    |output_img_read_reg_340                                                   |  64|   0|   64|          0|
     +--------------------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                                     | 216|   0|  216|          0|
     +--------------------------------------------------------------------------+----+----+-----+-----------+

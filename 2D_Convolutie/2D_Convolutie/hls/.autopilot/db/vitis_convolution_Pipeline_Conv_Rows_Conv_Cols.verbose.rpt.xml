@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'vitis_convolution_Pipeline_Conv_Rows_Conv_Cols'" level="0">
-<item name = "Date">Wed May 20 02:51:45 2026
+<item name = "Date">Wed May 20 13:51:36 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">2D_Convolutie</item>
@@ -116,29 +116,29 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln23_fu_1063_p2">+, 0, 0, 17, 14, 1</column>
-<column name="add_ln30_10_fu_1408_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_11_fu_1429_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_12_fu_1447_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_13_fu_1465_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_1_fu_1094_p2">+, 0, 0, 14, 7, 2</column>
-<column name="add_ln30_2_fu_1287_p2">+, 0, 0, 14, 7, 2</column>
-<column name="add_ln30_3_fu_1154_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln30_4_fu_1100_p2">+, 0, 0, 14, 7, 1</column>
-<column name="add_ln30_5_fu_1315_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_6_fu_1333_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_7_fu_1351_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_8_fu_1372_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_9_fu_1390_p2">+, 0, 0, 12, 11, 11</column>
-<column name="add_ln30_fu_1208_p2">+, 0, 0, 14, 7, 2</column>
-<column name="add_ln31_2_fu_1685_p2">+, 0, 0, 8, 8, 8</column>
-<column name="add_ln31_6_fu_1670_p2">+, 0, 0, 15, 8, 8</column>
-<column name="add_ln31_7_fu_1689_p2">+, 0, 0, 8, 8, 8</column>
-<column name="icmp_ln23_fu_1057_p2">icmp, 0, 0, 17, 14, 10</column>
-<column name="icmp_ln24_fu_1080_p2">icmp, 0, 0, 14, 7, 2</column>
+<column name="add_ln24_fu_1063_p2">+, 0, 0, 17, 14, 1</column>
+<column name="add_ln31_10_fu_1408_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_11_fu_1429_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_12_fu_1447_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_13_fu_1465_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_1_fu_1094_p2">+, 0, 0, 14, 7, 2</column>
+<column name="add_ln31_2_fu_1287_p2">+, 0, 0, 14, 7, 2</column>
+<column name="add_ln31_3_fu_1154_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln31_4_fu_1100_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln31_5_fu_1315_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_6_fu_1333_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_7_fu_1351_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_8_fu_1372_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_9_fu_1390_p2">+, 0, 0, 12, 11, 11</column>
+<column name="add_ln31_fu_1208_p2">+, 0, 0, 14, 7, 2</column>
+<column name="add_ln32_2_fu_1685_p2">+, 0, 0, 8, 8, 8</column>
+<column name="add_ln32_6_fu_1670_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln32_7_fu_1689_p2">+, 0, 0, 8, 8, 8</column>
+<column name="icmp_ln24_fu_1057_p2">icmp, 0, 0, 17, 14, 10</column>
+<column name="icmp_ln25_fu_1080_p2">icmp, 0, 0, 14, 7, 2</column>
 <column name="grp_fu_1122_p0">select, 0, 0, 7, 1, 7</column>
-<column name="select_ln23_1_fu_1106_p3">select, 0, 0, 7, 1, 7</column>
-<column name="select_ln23_fu_1086_p3">select, 0, 0, 7, 1, 1</column>
+<column name="select_ln24_1_fu_1106_p3">select, 0, 0, 7, 1, 7</column>
+<column name="select_ln24_fu_1086_p3">select, 0, 0, 7, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -163,13 +163,13 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln30_3_reg_1813">7, 0, 7, 0</column>
-<column name="add_ln31_1_reg_2365">8, 0, 8, 0</column>
-<column name="add_ln31_1_reg_2365_pp0_iter18_reg">8, 0, 8, 0</column>
-<column name="add_ln31_3_reg_2370">8, 0, 8, 0</column>
-<column name="add_ln31_6_reg_2380">8, 0, 8, 0</column>
-<column name="add_ln31_reg_2360">8, 0, 8, 0</column>
-<column name="add_ln31_reg_2360_pp0_iter18_reg">8, 0, 8, 0</column>
+<column name="add_ln31_3_reg_1813">7, 0, 7, 0</column>
+<column name="add_ln32_1_reg_2365">8, 0, 8, 0</column>
+<column name="add_ln32_1_reg_2365_pp0_iter18_reg">8, 0, 8, 0</column>
+<column name="add_ln32_3_reg_2370">8, 0, 8, 0</column>
+<column name="add_ln32_6_reg_2380">8, 0, 8, 0</column>
+<column name="add_ln32_reg_2360">8, 0, 8, 0</column>
+<column name="add_ln32_reg_2360_pp0_iter18_reg">8, 0, 8, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -211,20 +211,20 @@
 <column name="ap_loop_exit_ready_pp0_iter9_reg">1, 0, 1, 0</column>
 <column name="c_fu_96">7, 0, 7, 0</column>
 <column name="indvar_flatten6_fu_104">14, 0, 14, 0</column>
-<column name="mul_ln23_1_reg_1833">11, 0, 11, 0</column>
-<column name="mul_ln24_2_reg_1853">11, 0, 11, 0</column>
-<column name="mul_ln31_1_reg_2340">8, 0, 8, 0</column>
-<column name="mul_ln31_1_reg_2340_pp0_iter15_reg">8, 0, 8, 0</column>
-<column name="mul_ln31_3_reg_2345">8, 0, 8, 0</column>
-<column name="mul_ln31_3_reg_2345_pp0_iter15_reg">8, 0, 8, 0</column>
-<column name="mul_ln31_6_reg_2350">8, 0, 8, 0</column>
-<column name="mul_ln31_6_reg_2350_pp0_iter15_reg">8, 0, 8, 0</column>
-<column name="mul_ln31_8_reg_2355">8, 0, 8, 0</column>
-<column name="mul_ln31_8_reg_2355_pp0_iter15_reg">8, 0, 8, 0</column>
-<column name="mul_ln34_reg_1860">11, 0, 11, 0</column>
+<column name="mul_ln24_1_reg_1833">11, 0, 11, 0</column>
+<column name="mul_ln25_2_reg_1853">11, 0, 11, 0</column>
+<column name="mul_ln32_1_reg_2340">8, 0, 8, 0</column>
+<column name="mul_ln32_1_reg_2340_pp0_iter15_reg">8, 0, 8, 0</column>
+<column name="mul_ln32_3_reg_2345">8, 0, 8, 0</column>
+<column name="mul_ln32_3_reg_2345_pp0_iter15_reg">8, 0, 8, 0</column>
+<column name="mul_ln32_6_reg_2350">8, 0, 8, 0</column>
+<column name="mul_ln32_6_reg_2350_pp0_iter15_reg">8, 0, 8, 0</column>
+<column name="mul_ln32_8_reg_2355">8, 0, 8, 0</column>
+<column name="mul_ln32_8_reg_2355_pp0_iter15_reg">8, 0, 8, 0</column>
+<column name="mul_ln35_reg_1860">11, 0, 11, 0</column>
 <column name="r_fu_100">7, 0, 7, 0</column>
-<column name="select_ln23_2_reg_1800">7, 0, 7, 0</column>
-<column name="select_ln23_reg_1792">7, 0, 7, 0</column>
+<column name="select_ln24_2_reg_1800">7, 0, 7, 0</column>
+<column name="select_ln24_reg_1792">7, 0, 7, 0</column>
 <column name="tmp_10_reg_2305">8, 0, 8, 0</column>
 <column name="tmp_14_reg_2310">8, 0, 8, 0</column>
 <column name="tmp_18_reg_2315">8, 0, 8, 0</column>
@@ -241,12 +241,12 @@
 <column name="tmp_40_reg_1885">6, 0, 6, 0</column>
 <column name="tmp_41_reg_1818">6, 0, 6, 0</column>
 <column name="tmp_7_reg_2300">8, 0, 8, 0</column>
-<column name="trunc_ln23_reg_1840">2, 0, 2, 0</column>
-<column name="trunc_ln23_reg_1840_pp0_iter12_reg">2, 0, 2, 0</column>
-<column name="trunc_ln24_reg_1872">2, 0, 2, 0</column>
-<column name="trunc_ln24_reg_1872_pp0_iter12_reg">2, 0, 2, 0</column>
-<column name="select_ln23_2_reg_1800">64, 32, 7, 0</column>
-<column name="select_ln23_reg_1792">64, 32, 7, 0</column>
+<column name="trunc_ln24_reg_1840">2, 0, 2, 0</column>
+<column name="trunc_ln24_reg_1840_pp0_iter12_reg">2, 0, 2, 0</column>
+<column name="trunc_ln25_reg_1872">2, 0, 2, 0</column>
+<column name="trunc_ln25_reg_1872_pp0_iter12_reg">2, 0, 2, 0</column>
+<column name="select_ln24_2_reg_1800">64, 32, 7, 0</column>
+<column name="select_ln24_reg_1792">64, 32, 7, 0</column>
 <column name="tmp_38_reg_1808">64, 32, 6, 0</column>
 <column name="tmp_41_reg_1818">64, 32, 6, 0</column>
 </table>

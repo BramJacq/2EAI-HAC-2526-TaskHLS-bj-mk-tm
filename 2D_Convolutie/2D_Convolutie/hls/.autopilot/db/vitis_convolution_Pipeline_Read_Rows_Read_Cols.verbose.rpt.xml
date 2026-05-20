@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'vitis_convolution_Pipeline_Read_Rows_Read_Cols'" level="0">
-<item name = "Date">Wed May 20 02:51:44 2026
+<item name = "Date">Wed May 20 13:51:35 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">2D_Convolutie</item>
@@ -83,16 +83,16 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln16_1_fu_270_p2">+, 0, 0, 20, 15, 1</column>
-<column name="add_ln16_fu_287_p2">+, 0, 0, 15, 8, 1</column>
-<column name="add_ln17_fu_319_p2">+, 0, 0, 15, 8, 1</column>
-<column name="add_ln19_1_fu_406_p2">+, 0, 0, 64, 64, 64</column>
-<column name="add_ln19_fu_401_p2">+, 0, 0, 64, 64, 64</column>
-<column name="icmp_ln16_fu_264_p2">icmp, 0, 0, 23, 15, 16</column>
-<column name="icmp_ln17_fu_293_p2">icmp, 0, 0, 14, 8, 9</column>
+<column name="add_ln17_1_fu_272_p2">+, 0, 0, 20, 15, 1</column>
+<column name="add_ln17_fu_289_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln18_fu_321_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln20_1_fu_408_p2">+, 0, 0, 64, 64, 64</column>
+<column name="add_ln20_fu_403_p2">+, 0, 0, 64, 64, 64</column>
+<column name="icmp_ln17_fu_266_p2">icmp, 0, 0, 23, 15, 16</column>
+<column name="icmp_ln18_fu_295_p2">icmp, 0, 0, 14, 8, 9</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln16_1_fu_307_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln16_fu_299_p3">select, 0, 0, 8, 1, 1</column>
+<column name="select_ln17_1_fu_309_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln17_fu_301_p3">select, 0, 0, 8, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -101,16 +101,16 @@
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_indvar_flatten_load">9, 2, 15, 30</column>
-<column name="c_fu_92">9, 2, 8, 16</column>
+<column name="c_fu_94">9, 2, 8, 16</column>
 <column name="gmem_in_blk_n_AR">9, 2, 1, 2</column>
 <column name="gmem_in_blk_n_R">9, 2, 1, 2</column>
-<column name="indvar_flatten_fu_100">9, 2, 15, 30</column>
-<column name="r_fu_96">9, 2, 8, 16</column>
+<column name="indvar_flatten_fu_102">9, 2, 15, 30</column>
+<column name="r_fu_98">9, 2, 8, 16</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln19_2_reg_527">11, 0, 11, 0</column>
+<column name="add_ln20_2_reg_529">11, 0, 11, 0</column>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
@@ -141,20 +141,20 @@
 <column name="ap_loop_exit_ready_pp0_iter7_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter8_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter9_reg">1, 0, 1, 0</column>
-<column name="c_fu_92">8, 0, 8, 0</column>
-<column name="gmem_in_addr_read_reg_532">8, 0, 8, 0</column>
-<column name="gmem_in_addr_reg_516">64, 0, 64, 0</column>
-<column name="indvar_flatten_fu_100">15, 0, 15, 0</column>
-<column name="r_fu_96">8, 0, 8, 0</column>
-<column name="select_ln16_1_reg_495">8, 0, 8, 0</column>
-<column name="select_ln16_reg_488">8, 0, 8, 0</column>
-<column name="tmp_1_reg_511">7, 0, 7, 0</column>
-<column name="tmp_1_reg_511_pp0_iter3_reg">7, 0, 7, 0</column>
-<column name="trunc_ln16_reg_545">2, 0, 2, 0</column>
-<column name="trunc_ln17_reg_549">2, 0, 2, 0</column>
-<column name="trunc_ln19_reg_501">7, 0, 7, 0</column>
-<column name="add_ln19_2_reg_527">64, 32, 11, 0</column>
-<column name="gmem_in_addr_read_reg_532">64, 32, 8, 0</column>
+<column name="c_fu_94">8, 0, 8, 0</column>
+<column name="gmem_in_addr_read_reg_534">8, 0, 8, 0</column>
+<column name="gmem_in_addr_reg_518">64, 0, 64, 0</column>
+<column name="indvar_flatten_fu_102">15, 0, 15, 0</column>
+<column name="r_fu_98">8, 0, 8, 0</column>
+<column name="select_ln17_1_reg_497">8, 0, 8, 0</column>
+<column name="select_ln17_reg_490">8, 0, 8, 0</column>
+<column name="tmp_1_reg_513">7, 0, 7, 0</column>
+<column name="tmp_1_reg_513_pp0_iter3_reg">7, 0, 7, 0</column>
+<column name="trunc_ln17_reg_547">2, 0, 2, 0</column>
+<column name="trunc_ln18_reg_551">2, 0, 2, 0</column>
+<column name="trunc_ln20_reg_503">7, 0, 7, 0</column>
+<column name="add_ln20_2_reg_529">64, 32, 11, 0</column>
+<column name="gmem_in_addr_read_reg_534">64, 32, 8, 0</column>
 </table>
 </item>
 </section>

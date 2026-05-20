@@ -1,0 +1,4 @@
+--- Start C-Simulatie voor Edges (Horizontaal) ---
+C-Simulatie succesvol afgerond!
+Output op de horizontale rand (rij 64): -3 (Verwacht: Hoge waarde)
+Output ver van de rand (rij 10): 0 (Verwacht: 0)

@@ -1,0 +1,284 @@
+
+
+================================================================
+== Synthesis Summary Report of 'vitis_convolution'
+================================================================
++ General Information: 
+    * Date:           Wed May 20 16:42:42 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        Edges
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
+* Performance & Resource Estimates: 
++-----------------------------------------------------+------+---------------+----------+---------+-------+----------+---------+-----------+------+---------+---------+-----------+------------+-----+
+|                       Modules                       | Issue|               | Iteration|         |  Trip |          |       Latency       |      |         |         |           |            |     |
+|                       & Loops                       | Type | Violation Type|  Latency | Interval| Count | Pipelined| (cycles)|    (ns)   | Slack|  BRAM   |   DSP   |     FF    |     LUT    | URAM|
++-----------------------------------------------------+------+---------------+----------+---------+-------+----------+---------+-----------+------+---------+---------+-----------+------------+-----+
+|+ vitis_convolution                                  |     -|              -|         -|    48702|      -|        no|    48701|  4.870e+05|  0.00|  19 (6%)|   6 (2%)|  3649 (3%)|  5448 (10%)|    -|
+| + vitis_convolution_Pipeline_Read_Rows_Read_Cols    |     -|              -|         -|        -|      -|       yes|    16399|  1.640e+05|  0.00|        -|  1 (~0%)|  703 (~0%)|    751 (1%)|    -|
+|  o Read_Rows_Read_Cols                              |     -|              -|        15|        1|  16384|       yes|    16397|  1.640e+05|  7.30|        -|        -|          -|           -|    -|
+| + vitis_convolution_Pipeline_Conv_Rows_Conv_Cols    |     -|              -|         -|        -|      -|       yes|    15896|  1.590e+05|  0.09|        -|   5 (2%)|  937 (~0%)|   1874 (3%)|    -|
+|  o Conv_Rows_Conv_Cols                              |     -|              -|        20|        1|  15876|       yes|    15894|  1.589e+05|  7.30|        -|        -|          -|           -|    -|
+| + vitis_convolution_Pipeline_Write_Rows_Write_Cols  |     -|              -|         -|        -|      -|       yes|    16394|  1.639e+05|  0.00|        -|        -|  137 (~0%)|   337 (~0%)|    -|
+|  o Write_Rows_Write_Cols                            |     -|              -|        10|        1|  16384|       yes|    16392|  1.639e+05|  7.30|        -|        -|          -|           -|    -|
++-----------------------------------------------------+------+---------------+----------+---------+-------+----------+---------+-----------+------+---------+---------+-----------+------------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++----------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface      | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|                |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++----------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem_in  | READ_ONLY  | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem_out | WRITE_ONLY | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |                   |
++----------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++-----------------+------------+---------------+--------+----------+
+| Interface       | Data Width | Address Width | Offset | Register |
++-----------------+------------+---------------+--------+----------+
+| s_axi_control   | 32         | 5             | 16     | 0        |
+| s_axi_control_r | 32         | 6             | 16     | 0        |
++-----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface       | Register     | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control   | CTRL         | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control   | GIER         | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control   | IP_IER       | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control   | IP_ISR       | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control_r | input_img_1  | 0x10   | 32    | W      | Data signal of input_img         |                                                                      |
+| s_axi_control_r | input_img_2  | 0x14   | 32    | W      | Data signal of input_img         |                                                                      |
+| s_axi_control_r | output_img_1 | 0x1c   | 32    | W      | Data signal of output_img        |                                                                      |
+| s_axi_control_r | output_img_2 | 0x20   | 32    | W      | Data signal of output_img        |                                                                      |
++-----------------+--------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+----------+
+| Argument   | Direction | Datatype |
++------------+-----------+----------+
+| input_img  | in        | pointer  |
+| output_img | out       | pointer  |
+| kernel     | in        | char*    |
++------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------+-----------------+-----------+----------+----------------------------------------+
+| Argument   | HW Interface    | HW Type   | HW Usage | HW Info                                |
++------------+-----------------+-----------+----------+----------------------------------------+
+| input_img  | m_axi_gmem_in   | interface |          | channel=0                              |
+| input_img  | s_axi_control_r | register  | offset   | name=input_img_1 offset=0x10 range=32  |
+| input_img  | s_axi_control_r | register  | offset   | name=input_img_2 offset=0x14 range=32  |
+| output_img | m_axi_gmem_out  | interface |          | channel=0                              |
+| output_img | s_axi_control_r | register  | offset   | name=output_img_1 offset=0x1c range=32 |
+| output_img | s_axi_control_r | register  | offset   | name=output_img_2 offset=0x20 range=32 |
+| kernel     | s_axi_control   | memory    |          | name=kernel offset=16 range=16         |
++------------+-----------------+-----------+----------+----------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* All M_AXI Variable Accesses
++----------------+------------+-----------------------------+-----------+--------------+------------+-------------------------------------------------+
+| HW Interface   | Variable   | Access Location             | Direction | Burst Status | Resolution | Problem                                         |
++----------------+------------+-----------------------------+-----------+--------------+------------+-------------------------------------------------+
+| m_axi_gmem_in  | input_img  | vitis_convolution.cpp:21:33 | read      | Fail         | 214-227    | Volatile or Atomic access cannot be transformed |
+| m_axi_gmem_out | output_img | vitis_convolution.cpp:45:37 | write     | Fail         | 214-227    | Volatile or Atomic access cannot be transformed |
++----------------+------------+-----------------------------+-----------+--------------+------------+-------------------------------------------------+
+
+    * Resolution URL: docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
+| Name                                                | DSP | Pragma | Variable      | Op        | Impl                   | Latency |
++-----------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
+| + vitis_convolution                                 | 6   |        |               |           |                        |         |
+|  + vitis_convolution_Pipeline_Read_Rows_Read_Cols   | 1   |        |               |           |                        |         |
+|    icmp_ln18_fu_266_p2                              |     |        | icmp_ln18     | seteq     | auto                   | 0       |
+|    add_ln18_1_fu_272_p2                             |     |        | add_ln18_1    | add       | fabric                 | 0       |
+|    add_ln18_fu_289_p2                               |     |        | add_ln18      | add       | fabric                 | 0       |
+|    icmp_ln19_fu_295_p2                              |     |        | icmp_ln19     | seteq     | auto                   | 0       |
+|    select_ln18_fu_301_p3                            |     |        | select_ln18   | select    | auto_sel               | 0       |
+|    select_ln18_1_fu_309_p3                          |     |        | select_ln18_1 | select    | auto_sel               | 0       |
+|    mul_8ns_10ns_17_1_1_U1                           |     |        | mul_ln18      | mul       | auto                   | 0       |
+|    mac_muladd_7ns_6ns_7ns_11_4_1_U5                 | 1   |        | mul_ln18_1    | mul       | dsp_slice              | 3       |
+|    urem_8ns_3ns_2_12_1_U2                           |     |        | urem_ln18     | urem      | auto                   | 11      |
+|    mul_8ns_10ns_17_1_1_U3                           |     |        | mul_ln19      | mul       | auto                   | 0       |
+|    mac_muladd_7ns_6ns_7ns_11_4_1_U5                 | 1   |        | add_ln21_2    | add       | dsp_slice              | 3       |
+|    urem_8ns_3ns_2_12_1_U4                           |     |        | urem_ln19     | urem      | auto                   | 11      |
+|    add_ln19_fu_321_p2                               |     |        | add_ln19      | add       | fabric                 | 0       |
+|  + vitis_convolution_Pipeline_Conv_Rows_Conv_Cols   | 5   |        |               |           |                        |         |
+|    icmp_ln26_fu_1057_p2                             |     |        | icmp_ln26     | seteq     | auto                   | 0       |
+|    add_ln26_fu_1063_p2                              |     |        | add_ln26      | add       | fabric                 | 0       |
+|    icmp_ln27_fu_1080_p2                             |     |        | icmp_ln27     | seteq     | auto                   | 0       |
+|    select_ln26_fu_1086_p3                           |     |        | select_ln26   | select    | auto_sel               | 0       |
+|    add_ln33_1_fu_1094_p2                            |     |        | add_ln33_1    | add       | fabric                 | 0       |
+|    add_ln33_4_fu_1100_p2                            |     |        | add_ln33_4    | add       | fabric                 | 0       |
+|    select_ln26_1_fu_1106_p3                         |     |        | select_ln26_1 | select    | auto_sel               | 0       |
+|    select_ln26_2_fu_1114_p3                         |     |        | select_ln26_2 | select    | auto_sel               | 0       |
+|    mul_7ns_9ns_15_1_1_U33                           |     |        | mul_ln26      | mul       | auto                   | 0       |
+|    mul_6ns_7ns_11_1_1_U35                           |     |        | mul_ln26_1    | mul       | auto                   | 0       |
+|    urem_7ns_3ns_2_11_1_U29                          |     |        | urem_ln26     | urem      | auto                   | 10      |
+|    add_ln33_fu_1208_p2                              |     |        | add_ln33      | add       | fabric                 | 0       |
+|    mul_7ns_9ns_15_1_1_U34                           |     |        | mul_ln33      | mul       | auto                   | 0       |
+|    mul_6ns_7ns_11_1_1_U36                           |     |        | mul_ln27_2    | mul       | auto                   | 0       |
+|    mul_7ns_9ns_15_1_1_U30                           |     |        | mul_ln27      | mul       | auto                   | 0       |
+|    mul_6ns_7ns_11_1_1_U37                           |     |        | mul_ln37      | mul       | auto                   | 0       |
+|    mul_7ns_9ns_15_1_1_U38                           |     |        | mul_ln27_1    | mul       | auto                   | 0       |
+|    add_ln33_5_fu_1315_p2                            |     |        | add_ln33_5    | add       | fabric                 | 0       |
+|    add_ln33_6_fu_1333_p2                            |     |        | add_ln33_6    | add       | fabric                 | 0       |
+|    add_ln33_7_fu_1351_p2                            |     |        | add_ln33_7    | add       | fabric                 | 0       |
+|    urem_7ns_3ns_2_11_1_U31                          |     |        | urem_ln27     | urem      | auto                   | 10      |
+|    add_ln33_2_fu_1287_p2                            |     |        | add_ln33_2    | add       | fabric                 | 0       |
+|    mul_7ns_9ns_15_1_1_U39                           |     |        | mul_ln33_1    | mul       | auto                   | 0       |
+|    add_ln33_8_fu_1372_p2                            |     |        | add_ln33_8    | add       | fabric                 | 0       |
+|    add_ln33_9_fu_1390_p2                            |     |        | add_ln33_9    | add       | fabric                 | 0       |
+|    add_ln33_10_fu_1408_p2                           |     |        | add_ln33_10   | add       | fabric                 | 0       |
+|    sparsemux_7_2_8_1_1_U20                          |     |        | tmp           | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U21                          |     |        | tmp_1         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U22                          |     |        | tmp_2         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U40                          |     |        | tmp_3         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U23                          |     |        | tmp_4         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U24                          |     |        | tmp_5         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U25                          |     |        | tmp_6         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U41                          |     |        | tmp_7         | sparsemux | onehotencoding_realdef | 0       |
+|    add_ln33_3_fu_1154_p2                            |     |        | add_ln33_3    | add       | fabric                 | 0       |
+|    mul_7ns_9ns_15_1_1_U32                           |     |        | mul_ln33_2    | mul       | auto                   | 0       |
+|    add_ln33_11_fu_1429_p2                           |     |        | add_ln33_11   | add       | fabric                 | 0       |
+|    add_ln33_12_fu_1447_p2                           |     |        | add_ln33_12   | add       | fabric                 | 0       |
+|    add_ln33_13_fu_1465_p2                           |     |        | add_ln33_13   | add       | fabric                 | 0       |
+|    sparsemux_7_2_8_1_1_U26                          |     |        | tmp_8         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U27                          |     |        | tmp_9         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U28                          |     |        | tmp_s         | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U42                          |     |        | tmp_10        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U20                          |     |        | tmp_11        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U21                          |     |        | tmp_12        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U22                          |     |        | tmp_13        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U43                          |     |        | tmp_14        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U23                          |     |        | tmp_15        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U24                          |     |        | tmp_16        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U25                          |     |        | tmp_17        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U44                          |     |        | tmp_18        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U26                          |     |        | tmp_19        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U27                          |     |        | tmp_20        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U28                          |     |        | tmp_21        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U45                          |     |        | tmp_22        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U20                          |     |        | tmp_23        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U21                          |     |        | tmp_24        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U22                          |     |        | tmp_25        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U46                          |     |        | tmp_26        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U23                          |     |        | tmp_27        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U24                          |     |        | tmp_28        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U25                          |     |        | tmp_29        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U47                          |     |        | tmp_30        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U26                          |     |        | tmp_31        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U27                          |     |        | tmp_32        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U28                          |     |        | tmp_33        | sparsemux | onehotencoding_realdef | 0       |
+|    sparsemux_7_2_8_1_1_U48                          |     |        | tmp_34        | sparsemux | onehotencoding_realdef | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U53                    | 1   |        | mul_ln34      | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U49                              |     |        | mul_ln34_1    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U54                    | 1   |        | mul_ln34_2    | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U50                              |     |        | mul_ln34_3    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U57                    | 1   |        | mul_ln34_4    | mul       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U55                    | 1   |        | mul_ln34_5    | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U51                              |     |        | mul_ln34_6    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U56                    | 1   |        | mul_ln34_7    | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U52                              |     |        | mul_ln34_8    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U53                    | 1   |        | add_ln34      | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U56                    | 1   |        | add_ln34_1    | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U55                    | 1   |        | add_ln34_3    | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U54                    | 1   |        | add_ln34_4    | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U57                    | 1   |        | add_ln34_5    | add       | dsp_slice              | 3       |
+|    add_ln34_6_fu_1670_p2                            |     |        | add_ln34_6    | add       | fabric                 | 0       |
+|  + vitis_convolution_Pipeline_Write_Rows_Write_Cols | 0   |        |               |           |                        |         |
+|    icmp_ln42_fu_137_p2                              |     |        | icmp_ln42     | seteq     | auto                   | 0       |
+|    add_ln42_1_fu_143_p2                             |     |        | add_ln42_1    | add       | fabric                 | 0       |
+|    add_ln42_fu_160_p2                               |     |        | add_ln42      | add       | fabric                 | 0       |
+|    icmp_ln43_fu_166_p2                              |     |        | icmp_ln43     | seteq     | auto                   | 0       |
+|    select_ln42_fu_172_p3                            |     |        | select_ln42   | select    | auto_sel               | 0       |
+|    select_ln42_1_fu_180_p3                          |     |        | select_ln42_1 | select    | auto_sel               | 0       |
+|    add_ln45_2_fu_225_p2                             |     |        | add_ln45_2    | add       | fabric                 | 0       |
+|    add_ln43_fu_192_p2                               |     |        | add_ln43      | add       | fabric                 | 0       |
++-----------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------------------------------------------+-----------+-----------+------+------+--------+------------------------------------------------------+------+---------+------------------+
+| Name                                                     | Usage     | Type      | BRAM | URAM | Pragma | Variable                                             | Impl | Latency | Bitwidth, Depth, |
+|                                                          |           |           |      |      |        |                                                      |      |         | Banks            |
++----------------------------------------------------------+-----------+-----------+------+------+--------+------------------------------------------------------+------+---------+------------------+
+| + vitis_convolution                                      |           |           | 19   | 0    |        |                                                      |      |         |                  |
+|   control_s_axi_U                                        | interface | s_axilite |      |      |        |                                                      |      |         |                  |
+|   control_r_s_axi_U                                      | interface | s_axilite |      |      |        |                                                      |      |         |                  |
+|   gmem_in_m_axi_U                                        | interface | m_axi     | 2    |      |        |                                                      |      |         |                  |
+|   gmem_out_m_axi_U                                       | interface | m_axi     |      |      |        |                                                      |      |         |                  |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1 | auto | 1       | 8, 1849, 1       |
+|   p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2_U | ram_1p    |           | 1    |      |        | p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2 | auto | 1       | 8, 1849, 1       |
+|   local_output_U                                         | ram_1p    |           | 8    |      |        | local_output                                         | auto | 1       | 8, 16384, 1      |
++----------------------------------------------------------+-----------+-----------+------+------+--------+------------------------------------------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Inferred Pragmas
++-----------------+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| Type            | Options                                                                                                                   | Location                                                                                                                                       | Inferred From                     |
++-----------------+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
+| LOOP_FLATTEN    |                                                                                                                           | loop Read_Rows (vitis_convolution.cpp:18:16) in vitis_convolution (vitis_convolution.cpp:18)                                                   | pipeline vitis_convolution.cpp:20 |
+| ARRAY_PARTITION | dim=1 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input | variable vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input in vitis_convolution (vitis_convolution.cpp:14) | pipeline vitis_convolution.cpp:28 |
+| LOOP_FLATTEN    |                                                                                                                           | loop Conv_Rows (vitis_convolution.cpp:26:16) in vitis_convolution (vitis_convolution.cpp:26)                                                   | pipeline vitis_convolution.cpp:28 |
+| LOOP_FLATTEN    |                                                                                                                           | loop Write_Rows (vitis_convolution.cpp:42:17) in vitis_convolution (vitis_convolution.cpp:42)                                                  | pipeline vitis_convolution.cpp:44 |
++-----------------+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
+
+* Valid Pragma Syntax
++-----------+------------------------------------------------------------------+-------------------------------------------------+
+| Type      | Options                                                          | Location                                        |
++-----------+------------------------------------------------------------------+-------------------------------------------------+
+| INTERFACE | m_axi port=input_img offset=slave bundle=gmem_in depth=128*128   | in vitis_convolution (vitis_convolution.cpp:9)  |
+| INTERFACE | m_axi port=output_img offset=slave bundle=gmem_out depth=128*128 | in vitis_convolution (vitis_convolution.cpp:10) |
+| INTERFACE | s_axilite port=kernel bundle=control                             | in vitis_convolution (vitis_convolution.cpp:11) |
+| INTERFACE | s_axilite port=return bundle=control                             | in vitis_convolution (vitis_convolution.cpp:12) |
+| PIPELINE  | ii=1                                                             | in vitis_convolution (vitis_convolution.cpp:20) |
+| PIPELINE  | ii=1                                                             | in vitis_convolution (vitis_convolution.cpp:28) |
+| PIPELINE  | ii=1                                                             | in vitis_convolution (vitis_convolution.cpp:44) |
++-----------+------------------------------------------------------------------+-------------------------------------------------+
+
+

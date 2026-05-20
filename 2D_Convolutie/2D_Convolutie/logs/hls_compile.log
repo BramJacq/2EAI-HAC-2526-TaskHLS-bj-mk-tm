@@ -21,87 +21,87 @@ INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from hls_config.cfg(7)
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/vitis-comp.json
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 4.875 seconds; current allocated memory: 135.066 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 5.793 seconds; current allocated memory: 135.574 MB.
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 INFO: [HLS 200-10] Analyzing design file 'vitis_convolution.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.25 seconds; current allocated memory: 137.688 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.62 seconds; current allocated memory: 138.141 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 200-1995] There were 123 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 166 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 139 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 106 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 106 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 480 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 200-1995] There were 384 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 109 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 482 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 386 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 392 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
 INFO: [HLS 200-1995] There were 414 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/report/csynth_design_size.rpt:2)
-INFO: [HLS 214-291] Loop 'Kernel_Rows' is marked as complete unroll implied by the pipeline pragma (vitis_convolution.cpp:28:26)
-INFO: [HLS 214-291] Loop 'Kernel_Cols' is marked as complete unroll implied by the pipeline pragma (vitis_convolution.cpp:29:30)
-INFO: [HLS 214-186] Unrolling loop 'Kernel_Rows' (vitis_convolution.cpp:28:26) in function 'vitis_convolution' completely with a factor of 3 (vitis_convolution.cpp:7:0)
-INFO: [HLS 214-186] Unrolling loop 'Kernel_Cols' (vitis_convolution.cpp:29:30) in function 'vitis_convolution' completely with a factor of 3 (vitis_convolution.cpp:7:0)
-INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input' due to pipeline pragma (vitis_convolution.cpp:25:1)
-INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input' due to pipeline pragma (vitis_convolution.cpp:25:1)
-INFO: [HLS 214-248] Applying array_partition to '_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. (vitis_convolution.cpp:13:0)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.469 seconds; current allocated memory: 139.543 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 139.543 MB.
+INFO: [HLS 214-291] Loop 'Kernel_Rows' is marked as complete unroll implied by the pipeline pragma (vitis_convolution.cpp:29:26)
+INFO: [HLS 214-291] Loop 'Kernel_Cols' is marked as complete unroll implied by the pipeline pragma (vitis_convolution.cpp:30:30)
+INFO: [HLS 214-186] Unrolling loop 'Kernel_Rows' (vitis_convolution.cpp:29:26) in function 'vitis_convolution' completely with a factor of 3 (vitis_convolution.cpp:7:0)
+INFO: [HLS 214-186] Unrolling loop 'Kernel_Cols' (vitis_convolution.cpp:30:30) in function 'vitis_convolution' completely with a factor of 3 (vitis_convolution.cpp:7:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input' due to pipeline pragma (vitis_convolution.cpp:26:1)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input' due to pipeline pragma (vitis_convolution.cpp:26:1)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2. (vitis_convolution.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 9.962 seconds; current allocated memory: 140.160 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 140.160 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 144.688 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 145.219 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 147.000 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 147.164 MB.
 INFO: [XFORM 203-11] Balancing expressions in function 'vitis_convolution' (vitis_convolution.cpp:3:20)...8 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 169.262 MB.
-INFO: [HLS 200-2061] Successfully converted nested loops 'Read_Rows'(vitis_convolution.cpp:16:16) and 'Read_Cols'(vitis_convolution.cpp:17:20) in function 'vitis_convolution' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'Conv_Rows'(vitis_convolution.cpp:23:16) and 'Conv_Cols'(vitis_convolution.cpp:24:20) in function 'vitis_convolution' into perfectly nested loops.
-INFO: [HLS 200-2061] Successfully converted nested loops 'Write_Rows'(vitis_convolution.cpp:38:17) and 'Write_Cols'(vitis_convolution.cpp:39:21) in function 'vitis_convolution' into perfectly nested loops.
-INFO: [XFORM 203-541] Flattening a loop nest 'Read_Rows' (vitis_convolution.cpp:16:16) in function 'vitis_convolution'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Conv_Rows' (vitis_convolution.cpp:23:16) in function 'vitis_convolution'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Write_Rows' (vitis_convolution.cpp:38:17) in function 'vitis_convolution'.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.183 seconds; current allocated memory: 190.035 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 169.523 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Read_Rows'(vitis_convolution.cpp:17:16) and 'Read_Cols'(vitis_convolution.cpp:18:20) in function 'vitis_convolution' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Conv_Rows'(vitis_convolution.cpp:24:16) and 'Conv_Cols'(vitis_convolution.cpp:25:20) in function 'vitis_convolution' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Write_Rows'(vitis_convolution.cpp:39:17) and 'Write_Cols'(vitis_convolution.cpp:40:21) in function 'vitis_convolution' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'Read_Rows' (vitis_convolution.cpp:17:16) in function 'vitis_convolution'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Conv_Rows' (vitis_convolution.cpp:24:16) in function 'vitis_convolution'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Write_Rows' (vitis_convolution.cpp:39:17) in function 'vitis_convolution'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 190.195 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'vitis_convolution' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'vitis_convolution_Pipeline_Read_Rows_Read_Cols' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln19_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln20_2) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-61] Pipelining loop 'Read_Rows_Read_Cols'.
 INFO: [SCHED 204-61] Discarding stage scheduling solution.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 15, loop 'Read_Rows_Read_Cols'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.44 seconds; current allocated memory: 194.031 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.28 seconds; current allocated memory: 194.230 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 195.098 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 195.301 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'vitis_convolution_Pipeline_Conv_Rows_Conv_Cols' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_5) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_4) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_3) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln31_1) to 3 in order to utilize available DSP registers.
-INFO: [HLS 200-486] Changing DSP latency (root=add_ln31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-61] Pipelining loop 'Conv_Rows_Conv_Cols'.
 INFO: [SCHED 204-61] Discarding stage scheduling solution.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'Conv_Rows_Conv_Cols'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.297 seconds; current allocated memory: 198.156 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 198.324 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 198.219 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 198.445 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'vitis_convolution_Pipeline_Write_Rows_Write_Cols' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -109,25 +109,25 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Write_Rows_Write_Cols'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'Write_Rows_Write_Cols'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 198.293 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 198.488 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 198.293 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 198.523 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'vitis_convolution' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.053 seconds; current allocated memory: 198.418 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 198.734 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 198.520 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 198.848 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'vitis_convolution_Pipeline_Read_Rows_Read_Cols' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -136,7 +136,7 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_6ns_7ns_11_4_1': 1 
 INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_8ns_3ns_2_12_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'vitis_convolution_Pipeline_Read_Rows_Read_Cols'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.156 seconds; current allocated memory: 201.355 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 202.020 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'vitis_convolution_Pipeline_Conv_Rows_Conv_Cols' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -148,13 +148,13 @@ INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_8_1_1': 4 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_8_1_1': 18 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'urem_7ns_3ns_2_11_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'vitis_convolution_Pipeline_Conv_Rows_Conv_Cols'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.339 seconds; current allocated memory: 206.875 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.556 seconds; current allocated memory: 207.094 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'vitis_convolution_Pipeline_Write_Rows_Write_Cols' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'vitis_convolution_Pipeline_Write_Rows_Write_Cols' pipeline 'Write_Rows_Write_Cols' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'vitis_convolution_Pipeline_Write_Rows_Write_Cols'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.405 seconds; current allocated memory: 213.613 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.606 seconds; current allocated memory: 214.113 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'vitis_convolution' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -170,13 +170,13 @@ INFO: [RTGEN 206-100] Bundling port 'input_img' and 'output_img' to AXI-Lite por
 INFO: [RTGEN 206-100] Finished creating RTL model for 'vitis_convolution'.
 INFO: [RTMG 210-278] Implementing memory 'vitis_convolution_p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W' using auto RAMs.
 INFO: [RTMG 210-278] Implementing memory 'vitis_convolution_local_output_RAM_AUTO_1R1W' using auto RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.238 seconds; current allocated memory: 215.969 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.159 seconds; current allocated memory: 219.730 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.814 seconds; current allocated memory: 216.270 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.32 seconds; current allocated memory: 220.641 MB.
 INFO: [HLS 200-2225] Wrote inferred directives to file C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie/2D_Convolutie/hls/syn/inferred_directives.ini
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.614 seconds; current allocated memory: 227.684 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.76 seconds; current allocated memory: 228.191 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for vitis_convolution.
 INFO: [VLOG 209-307] Generating Verilog RTL for vitis_convolution.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
-INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 30.465 seconds; peak allocated memory: 227.758 MB.
-INFO: [v++ 60-791] Total elapsed time: 0h 0m 34s
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 3 seconds. Total elapsed time: 32.54 seconds; peak allocated memory: 228.262 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 37s

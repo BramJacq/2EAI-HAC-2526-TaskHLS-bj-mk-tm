@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>vitis_convolution.cpp:17</SourceLocation>
+<SourceLocation>vitis_convolution.cpp:18</SourceLocation>
 <SummaryOfLoopViolations>
 <Read_Rows_Read_Cols>
 <Name>Read_Rows_Read_Cols</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>vitis_convolution.cpp:16</SourceLocation>
+<SourceLocation>vitis_convolution.cpp:17</SourceLocation>
 </Read_Rows_Read_Cols>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

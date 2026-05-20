@@ -457,10 +457,10 @@ entry:9 %kernel_addr_7 = getelementptr i8 %kernel, i64 0, i64 7
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8">
 <![CDATA[
-entry:25 %call_ln31 = call void @vitis_convolution_Pipeline_Read_Rows_Read_Cols, i8 %gmem_in, i64 %input_img_read, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2
+entry:25 %call_ln32 = call void @vitis_convolution_Pipeline_Read_Rows_Read_Cols, i8 %gmem_in, i64 %input_img_read, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln31"/></StgValue>
+<StgValue><ssdm name="call_ln32"/></StgValue>
 </operation>
 
 <operation id="38" st_id="8" stage="1" lat="2">
@@ -520,10 +520,10 @@ entry:10 %kernel_addr_8 = getelementptr i8 %kernel, i64 0, i64 8
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8">
 <![CDATA[
-entry:25 %call_ln31 = call void @vitis_convolution_Pipeline_Read_Rows_Read_Cols, i8 %gmem_in, i64 %input_img_read, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2
+entry:25 %call_ln32 = call void @vitis_convolution_Pipeline_Read_Rows_Read_Cols, i8 %gmem_in, i64 %input_img_read, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2
 
 ]]></Node>
-<StgValue><ssdm name="call_ln31"/></StgValue>
+<StgValue><ssdm name="call_ln32"/></StgValue>
 </operation>
 
 <operation id="42" st_id="9" stage="1" lat="2">
@@ -583,10 +583,10 @@ entry:34 %kernel_load_8 = load i4 %kernel_addr_8
 
 <Node id="51" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="0" op_21_bw="0">
 <![CDATA[
-entry:35 %call_ln31 = call void @vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, i8 %kernel_load, i8 %kernel_load_1, i8 %kernel_load_8, i8 %kernel_load_7, i8 %kernel_load_6, i8 %kernel_load_5, i8 %kernel_load_4, i8 %kernel_load_3, i8 %kernel_load_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2, i8 %local_output
+entry:35 %call_ln32 = call void @vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, i8 %kernel_load, i8 %kernel_load_1, i8 %kernel_load_8, i8 %kernel_load_7, i8 %kernel_load_6, i8 %kernel_load_5, i8 %kernel_load_4, i8 %kernel_load_3, i8 %kernel_load_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2, i8 %local_output
 
 ]]></Node>
-<StgValue><ssdm name="call_ln31"/></StgValue>
+<StgValue><ssdm name="call_ln32"/></StgValue>
 </operation>
 </state>
 
@@ -601,10 +601,10 @@ entry:35 %call_ln31 = call void @vitis_convolution_Pipeline_Conv_Rows_Conv_Cols,
 
 <Node id="51" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="0" op_21_bw="0">
 <![CDATA[
-entry:35 %call_ln31 = call void @vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, i8 %kernel_load, i8 %kernel_load_1, i8 %kernel_load_8, i8 %kernel_load_7, i8 %kernel_load_6, i8 %kernel_load_5, i8 %kernel_load_4, i8 %kernel_load_3, i8 %kernel_load_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2, i8 %local_output
+entry:35 %call_ln32 = call void @vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, i8 %kernel_load, i8 %kernel_load_1, i8 %kernel_load_8, i8 %kernel_load_7, i8 %kernel_load_6, i8 %kernel_load_5, i8 %kernel_load_4, i8 %kernel_load_3, i8 %kernel_load_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1, i8 %p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2, i8 %local_output
 
 ]]></Node>
-<StgValue><ssdm name="call_ln31"/></StgValue>
+<StgValue><ssdm name="call_ln32"/></StgValue>
 </operation>
 </state>
 
@@ -619,10 +619,10 @@ entry:35 %call_ln31 = call void @vitis_convolution_Pipeline_Conv_Rows_Conv_Cols,
 
 <Node id="52" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:36 %call_ln31 = call void @vitis_convolution_Pipeline_Write_Rows_Write_Cols, i8 %gmem_out, i64 %output_img_read, i8 %local_output
+entry:36 %call_ln32 = call void @vitis_convolution_Pipeline_Write_Rows_Write_Cols, i8 %gmem_out, i64 %output_img_read, i8 %local_output
 
 ]]></Node>
-<StgValue><ssdm name="call_ln31"/></StgValue>
+<StgValue><ssdm name="call_ln32"/></StgValue>
 </operation>
 </state>
 
@@ -652,7 +652,7 @@ entry:11 %spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-entry:12 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem_in, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 1
+entry:12 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem_in, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 16384, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 1
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -682,7 +682,7 @@ entry:13 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %gmem_in
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-entry:14 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 1
+entry:14 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 16384, void @empty_3, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 1
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -847,10 +847,10 @@ entry:24 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0,
 
 <Node id="52" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="64" op_3_bw="8" op_4_bw="0" op_5_bw="0">
 <![CDATA[
-entry:36 %call_ln31 = call void @vitis_convolution_Pipeline_Write_Rows_Write_Cols, i8 %gmem_out, i64 %output_img_read, i8 %local_output
+entry:36 %call_ln32 = call void @vitis_convolution_Pipeline_Write_Rows_Write_Cols, i8 %gmem_out, i64 %output_img_read, i8 %local_output
 
 ]]></Node>
-<StgValue><ssdm name="call_ln31"/></StgValue>
+<StgValue><ssdm name="call_ln32"/></StgValue>
 </operation>
 
 <operation id="63" st_id="13" stage="1" lat="1">
@@ -862,10 +862,10 @@ entry:36 %call_ln31 = call void @vitis_convolution_Pipeline_Write_Rows_Write_Col
 
 <Node id="53" bw="0">
 <![CDATA[
-entry:37 %ret_ln44 = ret
+entry:37 %ret_ln45 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln44"/></StgValue>
+<StgValue><ssdm name="ret_ln45"/></StgValue>
 </operation>
 </state>
 </state_list>

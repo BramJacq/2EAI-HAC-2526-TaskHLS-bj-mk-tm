@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed May 20 13:59:48 2026
+| Host         : ELITE running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vitis_convolution_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vitis_convolution_0_0 (xilinx.com:hls:vitis_convolution:1.0) from (Rev. 2114616476) to (Rev. 2114617138)
+

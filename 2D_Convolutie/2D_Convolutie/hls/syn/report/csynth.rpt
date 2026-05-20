@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'vitis_convolution'
 ================================================================
 + General Information: 
-    * Date:           Wed May 20 02:51:46 2026
+    * Date:           Wed May 20 13:51:38 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        2D_Convolutie
     * Solution:       hls (Vivado IP Flow Target)
@@ -108,8 +108,8 @@
 +----------------+------------+-----------------------------+-----------+--------------+------------+-------------------------------------------------+
 | HW Interface   | Variable   | Access Location             | Direction | Burst Status | Resolution | Problem                                         |
 +----------------+------------+-----------------------------+-----------+--------------+------------+-------------------------------------------------+
-| m_axi_gmem_in  | input_img  | vitis_convolution.cpp:19:33 | read      | Fail         | 214-227    | Volatile or Atomic access cannot be transformed |
-| m_axi_gmem_out | output_img | vitis_convolution.cpp:41:37 | write     | Fail         | 214-227    | Volatile or Atomic access cannot be transformed |
+| m_axi_gmem_in  | input_img  | vitis_convolution.cpp:20:33 | read      | Fail         | 214-227    | Volatile or Atomic access cannot be transformed |
+| m_axi_gmem_out | output_img | vitis_convolution.cpp:42:37 | write     | Fail         | 214-227    | Volatile or Atomic access cannot be transformed |
 +----------------+------------+-----------------------------+-----------+--------------+------------+-------------------------------------------------+
 
     * Resolution URL: docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
@@ -122,46 +122,46 @@
 +-----------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
 | + vitis_convolution                                 | 6   |        |               |           |                        |         |
 |  + vitis_convolution_Pipeline_Read_Rows_Read_Cols   | 1   |        |               |           |                        |         |
-|    icmp_ln16_fu_264_p2                              |     |        | icmp_ln16     | seteq     | auto                   | 0       |
-|    add_ln16_1_fu_270_p2                             |     |        | add_ln16_1    | add       | fabric                 | 0       |
-|    add_ln16_fu_287_p2                               |     |        | add_ln16      | add       | fabric                 | 0       |
-|    icmp_ln17_fu_293_p2                              |     |        | icmp_ln17     | seteq     | auto                   | 0       |
-|    select_ln16_fu_299_p3                            |     |        | select_ln16   | select    | auto_sel               | 0       |
-|    select_ln16_1_fu_307_p3                          |     |        | select_ln16_1 | select    | auto_sel               | 0       |
-|    mul_8ns_10ns_17_1_1_U1                           |     |        | mul_ln16      | mul       | auto                   | 0       |
-|    mac_muladd_7ns_6ns_7ns_11_4_1_U5                 | 1   |        | mul_ln16_1    | mul       | dsp_slice              | 3       |
-|    urem_8ns_3ns_2_12_1_U2                           |     |        | urem_ln16     | urem      | auto                   | 11      |
-|    mul_8ns_10ns_17_1_1_U3                           |     |        | mul_ln17      | mul       | auto                   | 0       |
-|    mac_muladd_7ns_6ns_7ns_11_4_1_U5                 | 1   |        | add_ln19_2    | add       | dsp_slice              | 3       |
-|    urem_8ns_3ns_2_12_1_U4                           |     |        | urem_ln17     | urem      | auto                   | 11      |
-|    add_ln17_fu_319_p2                               |     |        | add_ln17      | add       | fabric                 | 0       |
+|    icmp_ln17_fu_266_p2                              |     |        | icmp_ln17     | seteq     | auto                   | 0       |
+|    add_ln17_1_fu_272_p2                             |     |        | add_ln17_1    | add       | fabric                 | 0       |
+|    add_ln17_fu_289_p2                               |     |        | add_ln17      | add       | fabric                 | 0       |
+|    icmp_ln18_fu_295_p2                              |     |        | icmp_ln18     | seteq     | auto                   | 0       |
+|    select_ln17_fu_301_p3                            |     |        | select_ln17   | select    | auto_sel               | 0       |
+|    select_ln17_1_fu_309_p3                          |     |        | select_ln17_1 | select    | auto_sel               | 0       |
+|    mul_8ns_10ns_17_1_1_U1                           |     |        | mul_ln17      | mul       | auto                   | 0       |
+|    mac_muladd_7ns_6ns_7ns_11_4_1_U5                 | 1   |        | mul_ln17_1    | mul       | dsp_slice              | 3       |
+|    urem_8ns_3ns_2_12_1_U2                           |     |        | urem_ln17     | urem      | auto                   | 11      |
+|    mul_8ns_10ns_17_1_1_U3                           |     |        | mul_ln18      | mul       | auto                   | 0       |
+|    mac_muladd_7ns_6ns_7ns_11_4_1_U5                 | 1   |        | add_ln20_2    | add       | dsp_slice              | 3       |
+|    urem_8ns_3ns_2_12_1_U4                           |     |        | urem_ln18     | urem      | auto                   | 11      |
+|    add_ln18_fu_321_p2                               |     |        | add_ln18      | add       | fabric                 | 0       |
 |  + vitis_convolution_Pipeline_Conv_Rows_Conv_Cols   | 5   |        |               |           |                        |         |
-|    icmp_ln23_fu_1057_p2                             |     |        | icmp_ln23     | seteq     | auto                   | 0       |
-|    add_ln23_fu_1063_p2                              |     |        | add_ln23      | add       | fabric                 | 0       |
-|    icmp_ln24_fu_1080_p2                             |     |        | icmp_ln24     | seteq     | auto                   | 0       |
-|    select_ln23_fu_1086_p3                           |     |        | select_ln23   | select    | auto_sel               | 0       |
-|    add_ln30_1_fu_1094_p2                            |     |        | add_ln30_1    | add       | fabric                 | 0       |
-|    add_ln30_4_fu_1100_p2                            |     |        | add_ln30_4    | add       | fabric                 | 0       |
-|    select_ln23_1_fu_1106_p3                         |     |        | select_ln23_1 | select    | auto_sel               | 0       |
-|    select_ln23_2_fu_1114_p3                         |     |        | select_ln23_2 | select    | auto_sel               | 0       |
-|    mul_7ns_9ns_15_1_1_U33                           |     |        | mul_ln23      | mul       | auto                   | 0       |
-|    mul_6ns_7ns_11_1_1_U35                           |     |        | mul_ln23_1    | mul       | auto                   | 0       |
-|    urem_7ns_3ns_2_11_1_U29                          |     |        | urem_ln23     | urem      | auto                   | 10      |
-|    add_ln30_fu_1208_p2                              |     |        | add_ln30      | add       | fabric                 | 0       |
-|    mul_7ns_9ns_15_1_1_U34                           |     |        | mul_ln30      | mul       | auto                   | 0       |
-|    mul_6ns_7ns_11_1_1_U36                           |     |        | mul_ln24_2    | mul       | auto                   | 0       |
-|    mul_7ns_9ns_15_1_1_U30                           |     |        | mul_ln24      | mul       | auto                   | 0       |
-|    mul_6ns_7ns_11_1_1_U37                           |     |        | mul_ln34      | mul       | auto                   | 0       |
-|    mul_7ns_9ns_15_1_1_U38                           |     |        | mul_ln24_1    | mul       | auto                   | 0       |
-|    add_ln30_5_fu_1315_p2                            |     |        | add_ln30_5    | add       | fabric                 | 0       |
-|    add_ln30_6_fu_1333_p2                            |     |        | add_ln30_6    | add       | fabric                 | 0       |
-|    add_ln30_7_fu_1351_p2                            |     |        | add_ln30_7    | add       | fabric                 | 0       |
-|    urem_7ns_3ns_2_11_1_U31                          |     |        | urem_ln24     | urem      | auto                   | 10      |
-|    add_ln30_2_fu_1287_p2                            |     |        | add_ln30_2    | add       | fabric                 | 0       |
-|    mul_7ns_9ns_15_1_1_U39                           |     |        | mul_ln30_1    | mul       | auto                   | 0       |
-|    add_ln30_8_fu_1372_p2                            |     |        | add_ln30_8    | add       | fabric                 | 0       |
-|    add_ln30_9_fu_1390_p2                            |     |        | add_ln30_9    | add       | fabric                 | 0       |
-|    add_ln30_10_fu_1408_p2                           |     |        | add_ln30_10   | add       | fabric                 | 0       |
+|    icmp_ln24_fu_1057_p2                             |     |        | icmp_ln24     | seteq     | auto                   | 0       |
+|    add_ln24_fu_1063_p2                              |     |        | add_ln24      | add       | fabric                 | 0       |
+|    icmp_ln25_fu_1080_p2                             |     |        | icmp_ln25     | seteq     | auto                   | 0       |
+|    select_ln24_fu_1086_p3                           |     |        | select_ln24   | select    | auto_sel               | 0       |
+|    add_ln31_1_fu_1094_p2                            |     |        | add_ln31_1    | add       | fabric                 | 0       |
+|    add_ln31_4_fu_1100_p2                            |     |        | add_ln31_4    | add       | fabric                 | 0       |
+|    select_ln24_1_fu_1106_p3                         |     |        | select_ln24_1 | select    | auto_sel               | 0       |
+|    select_ln24_2_fu_1114_p3                         |     |        | select_ln24_2 | select    | auto_sel               | 0       |
+|    mul_7ns_9ns_15_1_1_U33                           |     |        | mul_ln24      | mul       | auto                   | 0       |
+|    mul_6ns_7ns_11_1_1_U35                           |     |        | mul_ln24_1    | mul       | auto                   | 0       |
+|    urem_7ns_3ns_2_11_1_U29                          |     |        | urem_ln24     | urem      | auto                   | 10      |
+|    add_ln31_fu_1208_p2                              |     |        | add_ln31      | add       | fabric                 | 0       |
+|    mul_7ns_9ns_15_1_1_U34                           |     |        | mul_ln31      | mul       | auto                   | 0       |
+|    mul_6ns_7ns_11_1_1_U36                           |     |        | mul_ln25_2    | mul       | auto                   | 0       |
+|    mul_7ns_9ns_15_1_1_U30                           |     |        | mul_ln25      | mul       | auto                   | 0       |
+|    mul_6ns_7ns_11_1_1_U37                           |     |        | mul_ln35      | mul       | auto                   | 0       |
+|    mul_7ns_9ns_15_1_1_U38                           |     |        | mul_ln25_1    | mul       | auto                   | 0       |
+|    add_ln31_5_fu_1315_p2                            |     |        | add_ln31_5    | add       | fabric                 | 0       |
+|    add_ln31_6_fu_1333_p2                            |     |        | add_ln31_6    | add       | fabric                 | 0       |
+|    add_ln31_7_fu_1351_p2                            |     |        | add_ln31_7    | add       | fabric                 | 0       |
+|    urem_7ns_3ns_2_11_1_U31                          |     |        | urem_ln25     | urem      | auto                   | 10      |
+|    add_ln31_2_fu_1287_p2                            |     |        | add_ln31_2    | add       | fabric                 | 0       |
+|    mul_7ns_9ns_15_1_1_U39                           |     |        | mul_ln31_1    | mul       | auto                   | 0       |
+|    add_ln31_8_fu_1372_p2                            |     |        | add_ln31_8    | add       | fabric                 | 0       |
+|    add_ln31_9_fu_1390_p2                            |     |        | add_ln31_9    | add       | fabric                 | 0       |
+|    add_ln31_10_fu_1408_p2                           |     |        | add_ln31_10   | add       | fabric                 | 0       |
 |    sparsemux_7_2_8_1_1_U20                          |     |        | tmp           | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U21                          |     |        | tmp_1         | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U22                          |     |        | tmp_2         | sparsemux | onehotencoding_realdef | 0       |
@@ -170,11 +170,11 @@
 |    sparsemux_7_2_8_1_1_U24                          |     |        | tmp_5         | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U25                          |     |        | tmp_6         | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U41                          |     |        | tmp_7         | sparsemux | onehotencoding_realdef | 0       |
-|    add_ln30_3_fu_1154_p2                            |     |        | add_ln30_3    | add       | fabric                 | 0       |
-|    mul_7ns_9ns_15_1_1_U32                           |     |        | mul_ln30_2    | mul       | auto                   | 0       |
-|    add_ln30_11_fu_1429_p2                           |     |        | add_ln30_11   | add       | fabric                 | 0       |
-|    add_ln30_12_fu_1447_p2                           |     |        | add_ln30_12   | add       | fabric                 | 0       |
-|    add_ln30_13_fu_1465_p2                           |     |        | add_ln30_13   | add       | fabric                 | 0       |
+|    add_ln31_3_fu_1154_p2                            |     |        | add_ln31_3    | add       | fabric                 | 0       |
+|    mul_7ns_9ns_15_1_1_U32                           |     |        | mul_ln31_2    | mul       | auto                   | 0       |
+|    add_ln31_11_fu_1429_p2                           |     |        | add_ln31_11   | add       | fabric                 | 0       |
+|    add_ln31_12_fu_1447_p2                           |     |        | add_ln31_12   | add       | fabric                 | 0       |
+|    add_ln31_13_fu_1465_p2                           |     |        | add_ln31_13   | add       | fabric                 | 0       |
 |    sparsemux_7_2_8_1_1_U26                          |     |        | tmp_8         | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U27                          |     |        | tmp_9         | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U28                          |     |        | tmp_s         | sparsemux | onehotencoding_realdef | 0       |
@@ -203,30 +203,30 @@
 |    sparsemux_7_2_8_1_1_U27                          |     |        | tmp_32        | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U28                          |     |        | tmp_33        | sparsemux | onehotencoding_realdef | 0       |
 |    sparsemux_7_2_8_1_1_U48                          |     |        | tmp_34        | sparsemux | onehotencoding_realdef | 0       |
-|    mac_muladd_8s_8s_8s_8_4_1_U53                    | 1   |        | mul_ln31      | mul       | dsp_slice              | 3       |
-|    mul_8s_8s_8_1_1_U49                              |     |        | mul_ln31_1    | mul       | auto                   | 0       |
-|    mac_muladd_8s_8s_8s_8_4_1_U54                    | 1   |        | mul_ln31_2    | mul       | dsp_slice              | 3       |
-|    mul_8s_8s_8_1_1_U50                              |     |        | mul_ln31_3    | mul       | auto                   | 0       |
-|    mac_muladd_8s_8s_8s_8_4_1_U57                    | 1   |        | mul_ln31_4    | mul       | dsp_slice              | 3       |
-|    mac_muladd_8s_8s_8s_8_4_1_U55                    | 1   |        | mul_ln31_5    | mul       | dsp_slice              | 3       |
-|    mul_8s_8s_8_1_1_U51                              |     |        | mul_ln31_6    | mul       | auto                   | 0       |
-|    mac_muladd_8s_8s_8s_8_4_1_U56                    | 1   |        | mul_ln31_7    | mul       | dsp_slice              | 3       |
-|    mul_8s_8s_8_1_1_U52                              |     |        | mul_ln31_8    | mul       | auto                   | 0       |
-|    mac_muladd_8s_8s_8s_8_4_1_U53                    | 1   |        | add_ln31      | add       | dsp_slice              | 3       |
-|    mac_muladd_8s_8s_8s_8_4_1_U56                    | 1   |        | add_ln31_1    | add       | dsp_slice              | 3       |
-|    mac_muladd_8s_8s_8s_8_4_1_U55                    | 1   |        | add_ln31_3    | add       | dsp_slice              | 3       |
-|    mac_muladd_8s_8s_8s_8_4_1_U54                    | 1   |        | add_ln31_4    | add       | dsp_slice              | 3       |
-|    mac_muladd_8s_8s_8s_8_4_1_U57                    | 1   |        | add_ln31_5    | add       | dsp_slice              | 3       |
-|    add_ln31_6_fu_1670_p2                            |     |        | add_ln31_6    | add       | fabric                 | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U53                    | 1   |        | mul_ln32      | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U49                              |     |        | mul_ln32_1    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U54                    | 1   |        | mul_ln32_2    | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U50                              |     |        | mul_ln32_3    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U57                    | 1   |        | mul_ln32_4    | mul       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U55                    | 1   |        | mul_ln32_5    | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U51                              |     |        | mul_ln32_6    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U56                    | 1   |        | mul_ln32_7    | mul       | dsp_slice              | 3       |
+|    mul_8s_8s_8_1_1_U52                              |     |        | mul_ln32_8    | mul       | auto                   | 0       |
+|    mac_muladd_8s_8s_8s_8_4_1_U53                    | 1   |        | add_ln32      | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U56                    | 1   |        | add_ln32_1    | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U55                    | 1   |        | add_ln32_3    | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U54                    | 1   |        | add_ln32_4    | add       | dsp_slice              | 3       |
+|    mac_muladd_8s_8s_8s_8_4_1_U57                    | 1   |        | add_ln32_5    | add       | dsp_slice              | 3       |
+|    add_ln32_6_fu_1670_p2                            |     |        | add_ln32_6    | add       | fabric                 | 0       |
 |  + vitis_convolution_Pipeline_Write_Rows_Write_Cols | 0   |        |               |           |                        |         |
-|    icmp_ln38_fu_135_p2                              |     |        | icmp_ln38     | seteq     | auto                   | 0       |
-|    add_ln38_1_fu_141_p2                             |     |        | add_ln38_1    | add       | fabric                 | 0       |
-|    add_ln38_fu_158_p2                               |     |        | add_ln38      | add       | fabric                 | 0       |
-|    icmp_ln39_fu_164_p2                              |     |        | icmp_ln39     | seteq     | auto                   | 0       |
-|    select_ln38_fu_170_p3                            |     |        | select_ln38   | select    | auto_sel               | 0       |
-|    select_ln38_1_fu_178_p3                          |     |        | select_ln38_1 | select    | auto_sel               | 0       |
-|    add_ln41_2_fu_223_p2                             |     |        | add_ln41_2    | add       | fabric                 | 0       |
-|    add_ln39_fu_190_p2                               |     |        | add_ln39      | add       | fabric                 | 0       |
+|    icmp_ln39_fu_137_p2                              |     |        | icmp_ln39     | seteq     | auto                   | 0       |
+|    add_ln39_1_fu_143_p2                             |     |        | add_ln39_1    | add       | fabric                 | 0       |
+|    add_ln39_fu_160_p2                               |     |        | add_ln39      | add       | fabric                 | 0       |
+|    icmp_ln40_fu_166_p2                              |     |        | icmp_ln40     | seteq     | auto                   | 0       |
+|    select_ln39_fu_172_p3                            |     |        | select_ln39   | select    | auto_sel               | 0       |
+|    select_ln39_1_fu_180_p3                          |     |        | select_ln39_1 | select    | auto_sel               | 0       |
+|    add_ln42_2_fu_225_p2                             |     |        | add_ln42_2    | add       | fabric                 | 0       |
+|    add_ln40_fu_192_p2                               |     |        | add_ln40      | add       | fabric                 | 0       |
 +-----------------------------------------------------+-----+--------+---------------+-----------+------------------------+---------+
 
 
@@ -262,23 +262,23 @@
 +-----------------+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
 | Type            | Options                                                                                                                   | Location                                                                                                                                       | Inferred From                     |
 +-----------------+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
-| LOOP_FLATTEN    |                                                                                                                           | loop Read_Rows (vitis_convolution.cpp:16:16) in vitis_convolution (vitis_convolution.cpp:16)                                                   | pipeline vitis_convolution.cpp:18 |
-| ARRAY_PARTITION | dim=1 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input | variable vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input in vitis_convolution (vitis_convolution.cpp:13) | pipeline vitis_convolution.cpp:25 |
-| LOOP_FLATTEN    |                                                                                                                           | loop Conv_Rows (vitis_convolution.cpp:23:16) in vitis_convolution (vitis_convolution.cpp:23)                                                   | pipeline vitis_convolution.cpp:25 |
-| LOOP_FLATTEN    |                                                                                                                           | loop Write_Rows (vitis_convolution.cpp:38:17) in vitis_convolution (vitis_convolution.cpp:38)                                                  | pipeline vitis_convolution.cpp:40 |
+| LOOP_FLATTEN    |                                                                                                                           | loop Read_Rows (vitis_convolution.cpp:17:16) in vitis_convolution (vitis_convolution.cpp:17)                                                   | pipeline vitis_convolution.cpp:19 |
+| ARRAY_PARTITION | dim=1 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input | variable vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input in vitis_convolution (vitis_convolution.cpp:14) | pipeline vitis_convolution.cpp:26 |
+| LOOP_FLATTEN    |                                                                                                                           | loop Conv_Rows (vitis_convolution.cpp:24:16) in vitis_convolution (vitis_convolution.cpp:24)                                                   | pipeline vitis_convolution.cpp:26 |
+| LOOP_FLATTEN    |                                                                                                                           | loop Write_Rows (vitis_convolution.cpp:39:17) in vitis_convolution (vitis_convolution.cpp:39)                                                  | pipeline vitis_convolution.cpp:41 |
 +-----------------+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
 
 * Valid Pragma Syntax
-+-----------+----------------------------------------------------+-------------------------------------------------+
-| Type      | Options                                            | Location                                        |
-+-----------+----------------------------------------------------+-------------------------------------------------+
-| INTERFACE | m_axi port=input_img offset=slave bundle=gmem_in   | in vitis_convolution (vitis_convolution.cpp:8)  |
-| INTERFACE | m_axi port=output_img offset=slave bundle=gmem_out | in vitis_convolution (vitis_convolution.cpp:9)  |
-| INTERFACE | s_axilite port=kernel bundle=control               | in vitis_convolution (vitis_convolution.cpp:10) |
-| INTERFACE | s_axilite port=return bundle=control               | in vitis_convolution (vitis_convolution.cpp:11) |
-| PIPELINE  | ii=1                                               | in vitis_convolution (vitis_convolution.cpp:18) |
-| PIPELINE  | ii=1                                               | in vitis_convolution (vitis_convolution.cpp:25) |
-| PIPELINE  | ii=1                                               | in vitis_convolution (vitis_convolution.cpp:40) |
-+-----------+----------------------------------------------------+-------------------------------------------------+
++-----------+------------------------------------------------------------------+-------------------------------------------------+
+| Type      | Options                                                          | Location                                        |
++-----------+------------------------------------------------------------------+-------------------------------------------------+
+| INTERFACE | m_axi port=input_img offset=slave bundle=gmem_in depth=128*128   | in vitis_convolution (vitis_convolution.cpp:9)  |
+| INTERFACE | m_axi port=output_img offset=slave bundle=gmem_out depth=128*128 | in vitis_convolution (vitis_convolution.cpp:10) |
+| INTERFACE | s_axilite port=kernel bundle=control                             | in vitis_convolution (vitis_convolution.cpp:11) |
+| INTERFACE | s_axilite port=return bundle=control                             | in vitis_convolution (vitis_convolution.cpp:12) |
+| PIPELINE  | ii=1                                                             | in vitis_convolution (vitis_convolution.cpp:19) |
+| PIPELINE  | ii=1                                                             | in vitis_convolution (vitis_convolution.cpp:26) |
+| PIPELINE  | ii=1                                                             | in vitis_convolution (vitis_convolution.cpp:41) |
++-----------+------------------------------------------------------------------+-------------------------------------------------+
 
 

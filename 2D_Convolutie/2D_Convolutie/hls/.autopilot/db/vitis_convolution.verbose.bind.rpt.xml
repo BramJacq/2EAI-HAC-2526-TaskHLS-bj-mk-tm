@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'vitis_convolution'" level="0">
-<item name = "Date">Wed May 20 02:51:44 2026
+<item name = "Date">Wed May 20 13:51:35 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">2D_Convolutie</item>
@@ -31,9 +31,9 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204">vitis_convolution_Pipeline_Read_Rows_Read_Cols, 16399, 16399, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230">vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, 15896, 15896, 0.159 ms, 0.159 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264">vitis_convolution_Pipeline_Write_Rows_Write_Cols, 16394, 16394, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_206">vitis_convolution_Pipeline_Read_Rows_Read_Cols, 16399, 16399, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_232">vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, 15896, 15896, 0.159 ms, 0.159 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_266">vitis_convolution_Pipeline_Write_Rows_Write_Cols, 16394, 16394, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

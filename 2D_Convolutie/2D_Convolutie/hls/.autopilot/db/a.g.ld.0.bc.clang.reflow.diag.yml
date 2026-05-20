@@ -1,7 +1,7 @@
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: vitis_convolution.cpp, Line: 28, Column: 26 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 29, Column: 26 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          'Loop '''
@@ -11,7 +11,7 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: vitis_convolution.cpp, Line: 29, Column: 30 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 30, Column: 30 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          'Loop '''
@@ -27,7 +27,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        Kernel_Rows
   - String:          ''' ('
-  - LoopLoc:         'vitis_convolution.cpp:28:26'
+  - LoopLoc:         'vitis_convolution.cpp:29:26'
   - String:          ') '
   - String:          'in function '''
   - String:          vitis_convolution
@@ -43,7 +43,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        Kernel_Cols
   - String:          ''' ('
-  - LoopLoc:         'vitis_convolution.cpp:29:30'
+  - LoopLoc:         'vitis_convolution.cpp:30:30'
   - String:          ') '
   - String:          'in function '''
   - String:          vitis_convolution
@@ -59,7 +59,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        Kernel_Cols
   - String:          ''' ('
-  - LoopLoc:         'vitis_convolution.cpp:29:30'
+  - LoopLoc:         'vitis_convolution.cpp:30:30'
   - String:          ') '
   - String:          'in function '''
   - String:          vitis_convolution
@@ -75,7 +75,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        Kernel_Cols
   - String:          ''' ('
-  - LoopLoc:         'vitis_convolution.cpp:29:30'
+  - LoopLoc:         'vitis_convolution.cpp:30:30'
   - String:          ') '
   - String:          'in function '''
   - String:          vitis_convolution
@@ -96,13 +96,13 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            NonSimpleMemoryAccess
-DebugLoc:        { File: vitis_convolution.cpp, Line: 19, Column: 33 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 20, Column: 33 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          Volatile or Atomic access cannot be transformed
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: vitis_convolution.cpp, Line: 19, Column: 33 }
+    DebugLoc:        { File: vitis_convolution.cpp, Line: 20, Column: 33 }
   - OrigDirection:   read
   - OrigID:          for.inc.load.4
   - ArrayName:       input_img
@@ -116,13 +116,13 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            NonSimpleMemoryAccess
-DebugLoc:        { File: vitis_convolution.cpp, Line: 41, Column: 37 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 42, Column: 37 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          Volatile or Atomic access cannot be transformed
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      store
-    DebugLoc:        { File: vitis_convolution.cpp, Line: 41, Column: 37 }
+    DebugLoc:        { File: vitis_convolution.cpp, Line: 42, Column: 37 }
   - OrigDirection:   write
   - OrigID:          for.inc79.store.6
   - ArrayName:       output_img
@@ -136,7 +136,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: vitis_convolution.cpp, Line: 13, Column: 0 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 14, Column: 0 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - PragmaType:      array_partition
@@ -147,17 +147,17 @@ Args:
   - String:          ' '
   - PragmaFunction:  vitis_convolution
   - String:          ' '
-  - VarLoc:          'vitis_convolution.cpp:13:0'
+  - VarLoc:          'vitis_convolution.cpp:14:0'
   - String:          ' '
-  - PragmaSrcLoc:    'vitis_convolution.cpp:25:1'
-    DebugLoc:        { File: vitis_convolution.cpp, Line: 25, Column: 1 }
+  - PragmaSrcLoc:    'vitis_convolution.cpp:26:1'
+    DebugLoc:        { File: vitis_convolution.cpp, Line: 26, Column: 1 }
   - VarName:         'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: vitis_convolution.cpp, Line: 25, Column: 1 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 26, Column: 1 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          'Inferring pragma '''
@@ -178,7 +178,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: vitis_convolution.cpp, Line: 13, Column: 0 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 14, Column: 0 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - PragmaType:      array_partition
@@ -189,17 +189,17 @@ Args:
   - String:          ' '
   - PragmaFunction:  vitis_convolution
   - String:          ' '
-  - VarLoc:          'vitis_convolution.cpp:13:0'
+  - VarLoc:          'vitis_convolution.cpp:14:0'
   - String:          ' '
-  - PragmaSrcLoc:    'vitis_convolution.cpp:25:1'
-    DebugLoc:        { File: vitis_convolution.cpp, Line: 25, Column: 1 }
+  - PragmaSrcLoc:    'vitis_convolution.cpp:26:1'
+    DebugLoc:        { File: vitis_convolution.cpp, Line: 26, Column: 1 }
   - VarName:         'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input'
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: vitis_convolution.cpp, Line: 25, Column: 1 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 26, Column: 1 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          'Inferring pragma '''
@@ -220,7 +220,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: vitis_convolution.cpp, Line: 13, Column: 0 }
+DebugLoc:        { File: vitis_convolution.cpp, Line: 14, Column: 0 }
 Function:        _Z17vitis_convolutionPVhPVcPA3_c
 Args:            
   - String:          'Applying '
