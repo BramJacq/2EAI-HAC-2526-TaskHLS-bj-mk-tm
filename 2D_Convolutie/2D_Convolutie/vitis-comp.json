@@ -1,0 +1,9 @@
+{
+  "name": "2D_Convolutie",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}
