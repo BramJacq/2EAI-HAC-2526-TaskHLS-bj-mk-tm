@@ -77,41 +77,37 @@ void XVitis_convolution_DisableAutoRestart(XVitis_convolution *InstancePtr) {
     XVitis_convolution_WriteReg(InstancePtr->Control_BaseAddress, XVITIS_CONVOLUTION_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-void XVitis_convolution_Set_input_img(XVitis_convolution *InstancePtr, u64 Data) {
+void XVitis_convolution_Set_input_img(XVitis_convolution *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XVitis_convolution_WriteReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_INPUT_IMG_DATA, (u32)(Data));
-    XVitis_convolution_WriteReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_INPUT_IMG_DATA + 4, (u32)(Data >> 32));
+    XVitis_convolution_WriteReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_INPUT_IMG_DATA, Data);
 }
 
-u64 XVitis_convolution_Get_input_img(XVitis_convolution *InstancePtr) {
-    u64 Data;
+u32 XVitis_convolution_Get_input_img(XVitis_convolution *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XVitis_convolution_ReadReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_INPUT_IMG_DATA);
-    Data += (u64)XVitis_convolution_ReadReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_INPUT_IMG_DATA + 4) << 32;
     return Data;
 }
 
-void XVitis_convolution_Set_output_img(XVitis_convolution *InstancePtr, u64 Data) {
+void XVitis_convolution_Set_output_img(XVitis_convolution *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XVitis_convolution_WriteReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA, (u32)(Data));
-    XVitis_convolution_WriteReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA + 4, (u32)(Data >> 32));
+    XVitis_convolution_WriteReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA, Data);
 }
 
-u64 XVitis_convolution_Get_output_img(XVitis_convolution *InstancePtr) {
-    u64 Data;
+u32 XVitis_convolution_Get_output_img(XVitis_convolution *InstancePtr) {
+    u32 Data;
 
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
     Data = XVitis_convolution_ReadReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA);
-    Data += (u64)XVitis_convolution_ReadReg(InstancePtr->Control_r_BaseAddress, XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA + 4) << 32;
     return Data;
 }
 

@@ -6,7 +6,7 @@
     "def_use_depth": 11,
     "file": "vitis_convolution.cpp",
     "fileloc": 3,
-    "instructions": 414,
+    "instructions": 416,
     "loads": {
       "G": 82,
       "T": 10
@@ -17,6 +17,6 @@
       "G": 10,
       "T": 1
     },
-    "total_instructions": 414
+    "total_instructions": 416
   }
 }

@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed May 20 16:45:14 2026
-# Process ID         : 34780
+# Start of session at: Fri May 22 00:49:55 2026
+# Process ID         : 21112
 # Current directory  : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/sim/verilog
 # Command line       : xsim.exe -mode tcl -source {xsim.dir/vitis_convolution/xsim_script.tcl}
 # Log file           : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/sim/verilog/xsim.log
@@ -17,9 +17,9 @@
 # CPU Physical cores : 12
 # CPU Logical cores  : 14
 # Host memory        : 16605 MB
-# Swap memory        : 13958 MB
-# Total Virtual      : 30564 MB
-# Available Virtual  : 8485 MB
+# Swap memory        : 16106 MB
+# Total Virtual      : 32711 MB
+# Available Virtual  : 12523 MB
 #-----------------------------------------------------------
 source xsim.dir/vitis_convolution/xsim_script.tcl
 source vitis_convolution.tcl

@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Wed May 20 16:49:33 2026
-# Process ID         : 26040
+# Start of session at: Fri May 22 00:51:49 2026
+# Process ID         : 6184
 # Current directory  : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
 # Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file           : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/vivado.log
@@ -17,9 +17,9 @@
 # CPU Physical cores : 12
 # CPU Logical cores  : 14
 # Host memory        : 16605 MB
-# Swap memory        : 13958 MB
-# Total Virtual      : 30564 MB
-# Available Virtual  : 8094 MB
+# Swap memory        : 16106 MB
+# Total Virtual      : 32711 MB
+# Available Virtual  : 12683 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/hls_data.json outdir=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip srcdir=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls ippack_options_dict= ippack_options_dict=
@@ -27,7 +27,7 @@ INFO: Copied 1 ipmisc file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/h
 INFO: Copied 22 verilog file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/verilog
 INFO: Copied 20 vhdl file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/vhdl
 INFO: Copied 10 swdriver file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/drivers
-ipx::create_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 532.340 ; gain = 216.266
+ipx::create_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 530.008 ; gain = 214.176
 INFO: Import ports from HDL: C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/vhdl/vitis_convolution.vhd (vitis_convolution)
 INFO: Add axi4lite interface s_axi_control
 INFO: Add axi4lite interface s_axi_control_r
@@ -44,4 +44,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/component.xml
 INFO: Created IP archive C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/xilinx_com_hls_vitis_convolution_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Wed May 20 16:49:53 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri May 22 00:52:08 2026...

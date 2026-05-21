@@ -14,9 +14,9 @@
         vitis_convolution_virtual_sequencer vitis_convolution_virtual_sqr;                                                      
         vitis_convolution_config vitis_convolution_cfg;                                                                         
                                                                                                                     
-        axi_pkg::axi_env#(64,4,8,3,1) axi_master_gmem_in;
-        axi_pkg::axi_env#(64,4,8,3,1) axi_master_gmem_out;
-        axi_pkg::axi_env#(6,4,4,3,1) axi_lite_control_r;
+        axi_pkg::axi_env#(32,4,8,3,1) axi_master_gmem_in;
+        axi_pkg::axi_env#(32,4,8,3,1) axi_master_gmem_out;
+        axi_pkg::axi_env#(5,4,4,3,1) axi_lite_control_r;
         axi_pkg::axi_env#(5,4,4,3,1) axi_lite_control;
                                                                                                                     
         vitis_convolution_reference_model   refm;                                                                         
@@ -50,7 +50,7 @@
         vitis_convolution_cfg.gmem_in_cfg.write_latency_mode = TRANSACTION_FIRST;
         vitis_convolution_cfg.gmem_in_cfg.read_latency_mode = TRANSACTION_FIRST;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_master_gmem_in*", "cfg", vitis_convolution_cfg.gmem_in_cfg);
-        axi_master_gmem_in = axi_pkg::axi_env#(64,4,8,3,1)::type_id::create("axi_master_gmem_in", this);
+        axi_master_gmem_in = axi_pkg::axi_env#(32,4,8,3,1)::type_id::create("axi_master_gmem_in", this);
 
         vitis_convolution_cfg.gmem_out_cfg.set_default();
         vitis_convolution_cfg.gmem_out_cfg.drv_type = axi_pkg::SLAVE;
@@ -58,13 +58,13 @@
         vitis_convolution_cfg.gmem_out_cfg.write_latency_mode = TRANSACTION_FIRST;
         vitis_convolution_cfg.gmem_out_cfg.read_latency_mode = TRANSACTION_FIRST;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_master_gmem_out*", "cfg", vitis_convolution_cfg.gmem_out_cfg);
-        axi_master_gmem_out = axi_pkg::axi_env#(64,4,8,3,1)::type_id::create("axi_master_gmem_out", this);
+        axi_master_gmem_out = axi_pkg::axi_env#(32,4,8,3,1)::type_id::create("axi_master_gmem_out", this);
 
         vitis_convolution_cfg.control_r_cfg.set_default();
         vitis_convolution_cfg.control_r_cfg.drv_type = axi_pkg::MASTER;
         vitis_convolution_cfg.control_r_cfg.reset_level = axi_pkg::RESET_LEVEL_LOW;
         uvm_config_db#(axi_pkg::axi_cfg)::set(this, "axi_lite_control_r*", "cfg", vitis_convolution_cfg.control_r_cfg);
-        axi_lite_control_r = axi_pkg::axi_env#(6,4,4,3,1)::type_id::create("axi_lite_control_r", this);
+        axi_lite_control_r = axi_pkg::axi_env#(5,4,4,3,1)::type_id::create("axi_lite_control_r", this);
 
         vitis_convolution_cfg.control_cfg.set_default();
         vitis_convolution_cfg.control_cfg.drv_type = axi_pkg::MASTER;

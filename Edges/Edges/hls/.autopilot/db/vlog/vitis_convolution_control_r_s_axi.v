@@ -8,7 +8,7 @@
 `timescale 1ns/1ps
 (* DowngradeIPIdentifiedWarnings="yes" *) module vitis_convolution_control_r_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 6,
+    C_S_AXI_ADDR_WIDTH = 5,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -31,8 +31,8 @@
     output wire [1:0]                    RRESP,
     output wire                          RVALID,
     input  wire                          RREADY,
-    output wire [63:0]                   input_img,
-    output wire [63:0]                   output_img
+    output wire [31:0]                   input_img,
+    output wire [31:0]                   output_img
 );
 //------------------------Address Info-------------------
 // Protocol Used: ap_ctrl_none
@@ -43,24 +43,18 @@
 // 0x0c : reserved
 // 0x10 : Data signal of input_img
 //        bit 31~0 - input_img[31:0] (Read/Write)
-// 0x14 : Data signal of input_img
-//        bit 31~0 - input_img[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of output_img
+// 0x14 : reserved
+// 0x18 : Data signal of output_img
 //        bit 31~0 - output_img[31:0] (Read/Write)
-// 0x20 : Data signal of output_img
-//        bit 31~0 - output_img[63:32] (Read/Write)
-// 0x24 : reserved
+// 0x1c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_INPUT_IMG_DATA_0  = 6'h10,
-    ADDR_INPUT_IMG_DATA_1  = 6'h14,
-    ADDR_INPUT_IMG_CTRL    = 6'h18,
-    ADDR_OUTPUT_IMG_DATA_0 = 6'h1c,
-    ADDR_OUTPUT_IMG_DATA_1 = 6'h20,
-    ADDR_OUTPUT_IMG_CTRL   = 6'h24,
+    ADDR_INPUT_IMG_DATA_0  = 5'h10,
+    ADDR_INPUT_IMG_CTRL    = 5'h14,
+    ADDR_OUTPUT_IMG_DATA_0 = 5'h18,
+    ADDR_OUTPUT_IMG_CTRL   = 5'h1c,
     WRIDLE                 = 2'd0,
     WRDATA                 = 2'd1,
     WRRESP                 = 2'd2,
@@ -68,7 +62,7 @@ localparam
     RDIDLE                 = 2'd0,
     RDDATA                 = 2'd1,
     RDRESET                = 2'd2,
-    ADDR_BITS                = 6;
+    ADDR_BITS                = 5;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -83,8 +77,8 @@ localparam
     wire                          ar_hs;
     wire [ADDR_BITS-1:0]          raddr;
     // internal registers
-    reg  [63:0]                   int_input_img = 'b0;
-    reg  [63:0]                   int_output_img = 'b0;
+    reg  [31:0]                   int_input_img = 'b0;
+    reg  [31:0]                   int_output_img = 'b0;
 
 //------------------------Instantiation------------------
 
@@ -180,14 +174,8 @@ always @(posedge ACLK) begin
                 ADDR_INPUT_IMG_DATA_0: begin
                     rdata <= int_input_img[31:0];
                 end
-                ADDR_INPUT_IMG_DATA_1: begin
-                    rdata <= int_input_img[63:32];
-                end
                 ADDR_OUTPUT_IMG_DATA_0: begin
                     rdata <= int_output_img[31:0];
-                end
-                ADDR_OUTPUT_IMG_DATA_1: begin
-                    rdata <= int_output_img[63:32];
                 end
             endcase
         end
@@ -208,16 +196,6 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_input_img[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_input_img[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_INPUT_IMG_DATA_1)
-            int_input_img[63:32] <= (WDATA[31:0] & wmask) | (int_input_img[63:32] & ~wmask);
-    end
-end
-
 // int_output_img[31:0]
 always @(posedge ACLK) begin
     if (ARESET)
@@ -225,16 +203,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_OUTPUT_IMG_DATA_0)
             int_output_img[31:0] <= (WDATA[31:0] & wmask) | (int_output_img[31:0] & ~wmask);
-    end
-end
-
-// int_output_img[63:32]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_output_img[63:32] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_OUTPUT_IMG_DATA_1)
-            int_output_img[63:32] <= (WDATA[31:0] & wmask) | (int_output_img[63:32] & ~wmask);
     end
 end
 

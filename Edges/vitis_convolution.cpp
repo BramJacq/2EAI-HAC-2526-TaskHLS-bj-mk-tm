@@ -5,16 +5,16 @@ void vitis_convolution(
     volatile char *output_img,
     char kernel[KERNEL_SIZE][KERNEL_SIZE]) 
 {
-    // Hardware interfaces met depth-specificatie voor de simulator
-    #pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=IMG_ROWS*IMG_COLS
-    #pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=IMG_ROWS*IMG_COLS
+    // Standaard interfaces (Vitis regelt de rest via de config)
+    #pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=16384
+    #pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=16384
     #pragma HLS INTERFACE s_axilite port=kernel bundle=control
     #pragma HLS INTERFACE s_axilite port=return bundle=control
 
     static unsigned char local_input[IMG_ROWS][IMG_COLS];
     static char local_output[IMG_ROWS][IMG_COLS];
 
-    // 1. Inlezen van de pixels naar het interne FPGA-geheugen
+    // 1. Inlezen van de pixels
     Read_Rows: for(int r = 0; r < IMG_ROWS; r++) {
         Read_Cols: for(int c = 0; c < IMG_COLS; c++) {
             #pragma HLS PIPELINE II=1
@@ -38,7 +38,7 @@ void vitis_convolution(
         }
     }
 
-    // 3. Schrijf het resultaat terug naar het hoofdgeheugen
+    // 3. Schrijf het resultaat terug
     Write_Rows: for(int r = 0; r < IMG_ROWS; r++) {
         Write_Cols: for(int c = 0; c < IMG_COLS; c++) {
             #pragma HLS PIPELINE II=1

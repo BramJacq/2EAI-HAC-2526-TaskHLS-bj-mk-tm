@@ -3,10 +3,10 @@
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=vitis_convolution" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:9:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_img offset=slave bundle=gmem_in depth=128*128" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_img offset=slave bundle=gmem_in depth=16384" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:10:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_img offset=slave bundle=gmem_out depth=128*128" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_img offset=slave bundle=gmem_out depth=16384" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:11:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>

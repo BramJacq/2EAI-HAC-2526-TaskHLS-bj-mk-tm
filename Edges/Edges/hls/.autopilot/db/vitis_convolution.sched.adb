@@ -109,7 +109,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -145,7 +145,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -235,7 +235,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -292,7 +292,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1467,8 +1467,8 @@
 					<item>140</item>
 					<item>141</item>
 					<item>142</item>
+					<item>373</item>
 					<item>374</item>
-					<item>375</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1528,8 +1528,8 @@
 					<item>122</item>
 					<item>123</item>
 					<item>143</item>
-					<item>373</item>
-					<item>376</item>
+					<item>372</item>
+					<item>375</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1625,7 +1625,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -1656,7 +1656,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -1687,7 +1687,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>2</content>
@@ -1718,7 +1718,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>3</content>
@@ -1749,7 +1749,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>4</content>
@@ -1780,7 +1780,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>5</content>
@@ -1811,7 +1811,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>6</content>
@@ -1842,7 +1842,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>7</content>
@@ -1873,7 +1873,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>64</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>8</content>
@@ -2552,28 +2552,28 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_117">
-				<id>373</id>
+				<id>372</id>
 				<edge_type>4</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_118">
-				<id>374</id>
+				<id>373</id>
 				<edge_type>4</edge_type>
 				<source_obj>41</source_obj>
 				<sink_obj>51</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_119">
-				<id>375</id>
+				<id>374</id>
 				<edge_type>4</edge_type>
 				<source_obj>41</source_obj>
 				<sink_obj>51</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_120">
-				<id>376</id>
+				<id>375</id>
 				<edge_type>4</edge_type>
 				<source_obj>51</source_obj>
 				<sink_obj>52</sink_obj>

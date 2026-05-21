@@ -49,18 +49,14 @@
 // 0x0c : reserved
 // 0x10 : Data signal of input_img
 //        bit 31~0 - input_img[31:0] (Read/Write)
-// 0x14 : Data signal of input_img
-//        bit 31~0 - input_img[63:32] (Read/Write)
-// 0x18 : reserved
-// 0x1c : Data signal of output_img
+// 0x14 : reserved
+// 0x18 : Data signal of output_img
 //        bit 31~0 - output_img[31:0] (Read/Write)
-// 0x20 : Data signal of output_img
-//        bit 31~0 - output_img[63:32] (Read/Write)
-// 0x24 : reserved
+// 0x1c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XVITIS_CONVOLUTION_CONTROL_R_ADDR_INPUT_IMG_DATA  0x10
-#define XVITIS_CONVOLUTION_CONTROL_R_BITS_INPUT_IMG_DATA  64
-#define XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA 0x1c
-#define XVITIS_CONVOLUTION_CONTROL_R_BITS_OUTPUT_IMG_DATA 64
+#define XVITIS_CONVOLUTION_CONTROL_R_BITS_INPUT_IMG_DATA  32
+#define XVITIS_CONVOLUTION_CONTROL_R_ADDR_OUTPUT_IMG_DATA 0x18
+#define XVITIS_CONVOLUTION_CONTROL_R_BITS_OUTPUT_IMG_DATA 32
 

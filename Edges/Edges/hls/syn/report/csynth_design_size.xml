@@ -24,15 +24,15 @@
             <column name="">(4) simplification, 386, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering, 392, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations, 414, high level synthesis optimizations</column>
+            <column name="">(1) lowering, 394, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 416, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="vitis_convolution" col1="vitis_convolution.cpp:3" col2="123" col3="106" col4="109" col5="386" col6="414"/>
+                <row id="0" col0="vitis_convolution" col1="vitis_convolution.cpp:3" col2="123" col3="106" col4="109" col5="386" col6="416"/>
             </rows>
             <notes/>
         </hiertable>

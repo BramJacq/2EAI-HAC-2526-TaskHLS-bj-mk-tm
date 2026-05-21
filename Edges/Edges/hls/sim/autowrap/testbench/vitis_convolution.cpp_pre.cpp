@@ -26,8 +26,8 @@ void vitis_convolution(
     char kernel[3][3])
 {
 
-#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=IMG_ROWS*IMG_COLS
-#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=IMG_ROWS*IMG_COLS
+#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=16384
+#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=16384
 #pragma HLS INTERFACE s_axilite port=kernel bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 

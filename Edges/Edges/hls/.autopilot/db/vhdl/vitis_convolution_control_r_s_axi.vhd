@@ -11,7 +11,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity vitis_convolution_control_r_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -34,8 +34,8 @@ port (
     RRESP                 :out  STD_LOGIC_VECTOR(1 downto 0);
     RVALID                :out  STD_LOGIC;
     RREADY                :in   STD_LOGIC;
-    input_img             :out  STD_LOGIC_VECTOR(63 downto 0);
-    output_img            :out  STD_LOGIC_VECTOR(63 downto 0)
+    input_img             :out  STD_LOGIC_VECTOR(31 downto 0);
+    output_img            :out  STD_LOGIC_VECTOR(31 downto 0)
 );
 end entity vitis_convolution_control_r_s_axi;
 
@@ -48,14 +48,10 @@ end entity vitis_convolution_control_r_s_axi;
 -- 0x0c : reserved
 -- 0x10 : Data signal of input_img
 --        bit 31~0 - input_img[31:0] (Read/Write)
--- 0x14 : Data signal of input_img
---        bit 31~0 - input_img[63:32] (Read/Write)
--- 0x18 : reserved
--- 0x1c : Data signal of output_img
+-- 0x14 : reserved
+-- 0x18 : Data signal of output_img
 --        bit 31~0 - output_img[31:0] (Read/Write)
--- 0x20 : Data signal of output_img
---        bit 31~0 - output_img[63:32] (Read/Write)
--- 0x24 : reserved
+-- 0x1c : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of vitis_convolution_control_r_s_axi is
@@ -66,12 +62,10 @@ attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
     constant ADDR_INPUT_IMG_DATA_0  : INTEGER := 16#10#;
-    constant ADDR_INPUT_IMG_DATA_1  : INTEGER := 16#14#;
-    constant ADDR_INPUT_IMG_CTRL    : INTEGER := 16#18#;
-    constant ADDR_OUTPUT_IMG_DATA_0 : INTEGER := 16#1c#;
-    constant ADDR_OUTPUT_IMG_DATA_1 : INTEGER := 16#20#;
-    constant ADDR_OUTPUT_IMG_CTRL   : INTEGER := 16#24#;
-    constant ADDR_BITS         : INTEGER := 6;
+    constant ADDR_INPUT_IMG_CTRL    : INTEGER := 16#14#;
+    constant ADDR_OUTPUT_IMG_DATA_0 : INTEGER := 16#18#;
+    constant ADDR_OUTPUT_IMG_CTRL   : INTEGER := 16#1c#;
+    constant ADDR_BITS         : INTEGER := 5;
 
     signal AWREADY_t           : STD_LOGIC;
     signal WREADY_t            : STD_LOGIC;
@@ -86,8 +80,8 @@ attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     signal ar_hs               : STD_LOGIC;
     signal raddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     -- internal registers
-    signal int_input_img       : UNSIGNED(63 downto 0) := (others => '0');
-    signal int_output_img      : UNSIGNED(63 downto 0) := (others => '0');
+    signal int_input_img       : UNSIGNED(31 downto 0) := (others => '0');
+    signal int_output_img      : UNSIGNED(31 downto 0) := (others => '0');
 
 
 begin
@@ -206,12 +200,8 @@ begin
                     case (TO_INTEGER(raddr)) is
                     when ADDR_INPUT_IMG_DATA_0 =>
                         rdata_data <= RESIZE(int_input_img(31 downto 0), 32);
-                    when ADDR_INPUT_IMG_DATA_1 =>
-                        rdata_data <= RESIZE(int_input_img(63 downto 32), 32);
                     when ADDR_OUTPUT_IMG_DATA_0 =>
                         rdata_data <= RESIZE(int_output_img(31 downto 0), 32);
-                    when ADDR_OUTPUT_IMG_DATA_1 =>
-                        rdata_data <= RESIZE(int_output_img(63 downto 32), 32);
                     when others =>
                         NULL;
                     end case;
@@ -241,36 +231,10 @@ begin
     begin
         if (ACLK'event and ACLK = '1') then
             if (ARESET = '1') then
-                int_input_img(63 downto 32) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_INPUT_IMG_DATA_1) then
-                    int_input_img(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_input_img(63 downto 32));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
                 int_output_img(31 downto 0) <= (others => '0');
             elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_OUTPUT_IMG_DATA_0) then
                     int_output_img(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_output_img(31 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ARESET = '1') then
-                int_output_img(63 downto 32) <= (others => '0');
-            elsif (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_OUTPUT_IMG_DATA_1) then
-                    int_output_img(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_output_img(63 downto 32));
                 end if;
             end if;
         end if;

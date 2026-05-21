@@ -1,11 +1,11 @@
 directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=name=vitis_convolution_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=vitis_convolution
 ^
-vitis_convolution.cpp:9:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=input_img offset=slave bundle=gmem_in depth=128*128_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=128*128
+vitis_convolution.cpp:9:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=input_img offset=slave bundle=gmem_in depth=16384_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=16384
 ^
-vitis_convolution.cpp:10:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=output_img offset=slave bundle=gmem_out depth=128*128_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=128*128
+vitis_convolution.cpp:10:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=output_img offset=slave bundle=gmem_out depth=16384_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=16384
 ^
 vitis_convolution.cpp:11:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=s_axilite port=kernel bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=kernel bundle=control

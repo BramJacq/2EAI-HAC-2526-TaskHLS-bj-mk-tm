@@ -317,7 +317,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_CONTROL_R.ADDR_WIDTH">6</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_CONTROL_R.ADDR_WIDTH">5</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>DATA_WIDTH</spirit:name>
@@ -811,7 +811,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_IN.ADDR_WIDTH">64</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_IN.ADDR_WIDTH">32</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -1223,7 +1223,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_OUT.ADDR_WIDTH">64</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_OUT.ADDR_WIDTH">32</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -1231,8 +1231,8 @@
   <spirit:addressSpaces>
     <spirit:addressSpace>
       <spirit:name>Data_m_axi_gmem_in</spirit:name>
-      <spirit:range>16E</spirit:range>
-      <spirit:width spirit:format="long">64</spirit:width>
+      <spirit:range>4G</spirit:range>
+      <spirit:width spirit:format="long">32</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DEPENDENT_ON</spirit:name>
@@ -1246,8 +1246,8 @@
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data_m_axi_gmem_out</spirit:name>
-      <spirit:range>16E</spirit:range>
-      <spirit:width spirit:format="long">64</spirit:width>
+      <spirit:range>4G</spirit:range>
+      <spirit:width spirit:format="long">32</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DEPENDENT_ON</spirit:name>
@@ -1580,8 +1580,8 @@
           </spirit:parameter>
         </spirit:parameters>
         <spirit:register>
-          <spirit:name>input_img_1</spirit:name>
-          <spirit:displayName>input_img_1</spirit:displayName>
+          <spirit:name>input_img</spirit:name>
+          <spirit:displayName>input_img</spirit:displayName>
           <spirit:description>Data signal of input_img</spirit:description>
           <spirit:addressOffset>16</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
@@ -1603,33 +1603,10 @@
           </spirit:field>
         </spirit:register>
         <spirit:register>
-          <spirit:name>input_img_2</spirit:name>
-          <spirit:displayName>input_img_2</spirit:displayName>
-          <spirit:description>Data signal of input_img</spirit:description>
-          <spirit:addressOffset>20</spirit:addressOffset>
-          <spirit:size spirit:format="long">32</spirit:size>
-          <spirit:access>write-only</spirit:access>
-          <spirit:reset>
-            <spirit:value spirit:format="long">0</spirit:value>
-          </spirit:reset>
-          <spirit:field>
-            <spirit:name>input_img</spirit:name>
-            <spirit:description>Bit 63 to 32 of input_img</spirit:description>
-            <spirit:bitOffset>0</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
-            <spirit:access>write-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-        </spirit:register>
-        <spirit:register>
-          <spirit:name>output_img_1</spirit:name>
-          <spirit:displayName>output_img_1</spirit:displayName>
+          <spirit:name>output_img</spirit:name>
+          <spirit:displayName>output_img</spirit:displayName>
           <spirit:description>Data signal of output_img</spirit:description>
-          <spirit:addressOffset>28</spirit:addressOffset>
+          <spirit:addressOffset>24</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -1638,29 +1615,6 @@
           <spirit:field>
             <spirit:name>output_img</spirit:name>
             <spirit:description>Bit 31 to 0 of output_img</spirit:description>
-            <spirit:bitOffset>0</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
-            <spirit:access>write-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-        </spirit:register>
-        <spirit:register>
-          <spirit:name>output_img_2</spirit:name>
-          <spirit:displayName>output_img_2</spirit:displayName>
-          <spirit:description>Data signal of output_img</spirit:description>
-          <spirit:addressOffset>32</spirit:addressOffset>
-          <spirit:size spirit:format="long">32</spirit:size>
-          <spirit:access>write-only</spirit:access>
-          <spirit:reset>
-            <spirit:value spirit:format="long">0</spirit:value>
-          </spirit:reset>
-          <spirit:field>
-            <spirit:name>output_img</spirit:name>
-            <spirit:description>Bit 63 to 32 of output_img</spirit:description>
             <spirit:bitOffset>0</spirit:bitOffset>
             <spirit:bitWidth spirit:format="long">32</spirit:bitWidth>
             <spirit:access>write-only</spirit:access>
@@ -1688,7 +1642,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>18b47560</spirit:value>
+            <spirit:value>07eb42a3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1704,7 +1658,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>608299b1</spirit:value>
+            <spirit:value>43a5b60e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1720,7 +1674,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>945450eb</spirit:value>
+            <spirit:value>ae711ac6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1736,7 +1690,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fdffe570</spirit:value>
+            <spirit:value>ddb6f7cc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1750,7 +1704,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1aa836e4</spirit:value>
+            <spirit:value>f7e84d96</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1786,7 +1740,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6cc0cac9</spirit:value>
+            <spirit:value>dbfecc0c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2060,7 +2014,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONTROL_R_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONTROL_R_ADDR_WIDTH&apos;)) - 1)">4</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2103,7 +2057,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONTROL_R_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_CONTROL_R_ADDR_WIDTH&apos;)) - 1)">4</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2348,7 +2302,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_IN_ADDR_WIDTH&apos;)) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_IN_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2575,7 +2529,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_IN_ADDR_WIDTH&apos;)) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_IN_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3141,7 +3095,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_OUT_ADDR_WIDTH&apos;)) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_OUT_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3368,7 +3322,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_OUT_ADDR_WIDTH&apos;)) - 1)">63</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_GMEM_OUT_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -3941,7 +3895,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_S_AXI_CONTROL_R_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_CONTROL_R_ADDR_WIDTH">6</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_CONTROL_R_ADDR_WIDTH">5</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_S_AXI_CONTROL_R_DATA_WIDTH</spirit:name>
@@ -3960,7 +3914,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM_IN_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM_IN_ADDR_WIDTH">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM_IN_ADDR_WIDTH">32</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM_IN_DATA_WIDTH</spirit:name>
@@ -4053,7 +4007,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM_OUT_ADDR_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM_OUT_ADDR_WIDTH">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:id="MODELPARAM_VALUE.C_M_AXI_GMEM_OUT_ADDR_WIDTH">32</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_M_AXI_GMEM_OUT_DATA_WIDTH</spirit:name>
@@ -4440,7 +4394,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/vitis_convolution.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_3d5a24ab</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_c267dbda</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -4608,7 +4562,7 @@
       <spirit:file>
         <spirit:name>xgui/vitis_convolution_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6cc0cac9</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_dbfecc0c</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -4876,8 +4830,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Vitis_convolution</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114617309</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-05-20T14:49:52Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114619231</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-05-21T22:52:07Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -4885,12 +4839,12 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0b36656f"/>
-      <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="60819075"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="10221103"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b94d57b1"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="e7ff0790"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6bee3ac9"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6cb052f0"/>
+      <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="6ddcceb9"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="d221eb61"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e84a20e1"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="7a53159e"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5628e040"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="6741d3e5"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

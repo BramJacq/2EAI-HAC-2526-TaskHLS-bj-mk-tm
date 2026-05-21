@@ -20,18 +20,18 @@ INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from hls_config.cfg(7)
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_addr64=false' from hls_config.cfg(12)
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/vitis-comp.json
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
 INFO: [HLS 200-2036] Building debug C Simulation binaries
-   Compiling ../../../../vitis_convolution_tb.cpp in debug mode
    Compiling ../../../../vitis_convolution.cpp in debug mode
    Generating csim.exe
 --- Start C-Simulatie voor Edges (Horizontaal) ---
 C-Simulatie succesvol afgerond!
-Output op de horizontale rand (rij 64): -3 (Verwacht: Hoge waarde)
-Output ver van de rand (rij 10): 0 (Verwacht: 0)
+Output op de horizontale rand (rij 64, kol 50): -3 (Verwacht: Hoge waarde)
+Output ver van de rand (rij 10, kol 50): 0 (Verwacht: 0)
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 9.636 seconds; peak allocated memory: 134.730 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 15s
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.091 seconds; peak allocated memory: 134.719 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 7s

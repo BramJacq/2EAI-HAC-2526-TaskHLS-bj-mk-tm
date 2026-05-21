@@ -26,9 +26,9 @@
             virtual interface misc_interface misc_if;                                               
             vitis_convolution_reference_model refm;                                                       
                                                                                                     
-            axi_pkg::axi_slave_sequence#(64,4,8,3,1) axi_slave_gmem_in_seq;
-            axi_pkg::axi_slave_sequence#(64,4,8,3,1) axi_slave_gmem_out_seq;
-            axi_pkg::axi_busdatas_master_sequence#(6, 32) axi_master_wr_control_r_seq;
+            axi_pkg::axi_slave_sequence#(32,4,8,3,1) axi_slave_gmem_in_seq;
+            axi_pkg::axi_slave_sequence#(32,4,8,3,1) axi_slave_gmem_out_seq;
+            axi_pkg::axi_busdatas_master_sequence#(5, 32) axi_master_wr_control_r_seq;
             axi_pkg::axi_busdatas_master_sequence#(5, 32) axi_master_wr_control_seq;
             axi_pkg::axi_busdatas_master_sequence#(5, 32) axi_master_poll_control_seq;
 
@@ -88,7 +88,7 @@
                                 logic[32-1:0] databusbit_output_img[$];
                                 data64bit_input_img.delete(); databusbit_input_img.delete();
                                 axi_master_wr_control_r_seq.StableAxiliteNoUpdate=0;
-                                for(int j=0; j < (64+32-1)/32; j++) begin
+                                for(int j=0; j < (32+32-1)/32; j++) begin
                                     data64bit_input_img.push_back( ((refm.mem_blk_pages_gmem_in.maxi_bundlevar_offset["input_img"]+refm.mem_blk_pages_gmem_in.page_ofst[refm.mem_blk_pages_gmem_in.rd_page_idx])>>(j*32)) & (2**32-1) );
                                 end
                                 foreach(data64bit_input_img[s]) databusbit_input_img[s]=data64bit_input_img[s][32-1:0];
@@ -96,12 +96,12 @@
                                 axi_master_wr_control_r_seq.datamerge_inavg(databusbit_input_img, 0, 16, 1);
                                 data64bit_output_img.delete(); databusbit_output_img.delete();
                                 axi_master_wr_control_r_seq.StableAxiliteNoUpdate=0;
-                                for(int j=0; j < (64+32-1)/32; j++) begin
+                                for(int j=0; j < (32+32-1)/32; j++) begin
                                     data64bit_output_img.push_back( ((refm.mem_blk_pages_gmem_out.maxi_bundlevar_offset["output_img"]+refm.mem_blk_pages_gmem_out.page_ofst[refm.mem_blk_pages_gmem_out.rd_page_idx])>>(j*32)) & (2**32-1) );
                                 end
                                 foreach(data64bit_output_img[s]) databusbit_output_img[s]=data64bit_output_img[s][32-1:0];
                                 axi_master_wr_control_r_seq.StableAxiliteNoUpdate=1;
-                                axi_master_wr_control_r_seq.datamerge_inavg(databusbit_output_img, 0, 28, 1);
+                                axi_master_wr_control_r_seq.datamerge_inavg(databusbit_output_img, 0, 24, 1);
                                 `uvm_send(axi_master_wr_control_r_seq);
                                 refm.write_data_finish_control_r = 1;
                                 `uvm_info("control_r data writting thread", $sformatf("%0dth(total 1): waiting for all write data finish event",i), UVM_LOW)

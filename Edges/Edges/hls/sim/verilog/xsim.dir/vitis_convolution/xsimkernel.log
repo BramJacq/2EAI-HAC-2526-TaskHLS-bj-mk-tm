@@ -1,7 +1,7 @@
-Running: xsim.dir/vitis_convolution/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=vitis_convolution_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb vitis_convolution.wdb -simrunnum 0 -socket 49967
+Running: xsim.dir/vitis_convolution/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=vitis_convolution_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb vitis_convolution.wdb -simrunnum 0 -socket 54716
 Design successfully loaded
-Design Loading Memory Usage: 22192 KB (Peak: 22192 KB)
-Design Loading CPU Usage: 108 ms
+Design Loading Memory Usage: 21756 KB (Peak: 21756 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 1192692 KB (Peak: 1192692 KB)
-Simulation CPU Usage: 19280 ms
+Simulation Memory Usage: 1191912 KB (Peak: 1191912 KB)
+Simulation CPU Usage: 15092 ms

@@ -16,7 +16,7 @@
           <constraint constraint_type="bitwidth" orig_bitwidth="8" final_bitwidth="8"/>
         </hw>
         <hw hw_usage="address" hw_interface="S_AXILite" hw_name="control_r" hw_bitwidth="8" hw_size_or_depth="0" hw_kernel_support="true">
-          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="28"/>
+          <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24"/>
         </hw>
       </arg>
       <arg id="2" access_type="r" src_name="kernel" src_type="char*" src_isptr="1" src_bitwidth="8" src_size_or_depth="9">

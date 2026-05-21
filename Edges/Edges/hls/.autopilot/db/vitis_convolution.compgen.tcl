@@ -64,7 +64,7 @@ if {${::AESL::PGuard_simmodel_gen}} {
 			interrupt_trigger_type default \
 			is_flushable 0 \
 			is_datawidth64 0 \
-			is_addrwidth64 1 \
+			is_addrwidth64 0 \
 			enable_mem_auto_widen 1 \
 		} "
 	} else {
@@ -79,19 +79,19 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 set port_control_r {
 input_img { 
 	dir I
-	width 64
+	width 32
 	depth 1
 	mode ap_none
 	offset 16
-	offset_end 27
+	offset_end 23
 }
 output_img { 
 	dir I
-	width 64
+	width 32
 	depth 1
 	mode ap_none
-	offset 28
-	offset_end 39
+	offset 24
+	offset_end 31
 }
 }
 dict set axilite_register_dict control_r $port_control_r
@@ -110,7 +110,7 @@ if {${::AESL::PGuard_simmodel_gen}} {
 			interrupt_trigger_type default \
 			is_flushable 0 \
 			is_datawidth64 0 \
-			is_addrwidth64 1 \
+			is_addrwidth64 0 \
 			enable_mem_auto_widen 1 \
 		} "
 	} else {

@@ -26976,11 +26976,12 @@ vitis_convolution
     cout << "C-Simulatie succesvol afgerond!" << endl;
 
 
-    cout << "Output op de horizontale rand (rij 64): " << (int)test_output[64 * 128 + 50] << " (Verwacht: Hoge waarde)" << endl;
-    cout << "Output ver van de rand (rij 10): " << (int)test_output[10 * 128 + 50] << " (Verwacht: 0)" << endl;
+
+    cout << "Output op de horizontale rand (rij 64, kol 50): " << (int)test_output[64 * 128 + 50] << " (Verwacht: Hoge waarde)" << endl;
+    cout << "Output ver van de rand (rij 10, kol 50): " << (int)test_output[10 * 128 + 50] << " (Verwacht: 0)" << endl;
 
     return 0;
 }
 #endif
-# 37 "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/vitis_convolution_tb.cpp"
+# 38 "C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/vitis_convolution_tb.cpp"
 

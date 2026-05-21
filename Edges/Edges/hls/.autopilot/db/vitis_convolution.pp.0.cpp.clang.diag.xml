@@ -29,7 +29,7 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=input_img offset=slave bundle=gmem_in depth=128*128_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=input_img offset=slave bundle=gmem_in depth=16384_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -45,7 +45,7 @@
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=output_img offset=slave bundle=gmem_out depth=128*128_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=vitis_convolution_XLX_SEP_ PragmaOptions=m_axi port=output_img offset=slave bundle=gmem_out depth=16384_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>

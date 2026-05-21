@@ -28,15 +28,15 @@
 |               | (4) simplification         | 386          | simplification of design after performance transformations                             |
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               | 392          | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          | 414          | high level synthesis optimizations                                                     |
+|               | (1) lowering               | 394          | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          | 416          | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
 +---------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
 | Function            | Location                | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
 +---------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
-|   vitis_convolution | vitis_convolution.cpp:3 | 123          | 106           | 109          | 386         | 414           |
+|   vitis_convolution | vitis_convolution.cpp:3 | 123          | 106           | 109          | 386         | 416           |
 +---------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings

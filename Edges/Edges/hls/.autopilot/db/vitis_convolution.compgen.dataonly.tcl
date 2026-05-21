@@ -27,19 +27,19 @@ dict set axilite_register_dict control $port_control
 set port_control_r {
 input_img { 
 	dir I
-	width 64
+	width 32
 	depth 1
 	mode ap_none
 	offset 16
-	offset_end 27
+	offset_end 23
 }
 output_img { 
 	dir I
-	width 64
+	width 32
 	depth 1
 	mode ap_none
-	offset 28
-	offset_end 39
+	offset 24
+	offset_end 31
 }
 }
 dict set axilite_register_dict control_r $port_control_r

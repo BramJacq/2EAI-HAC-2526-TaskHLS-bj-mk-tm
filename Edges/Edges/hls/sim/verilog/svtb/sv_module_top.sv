@@ -32,7 +32,7 @@ module sv_module_top;
     end
 
 
-    axi_if #(64,4,8,3,1)  axi_gmem_in_if (.clk  (apatb_vitis_convolution_top.AESL_clock), .rst(apatb_vitis_convolution_top.AESL_reset));
+    axi_if #(32,4,8,3,1)  axi_gmem_in_if (.clk  (apatb_vitis_convolution_top.AESL_clock), .rst(apatb_vitis_convolution_top.AESL_reset));
     assign axi_gmem_in_if.AWVALID = apatb_vitis_convolution_top.gmem_in_AWVALID;
     assign apatb_vitis_convolution_top.gmem_in_AWREADY = axi_gmem_in_if.AWREADY;
     assign axi_gmem_in_if.AWADDR = apatb_vitis_convolution_top.gmem_in_AWADDR;
@@ -79,11 +79,11 @@ module sv_module_top;
     assign apatb_vitis_convolution_top.gmem_in_BID = axi_gmem_in_if.BID;
     assign apatb_vitis_convolution_top.gmem_in_BUSER = axi_gmem_in_if.BUSER;
     initial begin
-        uvm_config_db #( virtual axi_if#(64,4,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem_in.*", "vif", axi_gmem_in_if);
+        uvm_config_db #( virtual axi_if#(32,4,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem_in.*", "vif", axi_gmem_in_if);
     end
 
 
-    axi_if #(64,4,8,3,1)  axi_gmem_out_if (.clk  (apatb_vitis_convolution_top.AESL_clock), .rst(apatb_vitis_convolution_top.AESL_reset));
+    axi_if #(32,4,8,3,1)  axi_gmem_out_if (.clk  (apatb_vitis_convolution_top.AESL_clock), .rst(apatb_vitis_convolution_top.AESL_reset));
     assign axi_gmem_out_if.AWVALID = apatb_vitis_convolution_top.gmem_out_AWVALID;
     assign apatb_vitis_convolution_top.gmem_out_AWREADY = axi_gmem_out_if.AWREADY;
     assign axi_gmem_out_if.AWADDR = apatb_vitis_convolution_top.gmem_out_AWADDR;
@@ -130,11 +130,11 @@ module sv_module_top;
     assign apatb_vitis_convolution_top.gmem_out_BID = axi_gmem_out_if.BID;
     assign apatb_vitis_convolution_top.gmem_out_BUSER = axi_gmem_out_if.BUSER;
     initial begin
-        uvm_config_db #( virtual axi_if#(64,4,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem_out.*", "vif", axi_gmem_out_if);
+        uvm_config_db #( virtual axi_if#(32,4,8,3,1) )::set(null, "uvm_test_top.top_env.axi_master_gmem_out.*", "vif", axi_gmem_out_if);
     end
 
 
-    axi_if #(6,4,4,3,1)  axi_control_r_if (.clk  (apatb_vitis_convolution_top.AESL_clock), .rst(apatb_vitis_convolution_top.AESL_reset));
+    axi_if #(5,4,4,3,1)  axi_control_r_if (.clk  (apatb_vitis_convolution_top.AESL_clock), .rst(apatb_vitis_convolution_top.AESL_reset));
     assign apatb_vitis_convolution_top.control_r_AWADDR = axi_control_r_if.AWADDR;
     assign apatb_vitis_convolution_top.control_r_AWVALID = axi_control_r_if.AWVALID;
     assign axi_control_r_if.AWREADY = apatb_vitis_convolution_top.control_r_AWREADY;
@@ -156,7 +156,7 @@ module sv_module_top;
     assign axi_control_r_if.RID = 0;
     assign axi_control_r_if.RLAST = 1;
     initial begin
-        uvm_config_db #( virtual axi_if#(6,4,4,3,1) )::set(null, "uvm_test_top.top_env.axi_lite_control_r.*", "vif", axi_control_r_if);
+        uvm_config_db #( virtual axi_if#(5,4,4,3,1) )::set(null, "uvm_test_top.top_env.axi_lite_control_r.*", "vif", axi_control_r_if);
     end
 
 
