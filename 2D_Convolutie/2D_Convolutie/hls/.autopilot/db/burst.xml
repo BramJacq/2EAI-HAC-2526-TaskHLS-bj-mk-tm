@@ -1,4 +1,0 @@
-<VitisHLS:BurstInfo>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="NonSimpleMemoryAccessMissed" src_info="vitis_convolution.cpp:20:33" msg_id="214-227" msg_severity="INFO" msg_body="Volatile or Atomic access cannot be transformed" resolution="214-227" BundleName="gmem_in" VarName="input_img" ParentFunc="vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])" OrigID="for.inc.load.4" OrigAccess-DebugLoc="vitis_convolution.cpp:20:33" OrigDirection="read"/>
-    <burst group="BURST_VERBOSE_MISSED" fe_name="NonSimpleMemoryAccessMissed" src_info="vitis_convolution.cpp:42:37" msg_id="214-227" msg_severity="INFO" msg_body="Volatile or Atomic access cannot be transformed" resolution="214-227" BundleName="gmem_out" VarName="output_img" ParentFunc="vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])" OrigID="for.inc79.store.6" OrigAccess-DebugLoc="vitis_convolution.cpp:42:37" OrigDirection="write"/>
-</VitisHLS:BurstInfo>

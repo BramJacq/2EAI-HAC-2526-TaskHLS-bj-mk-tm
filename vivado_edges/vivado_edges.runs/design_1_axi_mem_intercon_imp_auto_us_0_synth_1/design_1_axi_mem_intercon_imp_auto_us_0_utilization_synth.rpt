@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Fri May 22 01:17:11 2026
+| Date         : Fri May 22 03:08:13 2026
 | Host         : ELITE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_axi_mem_intercon_imp_auto_us_0_utilization_synth.rpt -pb design_1_axi_mem_intercon_imp_auto_us_0_utilization_synth.pb
 | Design       : design_1_axi_mem_intercon_imp_auto_us_0
@@ -31,17 +31,17 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  204 |     0 |          0 |     53200 |  0.38 |
-|   LUT as Logic             |  179 |     0 |          0 |     53200 |  0.34 |
-|   LUT as Memory            |   25 |     0 |          0 |     17400 |  0.14 |
+| Slice LUTs*                |  441 |     0 |          0 |     53200 |  0.83 |
+|   LUT as Logic             |  390 |     0 |          0 |     53200 |  0.73 |
+|   LUT as Memory            |   51 |     0 |          0 |     17400 |  0.29 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
-|     LUT as Shift Register  |   25 |     0 |            |           |       |
-| Slice Registers            |  321 |     0 |          0 |    106400 |  0.30 |
-|   Register as Flip Flop    |  321 |     0 |          0 |    106400 |  0.30 |
+|     LUT as Shift Register  |   51 |     0 |            |           |       |
+| Slice Registers            |  584 |     0 |          0 |    106400 |  0.55 |
+|   Register as Flip Flop    |  584 |     0 |          0 |    106400 |  0.55 |
 |   Register as Latch        |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                   |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |     13300 |  0.00 |
-| Unique Control Sets        |   13 |       |          0 |     13300 |  0.10 |
+| Unique Control Sets        |   37 |       |          0 |     13300 |  0.28 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -63,8 +63,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 2     |          Yes |         Set |            - |
-| 319   |          Yes |       Reset |            - |
+| 4     |          Yes |         Set |            - |
+| 580   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -153,15 +153,15 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  319 |        Flop & Latch |
-| LUT6     |   83 |                 LUT |
-| LUT3     |   83 |                 LUT |
-| LUT5     |   31 |                 LUT |
-| LUT4     |   27 |                 LUT |
-| SRLC32E  |   25 |  Distributed Memory |
-| LUT2     |   12 |                 LUT |
-| LUT1     |    5 |                 LUT |
-| FDSE     |    2 |        Flop & Latch |
+| FDRE     |  580 |        Flop & Latch |
+| LUT6     |  157 |                 LUT |
+| LUT5     |  144 |                 LUT |
+| LUT3     |  115 |                 LUT |
+| SRLC32E  |   51 |  Distributed Memory |
+| LUT4     |   42 |                 LUT |
+| LUT2     |   26 |                 LUT |
+| LUT1     |    7 |                 LUT |
+| FDSE     |    4 |        Flop & Latch |
 +----------+------+---------------------+
 
 

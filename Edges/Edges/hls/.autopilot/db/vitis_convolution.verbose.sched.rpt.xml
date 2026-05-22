@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'vitis_convolution'" level="0">
-<item name = "Date">Fri May 22 00:47:14 2026
+<item name = "Date">Fri May 22 02:53:19 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">Edges</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">48701, 48701, 0.487 ms, 0.487 ms, 48702, 48702, no</column>
+<column name="">32793, 32793, 0.328 ms, 0.328 ms, 32794, 32794, no</column>
 </table>
 </item>
 <item name = "Detail">

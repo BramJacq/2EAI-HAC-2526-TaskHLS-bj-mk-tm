@@ -1,1 +1,0 @@
-xsim {vitis_convolution} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=vitis_convolution_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {vitis_convolution.tcl}

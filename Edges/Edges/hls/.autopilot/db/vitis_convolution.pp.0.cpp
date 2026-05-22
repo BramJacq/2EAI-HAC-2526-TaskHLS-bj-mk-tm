@@ -161,25 +161,29 @@ extern "C" {
 
 
 
+
+extern char kernel[3][3];
+
 __attribute__((sdx_kernel("vitis_convolution", 0))) void vitis_convolution(
     volatile unsigned char *input_img,
-    volatile char *output_img,
-    char kernel[3][3]
+    volatile char *output_img
 );
 # 2 "vitis_convolution.cpp" 2
 
+
+char kernel[3][3];
+
 __attribute__((sdx_kernel("vitis_convolution", 0))) void vitis_convolution(
     volatile unsigned char *input_img,
-    volatile char *output_img,
-    char kernel[3][3])
+    volatile char *output_img)
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=vitis_convolution
-# 7 "vitis_convolution.cpp"
+# 9 "vitis_convolution.cpp"
 
 
-#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=16384
-#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=16384
+#pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem depth=16384
+#pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem depth=16384
 #pragma HLS INTERFACE s_axilite port=kernel bundle=control
 #pragma HLS INTERFACE s_axilite port=return bundle=control
 

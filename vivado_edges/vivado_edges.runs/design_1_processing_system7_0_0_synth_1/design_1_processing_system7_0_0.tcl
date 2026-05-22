@@ -74,15 +74,15 @@ set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/Bram/AppData/Roaming/Xilinx/Vivado/2025.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
   c:/2eai-soc-2526-weerstation-bj-mk-tm/CodesPart3V3/ip_repo
+  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
+read_ip -quiet C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 
 OPTRACE "Adding files" END { }

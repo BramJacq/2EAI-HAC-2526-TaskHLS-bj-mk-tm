@@ -10,8 +10,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_pr
 # IP: bd/design_1/ip/design_1_vitis_convolution_0_0/design_1_vitis_convolution_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_vitis_convolution_0_0 || ORIG_REF_NAME==design_1_vitis_convolution_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_xbar_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_xbar_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_0} -quiet] -quiet
@@ -21,17 +24,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 
 # IP: bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_smc_0 || ORIG_REF_NAME==design_1_axi_smc_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_us_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_1 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_pc_1} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_imp_auto_us_1 || ORIG_REF_NAME==design_1_axi_mem_intercon_imp_auto_us_1} -quiet] -quiet
 
 # XDC: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/design_1_ooc.xdc

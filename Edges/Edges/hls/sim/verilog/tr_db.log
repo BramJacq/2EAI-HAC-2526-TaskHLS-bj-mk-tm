@@ -1,5 +1,0 @@
-  CREATE_STREAM @0 {NAME:vitis_convolution_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.vitis_convolution_virtual_sqr STREAM:5948}
-  CREATE_STREAM @125000 {NAME:vitis_convolution_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem_in.vsqr STREAM:6283}
-  CREATE_STREAM @125000 {NAME:vitis_convolution_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem_out.vsqr STREAM:6292}
-  CREATE_STREAM @125000 {NAME:vitis_convolution_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control_r.vsqr STREAM:6301}
-  CREATE_STREAM @125000 {NAME:vitis_convolution_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:6310}

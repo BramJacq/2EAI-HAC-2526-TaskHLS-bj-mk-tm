@@ -105,15 +105,6 @@ void XVitis_convolution_Set_input_img(XVitis_convolution *InstancePtr, u32 Data)
 u32 XVitis_convolution_Get_input_img(XVitis_convolution *InstancePtr);
 void XVitis_convolution_Set_output_img(XVitis_convolution *InstancePtr, u32 Data);
 u32 XVitis_convolution_Get_output_img(XVitis_convolution *InstancePtr);
-u32 XVitis_convolution_Get_kernel_BaseAddress(XVitis_convolution *InstancePtr);
-u32 XVitis_convolution_Get_kernel_HighAddress(XVitis_convolution *InstancePtr);
-u32 XVitis_convolution_Get_kernel_TotalBytes(XVitis_convolution *InstancePtr);
-u32 XVitis_convolution_Get_kernel_BitWidth(XVitis_convolution *InstancePtr);
-u32 XVitis_convolution_Get_kernel_Depth(XVitis_convolution *InstancePtr);
-u32 XVitis_convolution_Write_kernel_Words(XVitis_convolution *InstancePtr, int offset, word_type *data, int length);
-u32 XVitis_convolution_Read_kernel_Words(XVitis_convolution *InstancePtr, int offset, word_type *data, int length);
-u32 XVitis_convolution_Write_kernel_Bytes(XVitis_convolution *InstancePtr, int offset, char *data, int length);
-u32 XVitis_convolution_Read_kernel_Bytes(XVitis_convolution *InstancePtr, int offset, char *data, int length);
 
 void XVitis_convolution_InterruptGlobalEnable(XVitis_convolution *InstancePtr);
 void XVitis_convolution_InterruptGlobalDisable(XVitis_convolution *InstancePtr);

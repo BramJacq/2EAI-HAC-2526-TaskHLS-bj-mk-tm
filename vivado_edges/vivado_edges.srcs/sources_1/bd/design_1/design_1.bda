@@ -200,9 +200,9 @@
                 "HA": "0x1FFFFFFF",
                 "BP": "C_BASEADDR",
                 "HP": "C_HIGHADDR",
-                "MA": "Data_m_axi_gmem_in",
+                "MA": "Data_m_axi_gmem",
                 "MX": "/vitis_convolution_0",
-                "MI": "m_axi_gmem_in",
+                "MI": "m_axi_gmem",
                 "MS": "SEG_processing_system7_0_HP0_DDR_LOWOCM",
                 "MV": "xilinx.com:hls:vitis_convolution:1.0",
                 "SX": "/processing_system7_0",
@@ -213,24 +213,6 @@
                 "TU": "memory"
             },
             "V4": {
-                "VT": "AC",
-                "BA": "0x00000000",
-                "HA": "0x1FFFFFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data_m_axi_gmem_out",
-                "MX": "/vitis_convolution_0",
-                "MI": "m_axi_gmem_out",
-                "MS": "SEG_processing_system7_0_HP0_DDR_LOWOCM",
-                "MV": "xilinx.com:hls:vitis_convolution:1.0",
-                "SX": "/processing_system7_0",
-                "SI": "S_AXI_HP0",
-                "SS": "HP0_DDR_LOWOCM",
-                "SV": "xilinx.com:ip:processing_system7:5.5",
-                "TM": "both",
-                "TU": "memory"
-            },
-            "V5": {
                 "VT": "AC",
                 "BA": "0x40000000",
                 "HA": "0x4000FFFF",
@@ -248,7 +230,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V6": {
+            "V5": {
                 "VT": "AC",
                 "BA": "0x40010000",
                 "HA": "0x4001FFFF",
@@ -288,11 +270,6 @@
             },
             {
                 "src": "V5",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V6",
                 "trg": "V2",
                 "EH": "2"
             }

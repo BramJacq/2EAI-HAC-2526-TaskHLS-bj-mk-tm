@@ -5,11 +5,11 @@
     "control_depth": 1,
     "def_use_depth": 5,
     "file": "vitis_convolution.cpp",
-    "fileloc": 3,
+    "fileloc": 6,
     "instructions": 123,
     "loads": {
-      "G": 2,
-      "T": 2
+      "G": 3,
+      "T": 1
     },
     "memory_accesses": 6,
     "name": "vitis_convolution",

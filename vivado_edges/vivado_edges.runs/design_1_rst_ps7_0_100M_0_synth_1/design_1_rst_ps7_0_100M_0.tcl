@@ -74,8 +74,8 @@ set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/Bram/AppData/Roaming/Xilinx/Vivado/2025.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
   c:/2eai-soc-2526-weerstation-bj-mk-tm/CodesPart3V3/ip_repo
+  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.cache/ip [current_project]

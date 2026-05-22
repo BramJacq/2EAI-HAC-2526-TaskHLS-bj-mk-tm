@@ -1,9 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../vitis_convolution_tb.cpp in debug mode
    Compiling ../../../../vitis_convolution.cpp in debug mode
    Generating csim.exe
---- Start C-Simulatie voor Edges (Horizontaal) ---
-C-Simulatie succesvol afgerond!
-Output op de horizontale rand (rij 64, kol 50): -3 (Verwacht: Hoge waarde)
-Output ver van de rand (rij 10, kol 50): 0 (Verwacht: 0)
+>> Start C-Simulatie van de HLS IP-Core...
+>> C-SIMULATIE SUCCESVOL! Geen fouten gevonden.
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

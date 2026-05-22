@@ -28,17 +28,17 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
   **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Fri May 22 00:51:50 2026
+  **** Start of session at: Fri May 22 02:55:06 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/hls_data.json outdir=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip srcdir=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls ippack_options_dict= ippack_options_dict=
 INFO: Copied 1 ipmisc file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/misc
-INFO: Copied 22 verilog file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/verilog
-INFO: Copied 20 vhdl file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/vhdl
+INFO: Copied 7 verilog file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/verilog
+INFO: Copied 7 vhdl file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/vhdl
 INFO: Copied 10 swdriver file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/drivers
-ipx::create_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 530.008 ; gain = 214.176
+ipx::create_core: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 530.168 ; gain = 212.672
 INFO: Import ports from HDL: C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/hdl/vhdl/vitis_convolution.vhd (vitis_convolution)
 INFO: Add axi4lite interface s_axi_control
 INFO: Add axi4lite interface s_axi_control_r
@@ -48,14 +48,13 @@ INFO: Add interrupt interface interrupt
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
-INFO: Add axi4full interface m_axi_gmem_in
-INFO: Add axi4full interface m_axi_gmem_out
+INFO: Add axi4full interface m_axi_gmem
 INFO: Calling post_process_vitis to specialize IP
 INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/component.xml
 INFO: Created IP archive C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip/xilinx_com_hls_vitis_convolution_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Fri May 22 00:52:08 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri May 22 02:55:25 2026...
 INFO: [HLS 200-802] Generated output file Edges/vitis_convolution.zip
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 23.148 seconds; peak allocated memory: 202.441 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 27s
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 27.858 seconds; peak allocated memory: 201.520 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 33s

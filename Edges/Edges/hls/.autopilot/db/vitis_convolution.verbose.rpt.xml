@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'vitis_convolution'" level="0">
-<item name = "Date">Fri May 22 00:47:18 2026
+<item name = "Date">Fri May 22 02:53:20 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">Edges</item>
@@ -24,16 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">48701, 48701, 0.487 ms, 0.487 ms, 48702, 48702, no</column>
+<column name="">32793, 32793, 0.328 ms, 0.328 ms, 32794, 32794, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204">vitis_convolution_Pipeline_Read_Rows_Read_Cols, 16399, 16399, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230">vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, 15896, 15896, 0.159 ms, 0.159 ms, 0, 0, loop pipeline stp</column>
-<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264">vitis_convolution_Pipeline_Write_Rows_Write_Cols, 16394, 16394, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_64">vitis_convolution_Pipeline_Read_Rows_Read_Cols, 16396, 16396, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
+<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_72">vitis_convolution_Pipeline_Write_Rows_Write_Cols, 16394, 16394, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,12 +51,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, -, -, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, 6, 3311, 4638, -</column>
-<column name="Memory">17, -, 0, 0, 0</column>
-<column name="Multiplexer">-, -, 0, 533, -</column>
-<column name="Register">-, -, 152, -, -</column>
+<column name="Instance">2, -, 1144, 1550, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 70, -</column>
+<column name="Register">-, -, 70, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">6, 2, 3, 9, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, 1, 3, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -65,12 +64,10 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="control_r_s_axi_U">control_r_s_axi, 0, 0, 106, 168, 0</column>
-<column name="control_s_axi_U">control_s_axi, 0, 0, 132, 112, 0</column>
-<column name="gmem_in_m_axi_U">gmem_in_m_axi, 2, 0, 707, 777, 0</column>
-<column name="gmem_out_m_axi_U">gmem_out_m_axi, 0, 0, 647, 768, 0</column>
-<column name="grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230">vitis_convolution_Pipeline_Conv_Rows_Conv_Cols, 0, 5, 937, 1874, 0</column>
-<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204">vitis_convolution_Pipeline_Read_Rows_Read_Cols, 0, 1, 678, 685, 0</column>
-<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264">vitis_convolution_Pipeline_Write_Rows_Write_Cols, 0, 0, 104, 254, 0</column>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 36, 40, 0</column>
+<column name="gmem_m_axi_U">gmem_m_axi, 2, 0, 806, 845, 0</column>
+<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_64">vitis_convolution_Pipeline_Read_Rows_Read_Cols, 0, 0, 100, 243, 0</column>
+<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_72">vitis_convolution_Pipeline_Write_Rows_Write_Cols, 0, 0, 96, 254, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -79,16 +76,6 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="local_output_U">local_output_RAM_AUTO_1R1W, 8, 0, 0, 0, 16384, 8, 1, 131072</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2_U">p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1849, 8, 1, 14792</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -101,62 +88,21 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">65, 14, 1, 14</column>
-<column name="gmem_in_0_ARVALID">9, 2, 1, 2</column>
-<column name="gmem_in_0_RREADY">9, 2, 1, 2</column>
-<column name="gmem_out_0_AWVALID">9, 2, 1, 2</column>
-<column name="gmem_out_0_BREADY">9, 2, 1, 2</column>
-<column name="gmem_out_0_WVALID">9, 2, 1, 2</column>
-<column name="kernel_address0_local">53, 10, 4, 40</column>
-<column name="local_output_address0">14, 3, 14, 42</column>
-<column name="local_output_ce0">14, 3, 1, 3</column>
-<column name="local_output_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_1_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_2_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_0_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_1_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_1_2_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_0_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_1_we0">9, 2, 1, 2</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2_address0">14, 3, 11, 33</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2_ce0">14, 3, 1, 3</column>
-<column name="p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_2_2_we0">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">25, 5, 1, 5</column>
+<column name="gmem_0_ARVALID">9, 2, 1, 2</column>
+<column name="gmem_0_AWVALID">9, 2, 1, 2</column>
+<column name="gmem_0_BREADY">9, 2, 1, 2</column>
+<column name="gmem_0_RREADY">9, 2, 1, 2</column>
+<column name="gmem_0_WVALID">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">13, 0, 13, 0</column>
-<column name="grp_vitis_convolution_Pipeline_Conv_Rows_Conv_Cols_fu_230_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_204_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_264_ap_start_reg">1, 0, 1, 0</column>
-<column name="input_img_read_reg_343">32, 0, 32, 0</column>
-<column name="kernel_load_1_reg_293">8, 0, 8, 0</column>
-<column name="kernel_load_2_reg_303">8, 0, 8, 0</column>
-<column name="kernel_load_3_reg_313">8, 0, 8, 0</column>
-<column name="kernel_load_4_reg_323">8, 0, 8, 0</column>
-<column name="kernel_load_5_reg_333">8, 0, 8, 0</column>
-<column name="kernel_load_6_reg_353">8, 0, 8, 0</column>
-<column name="kernel_load_7_reg_363">8, 0, 8, 0</column>
-<column name="kernel_load_8_reg_368">8, 0, 8, 0</column>
-<column name="kernel_load_reg_283">8, 0, 8, 0</column>
-<column name="output_img_read_reg_338">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="grp_vitis_convolution_Pipeline_Read_Rows_Read_Cols_fu_64_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_vitis_convolution_Pipeline_Write_Rows_Write_Cols_fu_72_ap_start_reg">1, 0, 1, 0</column>
+<column name="input_img_read_reg_84">32, 0, 32, 0</column>
+<column name="output_img_read_reg_79">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -166,23 +112,23 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
-<column name="s_axi_control_AWVALID">in, 1, s_axi, control, array</column>
-<column name="s_axi_control_AWREADY">out, 1, s_axi, control, array</column>
-<column name="s_axi_control_AWADDR">in, 5, s_axi, control, array</column>
-<column name="s_axi_control_WVALID">in, 1, s_axi, control, array</column>
-<column name="s_axi_control_WREADY">out, 1, s_axi, control, array</column>
-<column name="s_axi_control_WDATA">in, 32, s_axi, control, array</column>
-<column name="s_axi_control_WSTRB">in, 4, s_axi, control, array</column>
-<column name="s_axi_control_ARVALID">in, 1, s_axi, control, array</column>
-<column name="s_axi_control_ARREADY">out, 1, s_axi, control, array</column>
-<column name="s_axi_control_ARADDR">in, 5, s_axi, control, array</column>
-<column name="s_axi_control_RVALID">out, 1, s_axi, control, array</column>
-<column name="s_axi_control_RREADY">in, 1, s_axi, control, array</column>
-<column name="s_axi_control_RDATA">out, 32, s_axi, control, array</column>
-<column name="s_axi_control_RRESP">out, 2, s_axi, control, array</column>
-<column name="s_axi_control_BVALID">out, 1, s_axi, control, array</column>
-<column name="s_axi_control_BREADY">in, 1, s_axi, control, array</column>
-<column name="s_axi_control_BRESP">out, 2, s_axi, control, array</column>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, return void</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, return void</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, return void</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, return void</column>
 <column name="s_axi_control_r_AWVALID">in, 1, s_axi, control_r, scalar</column>
 <column name="s_axi_control_r_AWREADY">out, 1, s_axi, control_r, scalar</column>
 <column name="s_axi_control_r_AWADDR">in, 5, s_axi, control_r, scalar</column>
@@ -203,96 +149,51 @@
 <column name="ap_clk">in, 1, ap_ctrl_hs, vitis_convolution, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, vitis_convolution, return value</column>
 <column name="interrupt">out, 1, ap_ctrl_hs, vitis_convolution, return value</column>
-<column name="m_axi_gmem_in_AWVALID">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWREADY">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWADDR">out, 32, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWID">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWLEN">out, 8, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWSIZE">out, 3, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWBURST">out, 2, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWLOCK">out, 2, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWCACHE">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWPROT">out, 3, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWQOS">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWREGION">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_AWUSER">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WVALID">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WREADY">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WDATA">out, 32, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WSTRB">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WLAST">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WID">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_WUSER">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARVALID">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARREADY">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARADDR">out, 32, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARID">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARLEN">out, 8, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARSIZE">out, 3, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARBURST">out, 2, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARLOCK">out, 2, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARCACHE">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARPROT">out, 3, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARQOS">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARREGION">out, 4, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_ARUSER">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RVALID">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RREADY">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RDATA">in, 32, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RLAST">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RID">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RUSER">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_RRESP">in, 2, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_BVALID">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_BREADY">out, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_BRESP">in, 2, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_BID">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_in_BUSER">in, 1, m_axi, gmem_in, pointer</column>
-<column name="m_axi_gmem_out_AWVALID">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWREADY">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWADDR">out, 32, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWID">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWLEN">out, 8, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWSIZE">out, 3, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWBURST">out, 2, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWLOCK">out, 2, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWCACHE">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWPROT">out, 3, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWQOS">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWREGION">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_AWUSER">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WVALID">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WREADY">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WDATA">out, 32, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WSTRB">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WLAST">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WID">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_WUSER">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARVALID">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARREADY">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARADDR">out, 32, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARID">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARLEN">out, 8, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARSIZE">out, 3, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARBURST">out, 2, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARLOCK">out, 2, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARCACHE">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARPROT">out, 3, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARQOS">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARREGION">out, 4, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_ARUSER">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RVALID">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RREADY">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RDATA">in, 32, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RLAST">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RID">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RUSER">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_RRESP">in, 2, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_BVALID">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_BREADY">out, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_BRESP">in, 2, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_BID">in, 1, m_axi, gmem_out, pointer</column>
-<column name="m_axi_gmem_out_BUSER">in, 1, m_axi, gmem_out, pointer</column>
+<column name="m_axi_gmem_AWVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWADDR">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLEN">out, 8, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_AWUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WDATA">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WSTRB">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WLAST">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_WUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARVALID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREADY">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARADDR">out, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARID">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLEN">out, 8, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARSIZE">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARBURST">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARLOCK">out, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARCACHE">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARPROT">out, 3, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARQOS">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARREGION">out, 4, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_ARUSER">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RDATA">in, 32, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RLAST">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RUSER">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_RRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BVALID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BREADY">out, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BRESP">in, 2, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BID">in, 1, m_axi, gmem, pointer</column>
+<column name="m_axi_gmem_BUSER">in, 1, m_axi, gmem, pointer</column>
 </table>
 </item>
 </section>

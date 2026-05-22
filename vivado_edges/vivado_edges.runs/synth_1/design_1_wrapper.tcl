@@ -72,8 +72,8 @@ set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/Bram/AppData/Roaming/Xilinx/Vivado/2025.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
   c:/2eai-soc-2526-weerstation-bj-mk-tm/CodesPart3V3/ip_repo
+  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.cache/ip [current_project]
@@ -84,7 +84,10 @@ read_verilog -library xil_defaultlib c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_ed
 add_files C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_vitis_convolution_0_0/constraints/vitis_convolution_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_xbar_0/design_1_axi_mem_intercon_imp_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc]
@@ -123,14 +126,6 @@ set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskH
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_38/bd_afc3_m01bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_0/design_1_axi_mem_intercon_imp_auto_us_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_1/design_1_axi_mem_intercon_imp_auto_pc_1_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_us_1/design_1_axi_mem_intercon_imp_auto_us_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

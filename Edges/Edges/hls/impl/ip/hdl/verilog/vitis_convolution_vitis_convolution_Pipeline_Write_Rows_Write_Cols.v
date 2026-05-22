@@ -14,56 +14,53 @@ module vitis_convolution_vitis_convolution_Pipeline_Write_Rows_Write_Cols (
         ap_done,
         ap_idle,
         ap_ready,
-        m_axi_gmem_out_0_AWVALID,
-        m_axi_gmem_out_0_AWREADY,
-        m_axi_gmem_out_0_AWADDR,
-        m_axi_gmem_out_0_AWID,
-        m_axi_gmem_out_0_AWLEN,
-        m_axi_gmem_out_0_AWSIZE,
-        m_axi_gmem_out_0_AWBURST,
-        m_axi_gmem_out_0_AWLOCK,
-        m_axi_gmem_out_0_AWCACHE,
-        m_axi_gmem_out_0_AWPROT,
-        m_axi_gmem_out_0_AWQOS,
-        m_axi_gmem_out_0_AWREGION,
-        m_axi_gmem_out_0_AWUSER,
-        m_axi_gmem_out_0_WVALID,
-        m_axi_gmem_out_0_WREADY,
-        m_axi_gmem_out_0_WDATA,
-        m_axi_gmem_out_0_WSTRB,
-        m_axi_gmem_out_0_WLAST,
-        m_axi_gmem_out_0_WID,
-        m_axi_gmem_out_0_WUSER,
-        m_axi_gmem_out_0_ARVALID,
-        m_axi_gmem_out_0_ARREADY,
-        m_axi_gmem_out_0_ARADDR,
-        m_axi_gmem_out_0_ARID,
-        m_axi_gmem_out_0_ARLEN,
-        m_axi_gmem_out_0_ARSIZE,
-        m_axi_gmem_out_0_ARBURST,
-        m_axi_gmem_out_0_ARLOCK,
-        m_axi_gmem_out_0_ARCACHE,
-        m_axi_gmem_out_0_ARPROT,
-        m_axi_gmem_out_0_ARQOS,
-        m_axi_gmem_out_0_ARREGION,
-        m_axi_gmem_out_0_ARUSER,
-        m_axi_gmem_out_0_RVALID,
-        m_axi_gmem_out_0_RREADY,
-        m_axi_gmem_out_0_RDATA,
-        m_axi_gmem_out_0_RLAST,
-        m_axi_gmem_out_0_RID,
-        m_axi_gmem_out_0_RFIFONUM,
-        m_axi_gmem_out_0_RUSER,
-        m_axi_gmem_out_0_RRESP,
-        m_axi_gmem_out_0_BVALID,
-        m_axi_gmem_out_0_BREADY,
-        m_axi_gmem_out_0_BRESP,
-        m_axi_gmem_out_0_BID,
-        m_axi_gmem_out_0_BUSER,
-        output_img,
-        local_output_address0,
-        local_output_ce0,
-        local_output_q0
+        m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY,
+        m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY,
+        m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY,
+        m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID,
+        m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA,
+        m_axi_gmem_0_RLAST,
+        m_axi_gmem_0_RID,
+        m_axi_gmem_0_RFIFONUM,
+        m_axi_gmem_0_RUSER,
+        m_axi_gmem_0_RRESP,
+        m_axi_gmem_0_BVALID,
+        m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP,
+        m_axi_gmem_0_BID,
+        m_axi_gmem_0_BUSER,
+        output_img
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -74,61 +71,58 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output   m_axi_gmem_out_0_AWVALID;
-input   m_axi_gmem_out_0_AWREADY;
-output  [31:0] m_axi_gmem_out_0_AWADDR;
-output  [0:0] m_axi_gmem_out_0_AWID;
-output  [31:0] m_axi_gmem_out_0_AWLEN;
-output  [2:0] m_axi_gmem_out_0_AWSIZE;
-output  [1:0] m_axi_gmem_out_0_AWBURST;
-output  [1:0] m_axi_gmem_out_0_AWLOCK;
-output  [3:0] m_axi_gmem_out_0_AWCACHE;
-output  [2:0] m_axi_gmem_out_0_AWPROT;
-output  [3:0] m_axi_gmem_out_0_AWQOS;
-output  [3:0] m_axi_gmem_out_0_AWREGION;
-output  [0:0] m_axi_gmem_out_0_AWUSER;
-output   m_axi_gmem_out_0_WVALID;
-input   m_axi_gmem_out_0_WREADY;
-output  [7:0] m_axi_gmem_out_0_WDATA;
-output  [0:0] m_axi_gmem_out_0_WSTRB;
-output   m_axi_gmem_out_0_WLAST;
-output  [0:0] m_axi_gmem_out_0_WID;
-output  [0:0] m_axi_gmem_out_0_WUSER;
-output   m_axi_gmem_out_0_ARVALID;
-input   m_axi_gmem_out_0_ARREADY;
-output  [31:0] m_axi_gmem_out_0_ARADDR;
-output  [0:0] m_axi_gmem_out_0_ARID;
-output  [31:0] m_axi_gmem_out_0_ARLEN;
-output  [2:0] m_axi_gmem_out_0_ARSIZE;
-output  [1:0] m_axi_gmem_out_0_ARBURST;
-output  [1:0] m_axi_gmem_out_0_ARLOCK;
-output  [3:0] m_axi_gmem_out_0_ARCACHE;
-output  [2:0] m_axi_gmem_out_0_ARPROT;
-output  [3:0] m_axi_gmem_out_0_ARQOS;
-output  [3:0] m_axi_gmem_out_0_ARREGION;
-output  [0:0] m_axi_gmem_out_0_ARUSER;
-input   m_axi_gmem_out_0_RVALID;
-output   m_axi_gmem_out_0_RREADY;
-input  [7:0] m_axi_gmem_out_0_RDATA;
-input   m_axi_gmem_out_0_RLAST;
-input  [0:0] m_axi_gmem_out_0_RID;
-input  [10:0] m_axi_gmem_out_0_RFIFONUM;
-input  [0:0] m_axi_gmem_out_0_RUSER;
-input  [1:0] m_axi_gmem_out_0_RRESP;
-input   m_axi_gmem_out_0_BVALID;
-output   m_axi_gmem_out_0_BREADY;
-input  [1:0] m_axi_gmem_out_0_BRESP;
-input  [0:0] m_axi_gmem_out_0_BID;
-input  [0:0] m_axi_gmem_out_0_BUSER;
+output   m_axi_gmem_0_AWVALID;
+input   m_axi_gmem_0_AWREADY;
+output  [31:0] m_axi_gmem_0_AWADDR;
+output  [0:0] m_axi_gmem_0_AWID;
+output  [31:0] m_axi_gmem_0_AWLEN;
+output  [2:0] m_axi_gmem_0_AWSIZE;
+output  [1:0] m_axi_gmem_0_AWBURST;
+output  [1:0] m_axi_gmem_0_AWLOCK;
+output  [3:0] m_axi_gmem_0_AWCACHE;
+output  [2:0] m_axi_gmem_0_AWPROT;
+output  [3:0] m_axi_gmem_0_AWQOS;
+output  [3:0] m_axi_gmem_0_AWREGION;
+output  [0:0] m_axi_gmem_0_AWUSER;
+output   m_axi_gmem_0_WVALID;
+input   m_axi_gmem_0_WREADY;
+output  [7:0] m_axi_gmem_0_WDATA;
+output  [0:0] m_axi_gmem_0_WSTRB;
+output   m_axi_gmem_0_WLAST;
+output  [0:0] m_axi_gmem_0_WID;
+output  [0:0] m_axi_gmem_0_WUSER;
+output   m_axi_gmem_0_ARVALID;
+input   m_axi_gmem_0_ARREADY;
+output  [31:0] m_axi_gmem_0_ARADDR;
+output  [0:0] m_axi_gmem_0_ARID;
+output  [31:0] m_axi_gmem_0_ARLEN;
+output  [2:0] m_axi_gmem_0_ARSIZE;
+output  [1:0] m_axi_gmem_0_ARBURST;
+output  [1:0] m_axi_gmem_0_ARLOCK;
+output  [3:0] m_axi_gmem_0_ARCACHE;
+output  [2:0] m_axi_gmem_0_ARPROT;
+output  [3:0] m_axi_gmem_0_ARQOS;
+output  [3:0] m_axi_gmem_0_ARREGION;
+output  [0:0] m_axi_gmem_0_ARUSER;
+input   m_axi_gmem_0_RVALID;
+output   m_axi_gmem_0_RREADY;
+input  [7:0] m_axi_gmem_0_RDATA;
+input   m_axi_gmem_0_RLAST;
+input  [0:0] m_axi_gmem_0_RID;
+input  [10:0] m_axi_gmem_0_RFIFONUM;
+input  [0:0] m_axi_gmem_0_RUSER;
+input  [1:0] m_axi_gmem_0_RRESP;
+input   m_axi_gmem_0_BVALID;
+output   m_axi_gmem_0_BREADY;
+input  [1:0] m_axi_gmem_0_BRESP;
+input  [0:0] m_axi_gmem_0_BID;
+input  [0:0] m_axi_gmem_0_BUSER;
 input  [31:0] output_img;
-output  [13:0] local_output_address0;
-output   local_output_ce0;
-input  [7:0] local_output_q0;
 
 reg ap_idle;
-reg m_axi_gmem_out_0_AWVALID;
-reg m_axi_gmem_out_0_WVALID;
-reg m_axi_gmem_out_0_BREADY;
+reg m_axi_gmem_0_AWVALID;
+reg m_axi_gmem_0_WVALID;
+reg m_axi_gmem_0_BREADY;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_pp0_stage0;
@@ -144,43 +138,39 @@ reg    ap_enable_reg_pp0_iter8;
 reg    ap_enable_reg_pp0_iter9;
 reg    ap_idle_pp0;
 reg    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln42_fu_133_p2;
+wire   [0:0] icmp_ln44_fu_119_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg    gmem_out_blk_n_AW;
+reg    gmem_blk_n_AW;
 wire    ap_block_pp0_stage0_grp1;
-reg    gmem_out_blk_n_W;
-reg    gmem_out_blk_n_B;
+reg    gmem_blk_n_W;
+reg    gmem_blk_n_B;
 reg    ap_block_pp0_stage0_11001_grp1;
 reg    ap_block_pp0_stage0_11001;
-wire   [6:0] trunc_ln45_fu_184_p1;
-reg   [6:0] trunc_ln45_reg_280;
-wire   [6:0] trunc_ln45_1_fu_188_p1;
-reg   [6:0] trunc_ln45_1_reg_286;
-reg   [31:0] gmem_out_addr_reg_297;
-reg   [7:0] local_output_load_reg_304;
-wire   [31:0] zext_ln45_1_fu_217_p1;
-wire   [31:0] add_ln45_1_fu_238_p2;
+wire   [6:0] trunc_ln47_fu_170_p1;
+reg   [6:0] trunc_ln47_reg_255;
+wire   [6:0] trunc_ln47_1_fu_174_p1;
+reg   [6:0] trunc_ln47_1_reg_260;
+reg   [31:0] gmem_addr_reg_265;
+wire   [31:0] add_ln47_1_fu_213_p2;
 reg    ap_block_pp0_stage0_01001_grp1;
-reg   [7:0] c_fu_64;
-wire   [7:0] add_ln43_fu_192_p2;
+reg   [7:0] c_fu_62;
+wire   [7:0] add_ln45_fu_178_p2;
 wire    ap_loop_init;
-reg   [7:0] r_fu_68;
-wire   [7:0] select_ln42_1_fu_176_p3;
-reg   [14:0] indvar_flatten13_fu_72;
-wire   [14:0] add_ln42_1_fu_139_p2;
-reg   [14:0] ap_sig_allocacmp_indvar_flatten13_load;
+reg   [7:0] r_fu_66;
+wire   [7:0] select_ln44_1_fu_162_p3;
+reg   [14:0] indvar_flatten7_fu_70;
+wire   [14:0] add_ln44_fu_125_p2;
+reg   [14:0] ap_sig_allocacmp_indvar_flatten7_load;
 wire    ap_block_pp0_stage0;
-reg    local_output_ce0_local;
-wire   [0:0] icmp_ln43_fu_162_p2;
-wire   [7:0] add_ln42_fu_156_p2;
-wire   [7:0] select_ln42_fu_168_p3;
-wire   [13:0] tmp_s_fu_211_p3;
-wire   [13:0] shl_ln1_fu_222_p3;
-wire   [31:0] zext_ln45_2_fu_229_p1;
-wire   [31:0] add_ln45_fu_233_p2;
-wire   [31:0] zext_ln45_fu_208_p1;
+wire   [0:0] icmp_ln45_fu_142_p2;
+wire   [7:0] add_ln44_1_fu_156_p2;
+wire   [7:0] select_ln44_fu_148_p3;
+wire   [13:0] shl_ln1_fu_194_p3;
+wire   [31:0] zext_ln47_fu_201_p1;
+wire   [31:0] add_ln47_fu_208_p2;
+wire   [31:0] zext_ln47_1_fu_205_p1;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -211,9 +201,9 @@ initial begin
 #0 ap_enable_reg_pp0_iter7 = 1'b0;
 #0 ap_enable_reg_pp0_iter8 = 1'b0;
 #0 ap_enable_reg_pp0_iter9 = 1'b0;
-#0 c_fu_64 = 8'd0;
-#0 r_fu_68 = 8'd0;
-#0 indvar_flatten13_fu_72 = 15'd0;
+#0 c_fu_62 = 8'd0;
+#0 r_fu_66 = 8'd0;
+#0 indvar_flatten7_fu_70 = 15'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -347,19 +337,19 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
         if ((ap_loop_init == 1'b1)) begin
-            c_fu_64 <= 8'd0;
+            c_fu_62 <= 8'd0;
         end else if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
-            c_fu_64 <= add_ln43_fu_192_p2;
+            c_fu_62 <= add_ln45_fu_178_p2;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))) begin
-        if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln42_fu_133_p2 == 1'd0))) begin
-            indvar_flatten13_fu_72 <= add_ln42_1_fu_139_p2;
+        if (((ap_enable_reg_pp0_iter0 == 1'b1) & (icmp_ln44_fu_119_p2 == 1'd0))) begin
+            indvar_flatten7_fu_70 <= add_ln44_fu_125_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            indvar_flatten13_fu_72 <= 15'd0;
+            indvar_flatten7_fu_70 <= 15'd0;
         end
     end
 end
@@ -367,9 +357,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
         if ((ap_loop_init == 1'b1)) begin
-            r_fu_68 <= 8'd0;
+            r_fu_66 <= 8'd0;
         end else if ((ap_enable_reg_pp0_iter1 == 1'b1)) begin
-            r_fu_68 <= select_ln42_1_fu_176_p3;
+            r_fu_66 <= select_ln44_1_fu_162_p3;
         end
     end
 end
@@ -394,20 +384,19 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001_grp1)) begin
-        gmem_out_addr_reg_297 <= add_ln45_1_fu_238_p2;
-        local_output_load_reg_304 <= local_output_q0;
+        gmem_addr_reg_265 <= add_ln47_1_fu_213_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
-        trunc_ln45_1_reg_286 <= trunc_ln45_1_fu_188_p1;
-        trunc_ln45_reg_280 <= trunc_ln45_fu_184_p1;
+        trunc_ln47_1_reg_260 <= trunc_ln47_1_fu_174_p1;
+        trunc_ln47_reg_255 <= trunc_ln47_fu_170_p1;
     end
 end
 
 always @ (*) begin
-    if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln42_fu_133_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+    if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln44_fu_119_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -447,66 +436,58 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        ap_sig_allocacmp_indvar_flatten13_load = 15'd0;
+    if (((1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0))) begin
+        ap_sig_allocacmp_indvar_flatten7_load = 15'd0;
     end else begin
-        ap_sig_allocacmp_indvar_flatten13_load = indvar_flatten13_fu_72;
+        ap_sig_allocacmp_indvar_flatten7_load = indvar_flatten7_fu_70;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter3 == 1'b1) & (1'b0 == ap_block_pp0_stage0_grp1))) begin
-        gmem_out_blk_n_AW = m_axi_gmem_out_0_AWREADY;
+        gmem_blk_n_AW = m_axi_gmem_0_AWREADY;
     end else begin
-        gmem_out_blk_n_AW = 1'b1;
+        gmem_blk_n_AW = 1'b1;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter9 == 1'b1) & (1'b0 == ap_block_pp0_stage0_grp1))) begin
-        gmem_out_blk_n_B = m_axi_gmem_out_0_BVALID;
+        gmem_blk_n_B = m_axi_gmem_0_BVALID;
     end else begin
-        gmem_out_blk_n_B = 1'b1;
+        gmem_blk_n_B = 1'b1;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter4 == 1'b1) & (1'b0 == ap_block_pp0_stage0_grp1))) begin
-        gmem_out_blk_n_W = m_axi_gmem_out_0_WREADY;
+        gmem_blk_n_W = m_axi_gmem_0_WREADY;
     end else begin
-        gmem_out_blk_n_W = 1'b1;
-    end
-end
-
-always @ (*) begin
-    if (((ap_enable_reg_pp0_iter2 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
-        local_output_ce0_local = 1'b1;
-    end else begin
-        local_output_ce0_local = 1'b0;
+        gmem_blk_n_W = 1'b1;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter3 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
-        m_axi_gmem_out_0_AWVALID = 1'b1;
+        m_axi_gmem_0_AWVALID = 1'b1;
     end else begin
-        m_axi_gmem_out_0_AWVALID = 1'b0;
+        m_axi_gmem_0_AWVALID = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter9 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
-        m_axi_gmem_out_0_BREADY = 1'b1;
+        m_axi_gmem_0_BREADY = 1'b1;
     end else begin
-        m_axi_gmem_out_0_BREADY = 1'b0;
+        m_axi_gmem_0_BREADY = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter4 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001_grp1))) begin
-        m_axi_gmem_out_0_WVALID = 1'b1;
+        m_axi_gmem_0_WVALID = 1'b1;
     end else begin
-        m_axi_gmem_out_0_WVALID = 1'b0;
+        m_axi_gmem_0_WVALID = 1'b0;
     end
 end
 
@@ -521,36 +502,36 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln42_1_fu_139_p2 = (ap_sig_allocacmp_indvar_flatten13_load + 15'd1);
+assign add_ln44_1_fu_156_p2 = (r_fu_66 + 8'd1);
 
-assign add_ln42_fu_156_p2 = (r_fu_68 + 8'd1);
+assign add_ln44_fu_125_p2 = (ap_sig_allocacmp_indvar_flatten7_load + 15'd1);
 
-assign add_ln43_fu_192_p2 = (select_ln42_fu_168_p3 + 8'd1);
+assign add_ln45_fu_178_p2 = (select_ln44_fu_148_p3 + 8'd1);
 
-assign add_ln45_1_fu_238_p2 = (add_ln45_fu_233_p2 + zext_ln45_fu_208_p1);
+assign add_ln47_1_fu_213_p2 = (add_ln47_fu_208_p2 + zext_ln47_1_fu_205_p1);
 
-assign add_ln45_fu_233_p2 = (zext_ln45_2_fu_229_p1 + output_img);
+assign add_ln47_fu_208_p2 = (zext_ln47_fu_201_p1 + output_img);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_01001_grp1 = ((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_out_0_BVALID == 1'b0));
+    ap_block_pp0_stage0_01001_grp1 = ((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_0_BVALID == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001 = (((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_out_0_BVALID == 1'b0)) | ((m_axi_gmem_out_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter4 == 1'b1)) | ((m_axi_gmem_out_0_AWREADY == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1)));
+    ap_block_pp0_stage0_11001 = (((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_0_BVALID == 1'b0)) | ((m_axi_gmem_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter4 == 1'b1)) | ((m_axi_gmem_0_AWREADY == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1)));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001_grp1 = (((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_out_0_BVALID == 1'b0)) | ((m_axi_gmem_out_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter4 == 1'b1)) | ((m_axi_gmem_out_0_AWREADY == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1)));
+    ap_block_pp0_stage0_11001_grp1 = (((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_0_BVALID == 1'b0)) | ((m_axi_gmem_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter4 == 1'b1)) | ((m_axi_gmem_0_AWREADY == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1)));
 end
 
 assign ap_block_pp0_stage0_grp1 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_subdone = (((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_out_0_BVALID == 1'b0)) | ((m_axi_gmem_out_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter4 == 1'b1)) | ((m_axi_gmem_out_0_AWREADY == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1)));
+    ap_block_pp0_stage0_subdone = (((ap_enable_reg_pp0_iter9 == 1'b1) & (m_axi_gmem_0_BVALID == 1'b0)) | ((m_axi_gmem_0_WREADY == 1'b0) & (ap_enable_reg_pp0_iter4 == 1'b1)) | ((m_axi_gmem_0_AWREADY == 1'b0) & (ap_enable_reg_pp0_iter3 == 1'b1)));
 end
 
 assign ap_done = ap_done_sig;
@@ -563,88 +544,80 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln42_fu_133_p2 = ((ap_sig_allocacmp_indvar_flatten13_load == 15'd16384) ? 1'b1 : 1'b0);
+assign icmp_ln44_fu_119_p2 = ((ap_sig_allocacmp_indvar_flatten7_load == 15'd16384) ? 1'b1 : 1'b0);
 
-assign icmp_ln43_fu_162_p2 = ((c_fu_64 == 8'd128) ? 1'b1 : 1'b0);
+assign icmp_ln45_fu_142_p2 = ((c_fu_62 == 8'd128) ? 1'b1 : 1'b0);
 
-assign local_output_address0 = zext_ln45_1_fu_217_p1;
+assign m_axi_gmem_0_ARADDR = 32'd0;
 
-assign local_output_ce0 = local_output_ce0_local;
+assign m_axi_gmem_0_ARBURST = 2'd0;
 
-assign m_axi_gmem_out_0_ARADDR = 32'd0;
+assign m_axi_gmem_0_ARCACHE = 4'd0;
 
-assign m_axi_gmem_out_0_ARBURST = 2'd0;
+assign m_axi_gmem_0_ARID = 1'd0;
 
-assign m_axi_gmem_out_0_ARCACHE = 4'd0;
+assign m_axi_gmem_0_ARLEN = 32'd0;
 
-assign m_axi_gmem_out_0_ARID = 1'd0;
+assign m_axi_gmem_0_ARLOCK = 2'd0;
 
-assign m_axi_gmem_out_0_ARLEN = 32'd0;
+assign m_axi_gmem_0_ARPROT = 3'd0;
 
-assign m_axi_gmem_out_0_ARLOCK = 2'd0;
+assign m_axi_gmem_0_ARQOS = 4'd0;
 
-assign m_axi_gmem_out_0_ARPROT = 3'd0;
+assign m_axi_gmem_0_ARREGION = 4'd0;
 
-assign m_axi_gmem_out_0_ARQOS = 4'd0;
+assign m_axi_gmem_0_ARSIZE = 3'd0;
 
-assign m_axi_gmem_out_0_ARREGION = 4'd0;
+assign m_axi_gmem_0_ARUSER = 1'd0;
 
-assign m_axi_gmem_out_0_ARSIZE = 3'd0;
+assign m_axi_gmem_0_ARVALID = 1'b0;
 
-assign m_axi_gmem_out_0_ARUSER = 1'd0;
+assign m_axi_gmem_0_AWADDR = gmem_addr_reg_265;
 
-assign m_axi_gmem_out_0_ARVALID = 1'b0;
+assign m_axi_gmem_0_AWBURST = 2'd0;
 
-assign m_axi_gmem_out_0_AWADDR = gmem_out_addr_reg_297;
+assign m_axi_gmem_0_AWCACHE = 4'd0;
 
-assign m_axi_gmem_out_0_AWBURST = 2'd0;
+assign m_axi_gmem_0_AWID = 1'd0;
 
-assign m_axi_gmem_out_0_AWCACHE = 4'd0;
+assign m_axi_gmem_0_AWLEN = 32'd1;
 
-assign m_axi_gmem_out_0_AWID = 1'd0;
+assign m_axi_gmem_0_AWLOCK = 2'd0;
 
-assign m_axi_gmem_out_0_AWLEN = 32'd1;
+assign m_axi_gmem_0_AWPROT = 3'd0;
 
-assign m_axi_gmem_out_0_AWLOCK = 2'd0;
+assign m_axi_gmem_0_AWQOS = 4'd0;
 
-assign m_axi_gmem_out_0_AWPROT = 3'd0;
+assign m_axi_gmem_0_AWREGION = 4'd0;
 
-assign m_axi_gmem_out_0_AWQOS = 4'd0;
+assign m_axi_gmem_0_AWSIZE = 3'd0;
 
-assign m_axi_gmem_out_0_AWREGION = 4'd0;
+assign m_axi_gmem_0_AWUSER = 1'd0;
 
-assign m_axi_gmem_out_0_AWSIZE = 3'd0;
+assign m_axi_gmem_0_RREADY = 1'b0;
 
-assign m_axi_gmem_out_0_AWUSER = 1'd0;
+assign m_axi_gmem_0_WDATA = 8'd0;
 
-assign m_axi_gmem_out_0_RREADY = 1'b0;
+assign m_axi_gmem_0_WID = 1'd0;
 
-assign m_axi_gmem_out_0_WDATA = local_output_load_reg_304;
+assign m_axi_gmem_0_WLAST = 1'b0;
 
-assign m_axi_gmem_out_0_WID = 1'd0;
+assign m_axi_gmem_0_WSTRB = 1'd1;
 
-assign m_axi_gmem_out_0_WLAST = 1'b0;
+assign m_axi_gmem_0_WUSER = 1'd0;
 
-assign m_axi_gmem_out_0_WSTRB = 1'd1;
+assign select_ln44_1_fu_162_p3 = ((icmp_ln45_fu_142_p2[0:0] == 1'b1) ? add_ln44_1_fu_156_p2 : r_fu_66);
 
-assign m_axi_gmem_out_0_WUSER = 1'd0;
+assign select_ln44_fu_148_p3 = ((icmp_ln45_fu_142_p2[0:0] == 1'b1) ? 8'd0 : c_fu_62);
 
-assign select_ln42_1_fu_176_p3 = ((icmp_ln43_fu_162_p2[0:0] == 1'b1) ? add_ln42_fu_156_p2 : r_fu_68);
+assign shl_ln1_fu_194_p3 = {{trunc_ln47_reg_255}, {7'd0}};
 
-assign select_ln42_fu_168_p3 = ((icmp_ln43_fu_162_p2[0:0] == 1'b1) ? 8'd0 : c_fu_64);
+assign trunc_ln47_1_fu_174_p1 = select_ln44_fu_148_p3[6:0];
 
-assign shl_ln1_fu_222_p3 = {{trunc_ln45_reg_280}, {7'd0}};
+assign trunc_ln47_fu_170_p1 = select_ln44_1_fu_162_p3[6:0];
 
-assign tmp_s_fu_211_p3 = {{trunc_ln45_reg_280}, {trunc_ln45_1_reg_286}};
+assign zext_ln47_1_fu_205_p1 = trunc_ln47_1_reg_260;
 
-assign trunc_ln45_1_fu_188_p1 = select_ln42_fu_168_p3[6:0];
-
-assign trunc_ln45_fu_184_p1 = select_ln42_1_fu_176_p3[6:0];
-
-assign zext_ln45_1_fu_217_p1 = tmp_s_fu_211_p3;
-
-assign zext_ln45_2_fu_229_p1 = shl_ln1_fu_222_p3;
-
-assign zext_ln45_fu_208_p1 = trunc_ln45_1_reg_286;
+assign zext_ln47_fu_201_p1 = shl_ln1_fu_194_p3;
 
 endmodule //vitis_convolution_vitis_convolution_Pipeline_Write_Rows_Write_Cols

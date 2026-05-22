@@ -2,52 +2,37 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=vitis_convolution" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:9:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_img offset=slave bundle=gmem_in depth=16384" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:10:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_img offset=slave bundle=gmem_out depth=16384" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:11:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input_img offset=slave bundle=gmem depth=16384" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:12:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output_img offset=slave bundle=gmem depth=16384" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:13:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=kernel bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:14:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:20:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:22:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:28:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:30:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:44:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:46:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="vitis_convolution" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="vitis_convolution.cpp:31:26" msg_body="Loop 'Kernel_Rows' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="Kernel_Rows"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="vitis_convolution.cpp:4:0" msg_body="Partitioning array 'kernel' dimension 1 due to constant index.">
+        <args Dim="1" Value="kernel"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="vitis_convolution.cpp:32:30" msg_body="Loop 'Kernel_Cols' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="Kernel_Cols"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="vitis_convolution.cpp:4:0" msg_body="Partitioning array 'kernel' dimension 2 due to constant index.">
+        <args Dim="2" Value="kernel"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="vitis_convolution.cpp:7:0" msg_body="Unrolling loop 'Kernel_Rows' (vitis_convolution.cpp:31:26) in function 'vitis_convolution' completely with a factor of 3">
-        <args Factor="3" LoopLoc="vitis_convolution.cpp:31:26" LoopName="Kernel_Rows"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="vitis_convolution.cpp:4:0" msg_body="Applying array_partition to 'kernel': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="kernel"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="vitis_convolution.cpp:7:0" msg_body="Unrolling loop 'Kernel_Cols' (vitis_convolution.cpp:32:30) in function 'vitis_convolution' completely with a factor of 3">
-        <args Factor="3" LoopLoc="vitis_convolution.cpp:32:30" LoopName="Kernel_Cols"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="vitis_convolution.cpp:14:0" msg_body="array_partition dim=1 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input 1 vitis_convolution vitis_convolution.cpp:14:0 vitis_convolution.cpp:28:1vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input">
-        <args PragmaFunction="vitis_convolution" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input" PragmaSrcLoc="vitis_convolution.cpp:28:1" PragmaSrcLoc-DebugLoc="File vitis_convolution.cpp Line 28 Column 1" PragmaType="array_partition" VarLoc="vitis_convolution.cpp:14:0" VarName="vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="vitis_convolution.cpp:28:1" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=1' for array 'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input' due to pipeline pragma">
-        <args Dim="1" Factor="3" Mode="cyclic" Name="vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="vitis_convolution.cpp:14:0" msg_body="array_partition dim=2 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input 1 vitis_convolution vitis_convolution.cpp:14:0 vitis_convolution.cpp:28:1vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input">
-        <args PragmaFunction="vitis_convolution" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input" PragmaSrcLoc="vitis_convolution.cpp:28:1" PragmaSrcLoc-DebugLoc="File vitis_convolution.cpp Line 28 Column 1" PragmaType="array_partition" VarLoc="vitis_convolution.cpp:14:0" VarName="vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input"/>
-    </msg>
-    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="vitis_convolution.cpp:28:1" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input' due to pipeline pragma">
-        <args Dim="2" Factor="3" Mode="cyclic" Name="vitis_convolution(unsigned char volatile*, char volatile*, char (*) [3])::local_input" PragmaType="array_partition"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="vitis_convolution.cpp:14:0" msg_body="Applying array_partition to '_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input': Cyclic partitioning with factor 3 on dimension 1. Cyclic partitioning with factor 3 on dimension 2.">
-        <args Dim="islist 1 2" Factor="islist 3 3" Mode="islist Cyclic Cyclic" UOName="_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input"/>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-385" msg_severity="WARNING" msg_loc="vitis_convolution.cpp:13:1" msg_body="Cannot apply INTERFACE pragma on a global variable. In function 'vitis_convolution(unsigned char volatile*, char volatile*)'">
+        <args Function="vitis_convolution(unsigned char volatile*, char volatile*)" Function-DebugLoc="File vitis_convolution.cpp Line 9 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>

@@ -1,9 +1,9 @@
 <pragmas>
-<pragma file="vitis_convolution.cpp" line="44" pragmaType="pipeline" parentfunction="vitis_convolution" off="0" ii="1" rewind="0" style=""/>
-<pragma file="vitis_convolution.cpp" line="28" pragmaType="pipeline" parentfunction="vitis_convolution" off="0" ii="1" rewind="0" style=""/>
-<pragma file="vitis_convolution.cpp" line="20" pragmaType="pipeline" parentfunction="vitis_convolution" off="0" ii="1" rewind="0" style=""/>
-<pragma file="vitis_convolution.cpp" line="9" pragmaType="interface" parentfunction="vitis_convolution" mode="m_axi" port="input_img" bundle="gmem_in" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="vitis_convolution.cpp" line="10" pragmaType="interface" parentfunction="vitis_convolution" mode="m_axi" port="output_img" bundle="gmem_out" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="vitis_convolution.cpp" line="11" pragmaType="interface" parentfunction="vitis_convolution" mode="s_axilite" port="kernel" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="vitis_convolution.cpp" line="12" pragmaType="interface" parentfunction="vitis_convolution" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="vitis_convolution.cpp" line="46" pragmaType="pipeline" parentfunction="vitis_convolution" off="0" ii="1" rewind="0" style=""/>
+<pragma file="vitis_convolution.cpp" line="30" pragmaType="pipeline" parentfunction="vitis_convolution" off="0" ii="1" rewind="0" style=""/>
+<pragma file="vitis_convolution.cpp" line="22" pragmaType="pipeline" parentfunction="vitis_convolution" off="0" ii="1" rewind="0" style=""/>
+<pragma file="vitis_convolution.cpp" line="11" pragmaType="interface" parentfunction="vitis_convolution" mode="m_axi" port="input_img" bundle="gmem" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="vitis_convolution.cpp" line="12" pragmaType="interface" parentfunction="vitis_convolution" mode="m_axi" port="output_img" bundle="gmem" offset="slave" name="" depth="16384" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="vitis_convolution.cpp" line="13" pragmaType="interface" parentfunction="vitis_convolution" mode="s_axilite" port="kernel" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="vitis_convolution.cpp" line="14" pragmaType="interface" parentfunction="vitis_convolution" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
 </pragmas>

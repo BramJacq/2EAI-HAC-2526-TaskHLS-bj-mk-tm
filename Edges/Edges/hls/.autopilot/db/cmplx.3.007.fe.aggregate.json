@@ -1,22 +1,21 @@
 {
   "0": {
-    "basicblocks": 13,
+    "basicblocks": 9,
     "calls": "",
     "control_depth": 0,
-    "def_use_depth": 12,
+    "def_use_depth": 3,
     "file": "vitis_convolution.cpp",
-    "fileloc": 3,
-    "instructions": 109,
+    "fileloc": 6,
+    "instructions": 39,
     "loads": {
-      "G": 10,
-      "T": 10
-    },
-    "memory_accesses": 14,
-    "name": "vitis_convolution",
-    "stores": {
-      "G": 2,
+      "G": 1,
       "T": 1
     },
-    "total_instructions": 109
+    "memory_accesses": 3,
+    "name": "vitis_convolution",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 39
   }
 }

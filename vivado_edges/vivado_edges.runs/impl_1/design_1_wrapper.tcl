@@ -118,8 +118,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.cache/wt [current_project]
   set_property parent.project_path C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.xpr [current_project]
   set_property ip_repo_paths {
-  c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
   c:/2eai-soc-2526-weerstation-bj-mk-tm/CodesPart3V3/ip_repo
+  C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/Edges/hls/impl/ip
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/vivado_edges/vivado_edges.cache/ip [current_project]

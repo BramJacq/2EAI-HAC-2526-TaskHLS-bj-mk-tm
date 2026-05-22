@@ -4,7 +4,7 @@ target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:20
 target triple = "fpga64-xilinx-none"
 
 ; Function Attrs: noinline
-define void @apatb_vitis_convolution_ir(i8* noalias nonnull "maxi" %input_img, i8* noalias nonnull "maxi" %output_img, [3 x i8]* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="3" %kernel) local_unnamed_addr #0 {
+define void @apatb_vitis_convolution_ir(i8* noalias nonnull "maxi" %input_img, i8* noalias nonnull "maxi" %output_img) local_unnamed_addr #0 {
 entry:
   %0 = bitcast i8* %input_img to [16384 x i8]*
   %1 = call i8* @malloc(i64 16384)
@@ -12,22 +12,19 @@ entry:
   %2 = bitcast i8* %output_img to [16384 x i8]*
   %3 = call i8* @malloc(i64 16384)
   %output_img_copy = bitcast i8* %3 to [16384 x i8]*
-  %4 = bitcast [3 x i8]* %kernel to [3 x [3 x i8]]*
-  %kernel_copy = alloca [3 x [3 x i8]], align 512
-  call fastcc void @copy_in([16384 x i8]* nonnull %0, [16384 x i8]* %input_img_copy, [16384 x i8]* nonnull %2, [16384 x i8]* %output_img_copy, [3 x [3 x i8]]* nonnull %4, [3 x [3 x i8]]* nonnull align 512 %kernel_copy)
-  call void @apatb_vitis_convolution_hw([16384 x i8]* %input_img_copy, [16384 x i8]* %output_img_copy, [3 x [3 x i8]]* %kernel_copy)
-  call void @copy_back([16384 x i8]* %0, [16384 x i8]* %input_img_copy, [16384 x i8]* %2, [16384 x i8]* %output_img_copy, [3 x [3 x i8]]* %4, [3 x [3 x i8]]* %kernel_copy)
+  call fastcc void @copy_in([16384 x i8]* nonnull %0, [16384 x i8]* %input_img_copy, [16384 x i8]* nonnull %2, [16384 x i8]* %output_img_copy)
+  call void @apatb_vitis_convolution_hw([16384 x i8]* %input_img_copy, [16384 x i8]* %output_img_copy)
+  call void @copy_back([16384 x i8]* %0, [16384 x i8]* %input_img_copy, [16384 x i8]* %2, [16384 x i8]* %output_img_copy)
   tail call void @free(i8* %1)
   tail call void @free(i8* %3)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @copy_in([16384 x i8]* readonly, [16384 x i8]*, [16384 x i8]* readonly, [16384 x i8]*, [3 x [3 x i8]]* readonly, [3 x [3 x i8]]* align 512) unnamed_addr #1 {
+define internal fastcc void @copy_in([16384 x i8]* readonly, [16384 x i8]*, [16384 x i8]* readonly, [16384 x i8]*) unnamed_addr #1 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a16384i8([16384 x i8]* %1, [16384 x i8]* %0)
   call fastcc void @onebyonecpy_hls.p0a16384i8([16384 x i8]* %3, [16384 x i8]* %2)
-  call fastcc void @onebyonecpy_hls.p0a3a3i8([3 x [3 x i8]]* align 512 %5, [3 x [3 x i8]]* %4)
   ret void
 }
 
@@ -80,90 +77,10 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @onebyonecpy_hls.p0a3a3i8([3 x [3 x i8]]* align 512 %dst, [3 x [3 x i8]]* readonly %src) unnamed_addr #2 {
-entry:
-  %0 = icmp eq [3 x [3 x i8]]* %dst, null
-  %1 = icmp eq [3 x [3 x i8]]* %src, null
-  %2 = or i1 %0, %1
-  br i1 %2, label %ret, label %copy
-
-copy:                                             ; preds = %entry
-  call void @arraycpy_hls.p0a3a3i8([3 x [3 x i8]]* nonnull %dst, [3 x [3 x i8]]* nonnull %src, i64 3)
-  br label %ret
-
-ret:                                              ; preds = %copy, %entry
-  ret void
-}
-
-; Function Attrs: argmemonly noinline norecurse willreturn
-define void @arraycpy_hls.p0a3a3i8([3 x [3 x i8]]* %dst, [3 x [3 x i8]]* readonly %src, i64 %num) local_unnamed_addr #3 {
-entry:
-  %0 = icmp eq [3 x [3 x i8]]* %src, null
-  %1 = icmp eq [3 x [3 x i8]]* %dst, null
-  %2 = or i1 %1, %0
-  br i1 %2, label %ret, label %copy
-
-copy:                                             ; preds = %entry
-  %for.loop.cond1 = icmp sgt i64 %num, 0
-  br i1 %for.loop.cond1, label %for.loop.lr.ph, label %copy.split
-
-for.loop.lr.ph:                                   ; preds = %copy
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop, %for.loop.lr.ph
-  %for.loop.idx2 = phi i64 [ 0, %for.loop.lr.ph ], [ %for.loop.idx.next, %for.loop ]
-  %dst.addr = getelementptr [3 x [3 x i8]], [3 x [3 x i8]]* %dst, i64 0, i64 %for.loop.idx2
-  %src.addr = getelementptr [3 x [3 x i8]], [3 x [3 x i8]]* %src, i64 0, i64 %for.loop.idx2
-  call void @arraycpy_hls.p0a3i8([3 x i8]* %dst.addr, [3 x i8]* %src.addr, i64 3)
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx2, 1
-  %exitcond = icmp ne i64 %for.loop.idx.next, %num
-  br i1 %exitcond, label %for.loop, label %copy.split
-
-copy.split:                                       ; preds = %for.loop, %copy
-  br label %ret
-
-ret:                                              ; preds = %copy.split, %entry
-  ret void
-}
-
-; Function Attrs: argmemonly noinline norecurse willreturn
-define void @arraycpy_hls.p0a3i8([3 x i8]* %dst, [3 x i8]* readonly %src, i64 %num) local_unnamed_addr #3 {
-entry:
-  %0 = icmp eq [3 x i8]* %src, null
-  %1 = icmp eq [3 x i8]* %dst, null
-  %2 = or i1 %1, %0
-  br i1 %2, label %ret, label %copy
-
-copy:                                             ; preds = %entry
-  %for.loop.cond1 = icmp sgt i64 %num, 0
-  br i1 %for.loop.cond1, label %for.loop.lr.ph, label %copy.split
-
-for.loop.lr.ph:                                   ; preds = %copy
-  br label %for.loop
-
-for.loop:                                         ; preds = %for.loop, %for.loop.lr.ph
-  %for.loop.idx2 = phi i64 [ 0, %for.loop.lr.ph ], [ %for.loop.idx.next, %for.loop ]
-  %dst.addr = getelementptr [3 x i8], [3 x i8]* %dst, i64 0, i64 %for.loop.idx2
-  %src.addr = getelementptr [3 x i8], [3 x i8]* %src, i64 0, i64 %for.loop.idx2
-  %3 = load i8, i8* %src.addr, align 1
-  store i8 %3, i8* %dst.addr, align 1
-  %for.loop.idx.next = add nuw nsw i64 %for.loop.idx2, 1
-  %exitcond = icmp ne i64 %for.loop.idx.next, %num
-  br i1 %exitcond, label %for.loop, label %copy.split
-
-copy.split:                                       ; preds = %for.loop, %copy
-  br label %ret
-
-ret:                                              ; preds = %copy.split, %entry
-  ret void
-}
-
-; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @copy_out([16384 x i8]*, [16384 x i8]* readonly, [16384 x i8]*, [16384 x i8]* readonly, [3 x [3 x i8]]*, [3 x [3 x i8]]* readonly align 512) unnamed_addr #4 {
+define internal fastcc void @copy_out([16384 x i8]*, [16384 x i8]* readonly, [16384 x i8]*, [16384 x i8]* readonly) unnamed_addr #4 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a16384i8([16384 x i8]* %0, [16384 x i8]* %1)
   call fastcc void @onebyonecpy_hls.p0a16384i8([16384 x i8]* %2, [16384 x i8]* %3)
-  call fastcc void @onebyonecpy_hls.p0a3a3i8([3 x [3 x i8]]* %4, [3 x [3 x i8]]* align 512 %5)
   ret void
 }
 
@@ -171,26 +88,25 @@ declare i8* @malloc(i64) local_unnamed_addr
 
 declare void @free(i8*) local_unnamed_addr
 
-declare void @apatb_vitis_convolution_hw([16384 x i8]*, [16384 x i8]*, [3 x [3 x i8]]*)
+declare void @apatb_vitis_convolution_hw([16384 x i8]*, [16384 x i8]*)
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @copy_back([16384 x i8]*, [16384 x i8]* readonly, [16384 x i8]*, [16384 x i8]* readonly, [3 x [3 x i8]]*, [3 x [3 x i8]]* readonly align 512) unnamed_addr #4 {
+define internal fastcc void @copy_back([16384 x i8]*, [16384 x i8]* readonly, [16384 x i8]*, [16384 x i8]* readonly) unnamed_addr #4 {
 entry:
   call fastcc void @onebyonecpy_hls.p0a16384i8([16384 x i8]* %0, [16384 x i8]* %1)
   call fastcc void @onebyonecpy_hls.p0a16384i8([16384 x i8]* %2, [16384 x i8]* %3)
   ret void
 }
 
-declare void @vitis_convolution_hw_stub(i8* noalias nonnull, i8* noalias nonnull, [3 x i8]* noalias nocapture nonnull readonly)
+declare void @vitis_convolution_hw_stub(i8* noalias nonnull, i8* noalias nonnull)
 
-define void @vitis_convolution_hw_stub_wrapper([16384 x i8]*, [16384 x i8]*, [3 x [3 x i8]]*) #5 {
+define void @vitis_convolution_hw_stub_wrapper([16384 x i8]*, [16384 x i8]*) #5 {
 entry:
-  call void @copy_out([16384 x i8]* null, [16384 x i8]* %0, [16384 x i8]* null, [16384 x i8]* %1, [3 x [3 x i8]]* null, [3 x [3 x i8]]* %2)
-  %3 = bitcast [16384 x i8]* %0 to i8*
-  %4 = bitcast [16384 x i8]* %1 to i8*
-  %5 = bitcast [3 x [3 x i8]]* %2 to [3 x i8]*
-  call void @vitis_convolution_hw_stub(i8* %3, i8* %4, [3 x i8]* %5)
-  call void @copy_in([16384 x i8]* null, [16384 x i8]* %0, [16384 x i8]* null, [16384 x i8]* %1, [3 x [3 x i8]]* null, [3 x [3 x i8]]* %2)
+  call void @copy_out([16384 x i8]* null, [16384 x i8]* %0, [16384 x i8]* null, [16384 x i8]* %1)
+  %2 = bitcast [16384 x i8]* %0 to i8*
+  %3 = bitcast [16384 x i8]* %1 to i8*
+  call void @vitis_convolution_hw_stub(i8* %2, i8* %3)
+  call void @copy_in([16384 x i8]* null, [16384 x i8]* %0, [16384 x i8]* null, [16384 x i8]* %1)
   ret void
 }
 

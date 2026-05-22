@@ -2,18 +2,6 @@
 
 set axilite_register_dict [dict create]
 set port_control {
-kernel { 
-	dir I
-	width 8
-	depth 9
-	mode ap_memory
-	offset 16
-	offset_end 31
-	core_op ram_1p
-	core_impl auto
-	core_latency 1
-	byte_write 0
-}
 ap_start { }
 ap_done { }
 ap_ready { }

@@ -1,19 +1,21 @@
 #include "vitis_convolution.h"
 
+// We zetten de kernel hier neer. Hierdoor hoort hij automatisch bij de return-bundle!
+char kernel[KERNEL_SIZE][KERNEL_SIZE];
+
 void vitis_convolution(
     volatile unsigned char *input_img,
-    volatile char *output_img,
-    char kernel[KERNEL_SIZE][KERNEL_SIZE]) 
+    volatile char *output_img) 
 {
-    // Standaard interfaces (Vitis regelt de rest via de config)
-    #pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem_in depth=16384
-    #pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem_out depth=16384
+    // FORCEER ABSOLUUT ÉÉN ENKELE CONTROL BUS EN ÉÉN GEHEUGEN BUS
+    #pragma HLS INTERFACE m_axi port=input_img offset=slave bundle=gmem depth=16384
+    #pragma HLS INTERFACE m_axi port=output_img offset=slave bundle=gmem depth=16384
     #pragma HLS INTERFACE s_axilite port=kernel bundle=control
     #pragma HLS INTERFACE s_axilite port=return bundle=control
 
     static unsigned char local_input[IMG_ROWS][IMG_COLS];
     static char local_output[IMG_ROWS][IMG_COLS];
-
+    
     // 1. Inlezen van de pixels
     Read_Rows: for(int r = 0; r < IMG_ROWS; r++) {
         Read_Cols: for(int c = 0; c < IMG_COLS; c++) {

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'vitis_convolution_Pipeline_Read_Rows_Read_Cols'" level="0">
-<item name = "Date">Fri May 22 00:47:14 2026
+<item name = "Date">Fri May 22 02:53:18 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">Edges</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">16399, 16399, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
+<column name="">16396, 16396, 0.164 ms, 0.164 ms, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Read_Rows_Read_Cols">16397, 16397, 15, 1, 1, 16384, yes</column>
+<column name="- Read_Rows_Read_Cols">16394, 16394, 12, 1, 1, 16384, yes</column>
 </table>
 </item>
 </section>

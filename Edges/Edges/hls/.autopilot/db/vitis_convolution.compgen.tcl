@@ -1,22 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler vitis_convolution_p_ZZ17vitis_convolutionPVhPVcPA3_cE11local_input_0_0_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler vitis_convolution_local_output_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler vitis_convolution_gmem_in_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler vitis_convolution_gmem_out_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
+	::AP::rtl_comp_handler vitis_convolution_gmem_m_axi BINDTYPE {interface} TYPE {adapter} IMPL {m_axi}
 }
 
 
@@ -29,18 +14,6 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 set axilite_register_dict [dict create]
 set port_control {
-kernel { 
-	dir I
-	width 8
-	depth 9
-	mode ap_memory
-	offset 16
-	offset_end 31
-	core_op ram_1p
-	core_impl auto
-	core_latency 1
-	byte_write 0
-}
 ap_start { }
 ap_done { }
 ap_ready { }
@@ -55,7 +28,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 90 \
+			id 5 \
 			corename vitis_convolution_control_axilite \
 			name vitis_convolution_control_s_axi \
 			ports {$port_control} \
@@ -101,7 +74,7 @@ dict set axilite_register_dict control_r $port_control_r
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 91 \
+			id 6 \
 			corename vitis_convolution_control_r_axilite \
 			name vitis_convolution_control_r_s_axi \
 			ports {$port_control_r} \
