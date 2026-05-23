@@ -619,7 +619,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_READ_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_INVOER.MAX_READ_BURST_LENGTH">16</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_INVOER.MAX_READ_BURST_LENGTH">64</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_WRITE_BURST_LENGTH</spirit:name>
@@ -1035,7 +1035,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_WRITE_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_UITVOER.MAX_WRITE_BURST_LENGTH">16</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXI_GMEM_UITVOER.MAX_WRITE_BURST_LENGTH">64</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_BURST_LENGTH</spirit:name>
@@ -1556,15 +1556,12 @@
         <spirit:language>verilog</spirit:language>
         <spirit:modelName>filter_afbeelding</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f5d4ec64</spirit:value>
+            <spirit:value>cce8229b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1575,15 +1572,12 @@
         <spirit:language>verilog</spirit:language>
         <spirit:modelName>filter_afbeelding</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_verilogbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1104dcf2</spirit:value>
+            <spirit:value>42d6fe9a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1594,15 +1588,12 @@
         <spirit:language>vhdl</spirit:language>
         <spirit:modelName>filter_afbeelding</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>bf218b43</spirit:value>
+            <spirit:value>e33218d5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1613,15 +1604,12 @@
         <spirit:language>vhdl</spirit:language>
         <spirit:modelName>filter_afbeelding</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>615a5a58</spirit:value>
+            <spirit:value>8ffd2785</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3783,23 +3771,19 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_1_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_afbeelding_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3811,31 +3795,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_32ns_32ns_64_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_mul_31ns_31ns_62_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_63ns_32ns_64_5_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_mul_31ns_32ns_62_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_63ns_32s_64_5_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_63s_32s_64_5_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_64s_32ns_64_5_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_sparsemux_7_2_32_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_mul_32ns_32ns_63_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3846,38 +3814,26 @@
         <spirit:name>hdl/verilog/filter_afbeelding.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="floating_point" xilinx:version="7.1">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_1_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/filter_afbeelding_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3892,37 +3848,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_32ns_32ns_64_2_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_mul_31ns_31ns_62_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_63ns_32ns_64_5_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_mul_31ns_32ns_62_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_63ns_32s_64_5_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_63s_32s_64_5_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_mul_64s_32ns_64_5_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_sparsemux_7_2_32_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1.v</spirit:name>
+        <spirit:name>hdl/verilog/filter_afbeelding_mul_32ns_32ns_63_2_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3936,16 +3872,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="floating_point" xilinx:version="7.1">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
@@ -3955,23 +3881,19 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_1_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_afbeelding_flow_control_loop_pipe_sequential_init.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3983,31 +3905,15 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_32ns_32ns_64_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_mul_31ns_31ns_62_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_63ns_32ns_64_5_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_mul_31ns_32ns_62_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_63ns_32s_64_5_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_63s_32s_64_5_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_64s_32ns_64_5_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_sparsemux_7_2_32_1_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_mul_32ns_32ns_63_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4017,40 +3923,28 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/filter_afbeelding.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4c30a461</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_8cafbe30</spirit:userFileType>
       </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_vhdlsynthesis_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="floating_point" xilinx:version="7.1">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_1_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_afbeelding_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_line_buffer_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/filter_afbeelding_flow_control_loop_pipe_sequential_init.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4065,37 +3959,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_32ns_32ns_64_2_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_mul_31ns_31ns_62_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_63ns_32ns_64_5_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_mul_31ns_32ns_62_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_63ns_32s_64_5_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_63s_32s_64_5_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_mul_64s_32ns_64_5_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_sparsemux_7_2_32_1_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/filter_afbeelding_mul_32ns_32ns_63_2_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4109,16 +3983,6 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_floating_point_7_1__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="floating_point" xilinx:version="7.1">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
@@ -4450,8 +4314,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Filter_afbeelding</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114620769</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-05-23T00:29:56Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114620840</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-05-23T01:41:03Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -4459,10 +4323,10 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8115e11e"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e738b8d9"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="5c8b138b"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="7d9665fa"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4f55c19c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="717e1e3f"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4c36fc99"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="960356d5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4213192e"/>

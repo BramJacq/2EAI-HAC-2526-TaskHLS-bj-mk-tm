@@ -243,33 +243,33 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-extern "C" void filter_afbeelding(Byte<1>*, Byte<1>*, int, int, int, int, int);
+extern "C" void filter_afbeelding(Byte<4>*, Byte<4>*, int, int, int, int, int);
 extern "C" void apatb_filter_afbeelding_hw(volatile void * __xlx_apatb_param_invoer_pixels, volatile void * __xlx_apatb_param_uitvoer_pixels, int __xlx_apatb_param_breedte, int __xlx_apatb_param_hoogte, int __xlx_apatb_param_kanalen) {
 using hls::sim::createStream;
   // Collect __xlx_invoer_pixels__tmp_vec
-std::vector<Byte<1>> __xlx_invoer_pixels__tmp_vec;
+std::vector<Byte<4>> __xlx_invoer_pixels__tmp_vec;
 for (size_t i = 0; i < 65536; ++i){
-__xlx_invoer_pixels__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_invoer_pixels)[i]);
+__xlx_invoer_pixels__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_invoer_pixels)[i]);
 }
   int __xlx_size_param_invoer_pixels = 65536;
   int __xlx_offset_param_invoer_pixels = 0;
-  int __xlx_offset_byte_param_invoer_pixels = 0*1;
+  int __xlx_offset_byte_param_invoer_pixels = 0*4;
   // Collect __xlx_uitvoer_pixels__tmp_vec
-std::vector<Byte<1>> __xlx_uitvoer_pixels__tmp_vec;
+std::vector<Byte<4>> __xlx_uitvoer_pixels__tmp_vec;
 for (size_t i = 0; i < 65536; ++i){
-__xlx_uitvoer_pixels__tmp_vec.push_back(((Byte<1>*)__xlx_apatb_param_uitvoer_pixels)[i]);
+__xlx_uitvoer_pixels__tmp_vec.push_back(((Byte<4>*)__xlx_apatb_param_uitvoer_pixels)[i]);
 }
   int __xlx_size_param_uitvoer_pixels = 65536;
   int __xlx_offset_param_uitvoer_pixels = 0;
-  int __xlx_offset_byte_param_uitvoer_pixels = 0*1;
+  int __xlx_offset_byte_param_uitvoer_pixels = 0*4;
   // DUT call
   filter_afbeelding(__xlx_invoer_pixels__tmp_vec.data(), __xlx_uitvoer_pixels__tmp_vec.data(), __xlx_offset_byte_param_invoer_pixels, __xlx_offset_byte_param_uitvoer_pixels, __xlx_apatb_param_breedte, __xlx_apatb_param_hoogte, __xlx_apatb_param_kanalen);
 // print __xlx_apatb_param_invoer_pixels
 for (size_t i = 0; i < __xlx_size_param_invoer_pixels; ++i) {
-((Byte<1>*)__xlx_apatb_param_invoer_pixels)[i] = __xlx_invoer_pixels__tmp_vec[__xlx_offset_param_invoer_pixels+i];
+((Byte<4>*)__xlx_apatb_param_invoer_pixels)[i] = __xlx_invoer_pixels__tmp_vec[__xlx_offset_param_invoer_pixels+i];
 }
 // print __xlx_apatb_param_uitvoer_pixels
 for (size_t i = 0; i < __xlx_size_param_uitvoer_pixels; ++i) {
-((Byte<1>*)__xlx_apatb_param_uitvoer_pixels)[i] = __xlx_uitvoer_pixels__tmp_vec[__xlx_offset_param_uitvoer_pixels+i];
+((Byte<4>*)__xlx_apatb_param_uitvoer_pixels)[i] = __xlx_uitvoer_pixels__tmp_vec[__xlx_offset_param_uitvoer_pixels+i];
 }
 }

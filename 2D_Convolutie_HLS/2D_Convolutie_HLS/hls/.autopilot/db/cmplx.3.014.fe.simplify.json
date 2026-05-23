@@ -1,17 +1,20 @@
 {
   "0": {
-    "basicblocks": 77,
+    "basicblocks": 11,
     "calls": "",
     "control_depth": 2,
-    "def_use_depth": 17,
+    "def_use_depth": 11,
     "file": "convolutie_2d.cpp",
     "fileloc": 3,
-    "instructions": 381,
+    "instructions": 191,
     "loads": {
-      "T": 27
+      "L": 2
     },
-    "memory_accesses": 2,
+    "memory_accesses": 6,
     "name": "filter_afbeelding",
-    "total_instructions": 381
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 191
   }
 }

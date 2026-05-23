@@ -4,30 +4,12 @@
 # IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.srcs/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/design_1_filter_afbeelding_0_0.xci
 # IP: The module: 'design_1_filter_afbeelding_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
-# IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip || ORIG_REF_NAME==filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip} -quiet] -quiet
-
-# IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip || ORIG_REF_NAME==filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip} -quiet] -quiet
-
-# IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip || ORIG_REF_NAME==filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip} -quiet] -quiet
-
 # XDC: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/constraints/filter_afbeelding_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'design_1_filter_afbeelding_0_0'. Do not add the DONT_TOUCH constraint.
 set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 
 # IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.srcs/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/design_1_filter_afbeelding_0_0.xci
 # IP: The module: 'design_1_filter_afbeelding_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
-
-# IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip || ORIG_REF_NAME==filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip} -quiet] -quiet
-
-# IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip || ORIG_REF_NAME==filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip} -quiet] -quiet
-
-# IP: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip || ORIG_REF_NAME==filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip} -quiet] -quiet
 
 # XDC: c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/constraints/filter_afbeelding_ooc.xdc
 # XDC: The top module name and the constraint reference have the same name: 'design_1_filter_afbeelding_0_0'. Do not add the DONT_TOUCH constraint.

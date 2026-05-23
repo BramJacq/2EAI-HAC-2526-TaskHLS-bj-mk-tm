@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-// Date        : Sat May 23 02:40:32 2026
+// Date        : Sat May 23 02:40:31 2026
 // Host        : ELITE running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_axi_mem_intercon_imp_auto_pc_0/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_axi_mem_intercon_imp_auto_pc_0 -prefix
+//               design_1_axi_mem_intercon_imp_auto_pc_0_ design_1_axi_mem_intercon_imp_auto_pc_0_stub.v
 // Design      : design_1_axi_mem_intercon_imp_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

@@ -4,7 +4,7 @@
     "xci_name": "design_1_filter_afbeelding_0_0",
     "cell_name": "filter_afbeelding_0",
     "component_reference": "xilinx.com:hls:filter_afbeelding:1.0",
-    "ip_revision": "2114620769",
+    "ip_revision": "2114620840",
     "gen_directory": "../../../../../../2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0",
     "parameters": {
       "component_parameters": {
@@ -80,7 +80,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114620769" } ],
+        "IPREVISION": [ { "value": "2114620840" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -301,7 +301,7 @@
           "parameters": {
             "NUM_READ_OUTSTANDING": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "NUM_WRITE_OUTSTANDING": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
-            "MAX_READ_BURST_LENGTH": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MAX_READ_BURST_LENGTH": [ { "value": "64", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "MAX_WRITE_BURST_LENGTH": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "MAX_BURST_LENGTH": [ { "value": "256", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "PROTOCOL": [ { "value": "AXI4", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
@@ -385,7 +385,7 @@
             "NUM_READ_OUTSTANDING": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "NUM_WRITE_OUTSTANDING": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "MAX_READ_BURST_LENGTH": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
-            "MAX_WRITE_BURST_LENGTH": [ { "value": "16", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "MAX_WRITE_BURST_LENGTH": [ { "value": "64", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "MAX_BURST_LENGTH": [ { "value": "256", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "PROTOCOL": [ { "value": "AXI4", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "READ_WRITE_MODE": [ { "value": "WRITE_ONLY", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
@@ -744,5 +744,5 @@
       }
     }
   },
-  "checksum": "427e8618"
+  "checksum": "531da554"
 }

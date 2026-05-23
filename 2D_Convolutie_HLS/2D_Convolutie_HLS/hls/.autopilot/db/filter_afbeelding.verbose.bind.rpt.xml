@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'filter_afbeelding'" level="0">
-<item name = "Date">Sat May 23 02:28:58 2026
+<item name = "Date">Sat May 23 03:40:15 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">2D_Convolutie_HLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 9.305 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,13 +31,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols_fu_116">filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols, ?, ?, ?, ?, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Lus_Y">?, ?, ?, -, -, ?, no</column>
-<column name=" + Lus_X">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Kanalen_Wegschrijven">?, ?, 4 ~ 5, -, -, ?, no</column>
 </table>
 </item>
 </section>

@@ -18,3 +18,18 @@ C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autop
       ^
       VITIS_LOOP_1251_1: 
 C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:5806:7: note: FIX-IT applied suggested code changes
+C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:49530:13: remark: Added loop label VITIS_LOOP_50_1:   [xilinx-label-all-loops]
+            for (int r = 0; r < 3; r++) {
+            ^
+            VITIS_LOOP_50_1: 
+C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:49530:13: note: FIX-IT applied suggested code changes
+C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:49546:17: remark: Added loop label VITIS_LOOP_66_2:   [xilinx-label-all-loops]
+                for (int kr = 0; kr < 3; kr++) {
+                ^
+                VITIS_LOOP_66_2: 
+C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:49546:17: note: FIX-IT applied suggested code changes
+C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:49547:21: remark: Added loop label VITIS_LOOP_67_3:   [xilinx-label-all-loops]
+                    for (int kc = 0; kc < 3; kc++) {
+                    ^
+                    VITIS_LOOP_67_3: 
+C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp:49547:21: note: FIX-IT applied suggested code changes

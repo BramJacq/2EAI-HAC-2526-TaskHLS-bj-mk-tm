@@ -1,0 +1,139 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=convolutie_2d.h' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/convolutie_2d.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=convolutie_2d.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/convolutie_2d.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=convolutie_tb.cpp' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/convolutie_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=filter_afbeelding' from hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.523 seconds; current allocated memory: 134.883 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'convolutie_2d.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.316 seconds; current allocated memory: 137.328 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 581 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 435 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 184 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 171 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 169 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 179 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 178 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 178 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 177 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 205 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 205 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'Venster_Y' is marked as complete unroll implied by the pipeline pragma (convolutie_2d.cpp:41:24)
+INFO: [HLS 214-291] Loop 'Venster_X' is marked as complete unroll implied by the pipeline pragma (convolutie_2d.cpp:42:28)
+INFO: [HLS 214-291] Loop 'Bereken_Matrix' is marked as complete unroll implied by the pipeline pragma (convolutie_2d.cpp:69:29)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_70_1' is marked as complete unroll implied by the pipeline pragma (convolutie_2d.cpp:70:34)
+INFO: [HLS 214-186] Unrolling loop 'Venster_Y' (convolutie_2d.cpp:41:24) in function 'filter_afbeelding' completely with a factor of 3 (convolutie_2d.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'Venster_X' (convolutie_2d.cpp:42:28) in function 'filter_afbeelding' completely with a factor of 3 (convolutie_2d.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'Bereken_Matrix' (convolutie_2d.cpp:69:29) in function 'filter_afbeelding' completely with a factor of 3 (convolutie_2d.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_70_1' (convolutie_2d.cpp:70:34) in function 'filter_afbeelding' completely with a factor of 3 (convolutie_2d.cpp:9:0)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 has been inferred on bundle 'gmem_uitvoer'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (convolutie_2d.cpp:36:12)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.801 seconds; current allocated memory: 139.480 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 139.480 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 144.664 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 146.266 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 168.293 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Lus_Y'(convolutie_2d.cpp:36:12) and 'Lus_X'(convolutie_2d.cpp:37:16) in function 'filter_afbeelding' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'Lus_Y' (convolutie_2d.cpp:36:12) in function 'filter_afbeelding'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 172.094 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'filter_afbeelding' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filter_afbeelding_Pipeline_Lus_Y_Lus_X' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Lus_Y_Lus_X'.
+WARNING: [HLS 200-448] Lower bound of II is 6 due to multiple bus read operation ('ingepakte_pixel', convolutie_2d.cpp:49) on port 'gmem_invoer' (convolutie_2d.cpp:49), bus read operation ('ingepakte_pixel', convolutie_2d.cpp:49) on port 'gmem_invoer' (convolutie_2d.cpp:49), bus read operation ('ingepakte_pixel', convolutie_2d.cpp:49) on port 'gmem_invoer' (convolutie_2d.cpp:49), bus read operation ('ingepakte_pixel', convolutie_2d.cpp:49) on port 'gmem_invoer' (convolutie_2d.cpp:49), bus read operation ('ingepakte_pixel', convolutie_2d.cpp:49) on port 'gmem_invoer' (convolutie_2d.cpp:49), bus read operation ('ingepakte_pixel', convolutie_2d.cpp:49) on port 'gmem_invoer' (convolutie_2d.cpp:49) accessing 'gmem_invoer' m_axi read
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 23, loop 'Lus_Y_Lus_X'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.525 seconds; current allocated memory: 176.773 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 177.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'filter_afbeelding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 177.918 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 178.074 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_afbeelding_Pipeline_Lus_Y_Lus_X' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'filter_afbeelding_Pipeline_Lus_Y_Lus_X' pipeline 'Lus_Y_Lus_X' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_BREADY' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_32s_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_afbeelding_Pipeline_Lus_Y_Lus_X'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 182.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'filter_afbeelding' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/gmem_invoer' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/gmem_uitvoer' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/invoer_pixels' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/uitvoer_pixels' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/breedte' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/hoogte' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'filter_afbeelding/kanalen' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'filter_afbeelding' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'invoer_pixels', 'uitvoer_pixels', 'breedte', 'hoogte', 'kanalen' to AXI-Lite port vitis_control.
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_63_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'filter_afbeelding'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.773 seconds; current allocated memory: 188.871 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.732 seconds; current allocated memory: 192.359 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.159 seconds; current allocated memory: 198.645 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for filter_afbeelding.
+INFO: [VLOG 209-307] Generating Verilog RTL for filter_afbeelding.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 3 seconds. Total elapsed time: 25.509 seconds; peak allocated memory: 198.711 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 29s

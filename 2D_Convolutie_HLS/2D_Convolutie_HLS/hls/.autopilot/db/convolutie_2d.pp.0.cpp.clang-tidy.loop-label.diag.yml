@@ -49,4 +49,40 @@ Diagnostics:
           ReplacementText: 'VITIS_LOOP_1251_1: '
     Level:           Remark
     BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_50_1:  '
+      FilePath:        convolutie_2d.cpp
+      FileOffset:      50
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          2230662
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_50_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_66_2:  '
+      FilePath:        convolutie_2d.cpp
+      FileOffset:      66
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          2231239
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_66_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_67_3:  '
+      FilePath:        convolutie_2d.cpp
+      FileOffset:      67
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          2231292
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_67_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
 ...

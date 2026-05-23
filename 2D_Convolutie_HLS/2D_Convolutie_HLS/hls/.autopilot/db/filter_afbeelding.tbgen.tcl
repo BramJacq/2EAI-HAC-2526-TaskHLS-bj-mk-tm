@@ -15,25 +15,25 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 3
+set cdfgNum 4
 set C_modelName {filter_afbeelding}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
-	{ gmem_invoer int 8 regular {axi_master 0}  }
-	{ gmem_uitvoer int 8 regular {axi_master 1}  }
+	{ gmem_invoer int 32 regular {axi_master 0}  }
+	{ gmem_uitvoer int 32 regular {axi_master 1}  }
 	{ invoer_pixels int 64 regular {axi_slave 0}  }
 	{ uitvoer_pixels int 64 regular {axi_slave 0}  }
 	{ breedte int 32 regular {axi_slave 0}  }
 	{ hoogte int 32 regular {axi_slave 0}  }
-	{ kanalen int 32 regular {axi_slave 0}  }
+	{ kanalen int 32 unused {axi_slave 0}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "gmem_invoer", "interface" : "axi_master", "bitwidth" : 8, "direction" : "READONLY", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "invoer_pixels","offset": { "type": "dynamic","port_name": "invoer_pixels","bundle": "vitis_control"},"direction": "READONLY"}]}]} , 
- 	{ "Name" : "gmem_uitvoer", "interface" : "axi_master", "bitwidth" : 8, "direction" : "WRITEONLY", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "uitvoer_pixels","offset": { "type": "dynamic","port_name": "uitvoer_pixels","bundle": "vitis_control"},"direction": "WRITEONLY"}]}]} , 
+	{ "Name" : "gmem_invoer", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "invoer_pixels","offset": { "type": "dynamic","port_name": "invoer_pixels","bundle": "vitis_control"},"direction": "READONLY"}]}]} , 
+ 	{ "Name" : "gmem_uitvoer", "interface" : "axi_master", "bitwidth" : 32, "direction" : "WRITEONLY", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "uitvoer_pixels","offset": { "type": "dynamic","port_name": "uitvoer_pixels","bundle": "vitis_control"},"direction": "WRITEONLY"}]}]} , 
  	{ "Name" : "invoer_pixels", "interface" : "axi_slave", "bundle":"vitis_control","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":27}} , 
  	{ "Name" : "uitvoer_pixels", "interface" : "axi_slave", "bundle":"vitis_control","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":28}, "offset_end" : {"in":39}} , 
  	{ "Name" : "breedte", "interface" : "axi_slave", "bundle":"vitis_control","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":40}, "offset_end" : {"in":47}} , 
@@ -267,13 +267,23 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	filter_afbeelding {
-		gmem_invoer {Type I LastRead 693 FirstWrite -1}
-		gmem_uitvoer {Type O LastRead 11 FirstWrite 696}
+		gmem_invoer {Type I LastRead 4 FirstWrite -1}
+		gmem_uitvoer {Type O LastRead 8 FirstWrite 7}
 		invoer_pixels {Type I LastRead 0 FirstWrite -1}
 		uitvoer_pixels {Type I LastRead 0 FirstWrite -1}
 		breedte {Type I LastRead 0 FirstWrite -1}
 		hoogte {Type I LastRead 0 FirstWrite -1}
-		kanalen {Type I LastRead 0 FirstWrite -1}}}
+		kanalen {Type I LastRead -1 FirstWrite -1}}
+	filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols {
+		gmem_uitvoer {Type O LastRead 8 FirstWrite 7}
+		breedte {Type I LastRead 0 FirstWrite -1}
+		gmem_invoer {Type I LastRead 2 FirstWrite -1}
+		mul_ln3 {Type I LastRead 0 FirstWrite -1}
+		sext_ln37 {Type I LastRead 0 FirstWrite -1}
+		zext_ln37 {Type I LastRead 0 FirstWrite -1}
+		sext_ln37_1 {Type I LastRead 0 FirstWrite -1}
+		uitvoer_pixels {Type I LastRead 0 FirstWrite -1}
+		select_ln37_1 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -291,8 +301,8 @@ set Spec2ImplPortList {
 }
 
 set maxi_interface_dict [dict create]
-dict set maxi_interface_dict gmem_invoer { CHANNEL_NUM 0 BUNDLE gmem_invoer NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_ONLY}
-dict set maxi_interface_dict gmem_uitvoer { CHANNEL_NUM 0 BUNDLE gmem_uitvoer NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE WRITE_ONLY}
+dict set maxi_interface_dict gmem_invoer { CHANNEL_NUM 0 BUNDLE gmem_invoer NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 64 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_ONLY}
+dict set maxi_interface_dict gmem_uitvoer { CHANNEL_NUM 0 BUNDLE gmem_uitvoer NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 64 READ_WRITE_MODE WRITE_ONLY}
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 

@@ -8,28 +8,33 @@
   **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Sat May 23 02:42:22 2026
+  **** Start of session at: Sat May 23 03:44:03 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 524.402 ; gain = 219.262
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 523.469 ; gain = 218.188
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/2eai-soc-2526-weerstation-bj-mk-tm/CodesPart3V3/ip_repo'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16736
+INFO: [Synth 8-7075] Helper process launched with PID 6672
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1347.789 ; gain = 541.324
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1348.520 ; gain = 540.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:13]
@@ -37,15 +42,15 @@ INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [c:/2EAI-
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1125]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1125]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1366]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1366]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1524]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_auto_pc_1' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_mem_intercon_imp_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1524]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_imp_xbar_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_mem_intercon_imp_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1093]
 WARNING: [Synth 8-689] width (32) of port connection 's_axi_rdata' does not match port width (64) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1111]
 WARNING: [Synth 8-689] width (2) of port connection 's_axi_rid' does not match port width (4) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1112]
@@ -53,13 +58,13 @@ WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match
 WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1115]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_axi_mem_intercon_imp_xbar_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:1116]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:543]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_axi_smc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:301]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_0' is unconnected for instance 'axi_smc' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:301]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_0' has 59 connections declared, but only 57 given [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:301]
-INFO: [Synth 8-6157] synthesizing module 'design_1_filter_afbeelding_0_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_filter_afbeelding_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_filter_afbeelding_0_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_filter_afbeelding_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_filter_afbeelding_0_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_filter_afbeelding_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_filter_afbeelding_0_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_filter_afbeelding_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_filter_afbeelding_0_0' is unconnected for instance 'filter_afbeelding_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:359]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_invoer_AWADDR' of module 'design_1_filter_afbeelding_0_0' is unconnected for instance 'filter_afbeelding_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:359]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_invoer_AWBURST' of module 'design_1_filter_afbeelding_0_0' is unconnected for instance 'filter_afbeelding_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:359]
@@ -92,8 +97,8 @@ WARNING: [Synth 8-7071] port 'm_axi_gmem_uitvoer_ARVALID' of module 'design_1_fi
 WARNING: [Synth 8-7071] port 'm_axi_gmem_uitvoer_RREADY' of module 'design_1_filter_afbeelding_0_0' is unconnected for instance 'filter_afbeelding_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:359]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_uitvoer_WID' of module 'design_1_filter_afbeelding_0_0' is unconnected for instance 'filter_afbeelding_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:359]
 WARNING: [Synth 8-7023] instance 'filter_afbeelding_0' of module 'design_1_filter_afbeelding_0_0' has 100 connections declared, but only 69 given [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:359]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:429]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:429]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:429]
@@ -101,8 +106,8 @@ WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_s
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:429]
 WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:429]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 110 connections declared, but only 104 given [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:429]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-9376-ELITE/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/.Xil/Vivado-19960-ELITE/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:534]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:534]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/synth/design_1.v:534]
@@ -129,18 +134,18 @@ WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_axi_mem_intercon_0 i
 WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1477.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1479.059 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -163,29 +168,31 @@ Parsing XDC File [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Conv
 Finished Parsing XDC File [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1477.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1479.059 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1477.699 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1479.059 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1477.699 ; gain = 671.234
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1479.059 ; gain = 671.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -223,25 +230,25 @@ WARNING: [Synth 8-7129] Port S01_ACLK in module design_1_axi_mem_intercon_0 is e
 WARNING: [Synth 8-7129] Port S01_ARESETN in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S01_AXI_awlock[1] in module design_1_axi_mem_intercon_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1486.844 ; gain = 680.379
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1482.422 ; gain = 674.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1657.387 ; gain = 850.922
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1654.801 ; gain = 847.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1658.098 ; gain = 851.633
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1655.656 ; gain = 848.066
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1668.344 ; gain = 861.879
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1665.520 ; gain = 857.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -259,37 +266,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -320,24 +327,24 @@ Report Cell Usage:
 |7     |design_1_rst_ps7_0_100M               |     1|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1916.637 ; gain = 1110.172
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1916.637 ; gain = 1110.172
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1914.641 ; gain = 1107.051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1914.641 ; gain = 1107.051
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1916.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1914.641 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1929.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1918.605 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: 32e1f201
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+48 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1933.363 ; gain = 1374.938
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1922.574 ; gain = 1346.902
 INFO: [Common 17-1381] The checkpoint 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 23 02:43:17 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat May 23 03:44:48 2026...

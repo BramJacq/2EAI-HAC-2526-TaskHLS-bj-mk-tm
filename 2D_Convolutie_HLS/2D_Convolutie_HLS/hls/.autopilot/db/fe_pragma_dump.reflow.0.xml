@@ -1,141 +1,26 @@
 <pragmas>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator==<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, true>::ap_bit_ref(ap_int_base<32, true>*, int)" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="527" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="527" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb0EEC2EDq33_j" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="519" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_int" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<8, false>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>::ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="519" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::RType<($_0)32, true>::plus operator+<32, true>(ap_int_base<32, true> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<33, 33, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<32, true>::operator!=<23, false>(ap_int_base<23, false> const&) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_int" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 33, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::RType<32, true>::plus operator+<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<8, false>(ap_int_base<8, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::af_range_ref(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<79, false>::operator==<79, false>(ap_int_base<79, false> const&) const" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="527" pragmaType="inline" parentfunction="_ZN8ssdm_intILi79ELb0EEC2EDq79_j" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::af_bit_ref(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::RType<($_0)32, true>::minus operator-<8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="527" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<23, false>::ap_range_ref(ap_int_base<23, false>*, int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<79, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<79, false>::RType<79, false>::arg1 operator>><79, false>(ap_int_base<79, false> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::operator long long() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<79>::ap_uint<79, false>(ap_int_base<79, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::RType<32, true>::minus operator-<8, false, 32, true>(ap_int_base<8, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_ufixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<23, false>::operator()(int, int) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator()(int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<23, false>::ap_int_base<23, false>(ap_range_ref<23, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator[](unsigned int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<1, false>::ap_bit_ref(ap_int_base<1, false>*, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::operator[](int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator()(int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>::ap_range_ref(ap_int_base<8, false>*, int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, false>::operator bool() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<23, false>::operator()(int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned char)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="527" pragmaType="inline" parentfunction="_ZN8ssdm_intILi23ELb0EEC2EDq23_j" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(unsigned int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, false>::operator()(int, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::operator[](int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<23, false>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/include/header_files\etc/ap_common.h" line="527" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int(unsigned char)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_int" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_ufixed<79, 55, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_ufixed<1, 32, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(int, ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_ufixed<79, 55, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<32, 32, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<23, false>(int, ap_int_base<23, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="to_ap_int_base" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator int() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<8, false>(ap_int_base<8, false> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator long long() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::operator[](int)" off="0" region="0" recursive="0"/>
-<pragma file="convolutie_2d.cpp" line="32" pragmaType="pipeline" parentfunction="filter_afbeelding" off="0" ii="2" rewind="0" style=""/>
-<pragma file="convolutie_2d.cpp" line="11" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="convolutie_2d.cpp" line="12" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="breedte" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="convolutie_2d.cpp" line="13" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="hoogte" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="convolutie_2d.cpp" line="14" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="kanalen" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="convolutie_2d.cpp" line="17" pragmaType="interface" parentfunction="filter_afbeelding" mode="m_axi" port="invoer_pixels" bundle="gmem_invoer" offset="slave" name="" depth="65536" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="convolutie_2d.cpp" line="18" pragmaType="interface" parentfunction="filter_afbeelding" mode="m_axi" port="uitvoer_pixels" bundle="gmem_uitvoer" offset="slave" name="" depth="65536" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="convolutie_2d.cpp" line="19" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="invoer_pixels" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="convolutie_2d.cpp" line="20" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="uitvoer_pixels" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(int) const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_ufixed<32, 32, (ap_q_mode)6, (ap_o_mode)3, 0>::ap_ufixed<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator-() const" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed<32, 32, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="wl" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<32, true>::operator=(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<1, false>& ap_bit_ref<1, false>::operator=<32, false>(ap_bit_ref<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>& ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>::operator=<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="af_bit_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=(bool)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_range_ref<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, false, (ap_q_mode)6, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<23, false>& ap_range_ref<23, false>::operator=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<33, 33, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<33, 33, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<1, false>::operator=(unsigned long long)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<32, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<32, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<1, 32, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<8, false>& ap_range_ref<8, false>::operator=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="convolutie_2d.cpp" line="39" pragmaType="pipeline" parentfunction="filter_afbeelding" off="0" ii="1" rewind="0" style=""/>
+<pragma file="convolutie_2d.cpp" line="10" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="convolutie_2d.cpp" line="11" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="breedte" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="convolutie_2d.cpp" line="12" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="hoogte" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="convolutie_2d.cpp" line="13" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="kanalen" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="convolutie_2d.cpp" line="15" pragmaType="interface" parentfunction="filter_afbeelding" mode="m_axi" port="invoer_pixels" bundle="gmem_invoer" offset="slave" name="" depth="65536" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="convolutie_2d.cpp" line="16" pragmaType="interface" parentfunction="filter_afbeelding" mode="m_axi" port="uitvoer_pixels" bundle="gmem_uitvoer" offset="slave" name="" depth="65536" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="64" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="convolutie_2d.cpp" line="17" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="invoer_pixels" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="convolutie_2d.cpp" line="18" pragmaType="interface" parentfunction="filter_afbeelding" mode="s_axilite" port="uitvoer_pixels" bundle="vitis_control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="convolutie_2d.cpp" line="22" pragmaType="array_partition" parentfunction="filter_afbeelding" dim="1" factor="0" mode="complete" dynamic="0" variable="line_buffer"/>
+<pragma file="convolutie_2d.cpp" line="26" pragmaType="array_partition" parentfunction="filter_afbeelding" dim="0" factor="0" mode="complete" dynamic="0" variable="win_R"/>
+<pragma file="convolutie_2d.cpp" line="27" pragmaType="array_partition" parentfunction="filter_afbeelding" dim="0" factor="0" mode="complete" dynamic="0" variable="win_G"/>
+<pragma file="convolutie_2d.cpp" line="28" pragmaType="array_partition" parentfunction="filter_afbeelding" dim="0" factor="0" mode="complete" dynamic="0" variable="win_B"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::operator=(unsigned char)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="overflow_adjust" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, false>(ap_int_base<23, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& af_range_ref<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, false>(ap_range_ref<23, false> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>& ap_int_base<32, true>::operator=<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="report" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<79, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<32, false>::operator=(int)" off="0" region="0" recursive="0"/>
 </pragmas>

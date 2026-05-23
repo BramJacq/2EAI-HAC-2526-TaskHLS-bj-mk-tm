@@ -3,22 +3,33 @@
         "name": "filter_afbeelding",
         "file": "convolutie_2d.cpp",
         "fileloc": "3",
-        "instructions": "557",
-        "total_instructions": "557",
-        "calls": "",
-        "basicblocks": "75",
+        "instructions": "50",
+        "total_instructions": "281",
+        "calls": "1",
+        "basicblocks": "1",
         "memory_accesses": "0",
         "control_depth": "0",
-        "def_use_depth": "5",
+        "def_use_depth": "4"
+    },
+    "1": {
+        "name": "filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols",
+        "file": "convolutie_2d.cpp",
+        "fileloc": "21",
+        "instructions": "231",
+        "total_instructions": "231",
+        "calls": "",
+        "basicblocks": "10",
+        "memory_accesses": "58",
+        "control_depth": "2",
+        "def_use_depth": "2",
         "loads": {
-            "L": "3"
+            "L": "27"
         },
         "stores": {
-            "L": "6"
+            "L": "34"
         },
         "loops": {
-            "L": "1",
-            "N": "2"
+            "L": "1"
         }
     }
 }

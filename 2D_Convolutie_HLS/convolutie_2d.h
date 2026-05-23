@@ -1,15 +1,12 @@
 #ifndef CONVOLUTIE_2D_H
 #define CONVOLUTIE_2D_H
 
-#include <ap_int.h> // <--- Gefixt: '#' toegevoegd
+#include <ap_int.h>
 
-// Maximale ondersteunde dimensies voor interne lijn- of vensterbuffers indien nodig
-#define MAX_WIDTH 1920
-
-// Hardware IP-core top-level functie
+// Hardware IP-core top-level functie met ap_uint<32> voor stabiele 32-bit AXI transfers
 void filter_afbeelding(
-    unsigned char* invoer_pixels,
-    unsigned char* uitvoer_pixels,
+    ap_uint<32>* invoer_pixels,
+    ap_uint<32>* uitvoer_pixels,
     int breedte,
     int hoogte,
     int kanalen

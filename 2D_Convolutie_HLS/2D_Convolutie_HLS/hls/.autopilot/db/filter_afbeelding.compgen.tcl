@@ -1,55 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
-set name filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fadd} IMPL {fulldsp} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fmul} IMPL {maxdsp} LATENCY 3 ALLOW_PRAGMA 1
-}
-
-
-set name filter_afbeelding_uitofp_32ns_32_6_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {uitofp} IMPL {auto} LATENCY 5 ALLOW_PRAGMA 1
-}
-
-
-set name filter_afbeelding_mul_32ns_32ns_64_2_1
+set name filter_afbeelding_mul_31ns_31ns_62_2_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
 }
 
 
-set name filter_afbeelding_mul_63ns_32ns_64_5_1
+set name filter_afbeelding_mul_32ns_32ns_63_2_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name filter_afbeelding_mul_63ns_32s_64_5_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name filter_afbeelding_mul_63s_32s_64_5_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-set name filter_afbeelding_mul_64s_32ns_64_5_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 4 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler filter_afbeelding_sparsemux_7_2_32_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {onehotencoding_realdef}
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
 }
 
 
@@ -126,7 +85,7 @@ dict set axilite_register_dict vitis_control $port_vitis_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 19 \
+			id 18 \
 			corename filter_afbeelding_vitis_control_axilite \
 			name filter_afbeelding_vitis_control_s_axi \
 			ports {$port_vitis_control} \

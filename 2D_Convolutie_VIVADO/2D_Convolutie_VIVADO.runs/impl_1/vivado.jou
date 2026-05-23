@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat May 23 02:43:24 2026
-# Process ID         : 10756
+# Start of session at: Sat May 23 03:44:54 2026
+# Process ID         : 26640
 # Current directory  : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/impl_1
 # Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file           : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/impl_1/design_1_wrapper.vdi
@@ -19,6 +19,6 @@
 # Host memory        : 16605 MB
 # Swap memory        : 16642 MB
 # Total Virtual      : 33248 MB
-# Available Virtual  : 10036 MB
+# Available Virtual  : 9181 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

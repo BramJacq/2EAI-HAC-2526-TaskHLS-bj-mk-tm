@@ -1331,8 +1331,8 @@ void apatb_filter_afbeelding_hw(void* __xlx_apatb_param_invoer_pixels, void* __x
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port5 {
 #endif
-    .width = 8,
-    .asize = 1,
+    .width = 32,
+    .asize = 4,
     .hbm = false,
     .name = { "gmem_invoer" },
 #ifdef POST_CHECK
@@ -1349,15 +1349,15 @@ void apatb_filter_afbeelding_hw(void* __xlx_apatb_param_invoer_pixels, void* __x
   };
   port5.param = { __xlx_apatb_param_invoer_pixels };
   port5.mname = { "invoer_pixels" };
-  port5.nbytes = { 65536 };
+  port5.nbytes = { 262144 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port6 {
 #else
   static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port6 {
 #endif
-    .width = 8,
-    .asize = 1,
+    .width = 32,
+    .asize = 4,
     .hbm = false,
     .name = { "gmem_uitvoer" },
 #ifdef POST_CHECK
@@ -1383,7 +1383,7 @@ void apatb_filter_afbeelding_hw(void* __xlx_apatb_param_invoer_pixels, void* __x
   };
   port6.param = { __xlx_apatb_param_uitvoer_pixels };
   port6.mname = { "uitvoer_pixels" };
-  port6.nbytes = { 65536 };
+  port6.nbytes = { 262144 };
 
   try {
 #ifdef POST_CHECK
