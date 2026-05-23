@@ -42,6 +42,7 @@ De drie deeloperaties zijn:
 
 ## Resultaten
 
+
 ### 2D Convolutie
 
 De kernel `[-1, 0, 1 / -1, 0, 1 / -1, 0, 1]` detecteert verticale kleurovergangen. Negatieve convolutie-uitkomsten worden geclipped naar 0 (zwart), wat ertoe leidt dat het outputbeeld gedeeltelijk donker is. Enkel positieve overgangen van links naar rechts blijven zichtbaar.
@@ -69,6 +70,22 @@ Voorbeeld:
 ### Vergelijking van de outputs
 
 De drie outputs per afbeelding worden opgeslagen onder aparte bestandsnamen zodat ze eenvoudig vergeleken kunnen worden. Voor afbeeldingen met zachte kleurovergangen zijn Max en Min Pooling visueel dichter bij elkaar dan bij afbeeldingen met harde contrasten.
+
+---
+
+## Why FPGA Acceleration?
+
+Image processing algorithms perform the same mathematical operation on thousands of pixels. On a CPU these calculations are executed sequentially, while an FPGA can process multiple operations simultaneously.
+
+Advantages of FPGA acceleration:
+
+- Parallel execution of operations
+- Lower latency
+- Higher throughput
+- Reduced CPU workload
+- More efficient processing of large images
+
+Because convolution and pooling repeatedly process every pixel of an image, these algorithms are well suited for hardware acceleration using Vitis HLS.
 
 ---
 
@@ -128,6 +145,22 @@ Onderstaande optimalisaties worden toegepast om de throughput en latency te verb
 - Gebruik van AXI4-Stream interfaces voor efficiënte gegevensstroom tussen CPU en FPGA
 - Kernel opgeslagen in lokaal geheugen om herhaald DDR-geheugenverkeer te vermijden
 
+## Performance Analysis
+
+---
+
+The generated synthesis reports provide information about performance and resource utilization.
+
+Important metrics:
+
+- Latency
+- Initiation Interval (II)
+- BRAM utilization
+- DSP utilization
+- LUT utilization
+- Flip-Flop utilization
+
+
 ---
 
 ## Bestandsstructuur
@@ -147,12 +180,20 @@ project/
 
 ---
 
-## Toekomstig werk en problemen
 
-- Min Pooling is momenteel sequentieel geïmplementeerd; parallelisatie via CUDA Streams of HLS-dataflow is een logische uitbreiding.
-- De convolutie clipt negatieve waarden naar zwart — een verbetering is absolute waarden gebruiken zodat ook negatieve randen zichtbaar worden.
-- Testen met RGB-afbeeldingen (3 kanalen) in plaats van enkel grayscale.
-- Automatische beeldgrootte-detectie zodat de kernels schaalbaar zijn voor variabele afmetingen.
+## Future Improvements
+
+Possible future extensions include:
+
+- RGB image processing
+- Dynamic image dimensions
+- Real-time video processing
+- USB camera support
+- GStreamer integration
+- Additional image filters
+- Sobel edge detection
+- Laplacian filtering
+- Hardware accelerated object detection
 
 ---
 
