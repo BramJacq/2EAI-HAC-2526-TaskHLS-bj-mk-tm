@@ -1,0 +1,964 @@
+
+*** Running vivado
+    with args -log design_1_filter_afbeelding_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_filter_afbeelding_0_0.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat May 23 02:38:28 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_filter_afbeelding_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 524.824 ; gain = 217.844
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/2eai-soc-2526-weerstation-bj-mk-tm/CodesPart3V3/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.cache/ip 
+Command: synth_design -top design_1_filter_afbeelding_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27656
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1316.184 ; gain = 541.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_filter_afbeelding_0_0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/synth/design_1_filter_afbeelding_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_vitis_control_s_axi' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_vitis_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_vitis_control_s_axi.v:238]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_vitis_control_s_axi' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_vitis_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_load' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_srl' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_srl' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2053]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo__parameterized0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_srl__parameterized0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_srl__parameterized0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo__parameterized0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo__parameterized1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_mem' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_mem' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo__parameterized1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_load' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_read' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo__parameterized2' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_srl__parameterized1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_srl__parameterized1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_fifo__parameterized2' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_burst_converter' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_burst_sequential' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:1656]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_burst_sequential' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:1656]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_burst_converter' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi_read' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_invoer_m_axi' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_invoer_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_store' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized2' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized2' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized2' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized2' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized3' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized3' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized3' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized3' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized4' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized4' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized4' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized4' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized5' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized5' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized5' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized5' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_store' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_write' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:1112]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_burst_converter' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_burst_sequential' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_burst_sequential' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_burst_converter' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_throttle' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized6' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized6' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_srl__parameterized6' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_fifo__parameterized6' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized0' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_throttle' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized2' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized2' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi_write' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_gmem_uitvoer_m_axi' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/synth/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/synth/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/synth/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/synth/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/synth/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/synth/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/synth/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/synth/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/synth/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_mul_32ns_32ns_64_2_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_32ns_32ns_64_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_mul_32ns_32ns_64_2_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_32ns_32ns_64_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_mul_63ns_32ns_64_5_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_63ns_32ns_64_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_mul_63ns_32ns_64_5_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_63ns_32ns_64_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_mul_63ns_32s_64_5_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_63ns_32s_64_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_mul_63ns_32s_64_5_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_63ns_32s_64_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_mul_63s_32s_64_5_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_63s_32s_64_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_mul_63s_32s_64_5_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_63s_32s_64_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_mul_64s_32ns_64_5_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_64s_32ns_64_5_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_mul_64s_32ns_64_5_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_mul_64s_32ns_64_5_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_afbeelding_sparsemux_7_2_32_1_1' [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_sparsemux_7_2_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding_sparsemux_7_2_32_1_1' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_sparsemux_7_2_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'filter_afbeelding' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_filter_afbeelding_0_0' (0#1) [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/synth/design_1_filter_afbeelding_0_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_vitis_control_s_axi.v:321]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port reset in module filter_afbeelding_mul_64s_32ns_64_5_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module filter_afbeelding_mul_63s_32s_64_5_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module filter_afbeelding_mul_63ns_32s_64_5_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module filter_afbeelding_mul_63ns_32ns_64_5_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port reset in module filter_afbeelding_mul_32ns_32ns_64_2_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized17 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized17 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized17 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op__parameterized0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized33 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized33 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized33 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized87 is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[31] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[30] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[29] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[28] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[27] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[26] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[25] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[24] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[23] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[22] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[21] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[20] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[19] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[18] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[17] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[16] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[15] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[14] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[13] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[12] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[11] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[10] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[9] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[8] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[7] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[6] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[5] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[4] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[3] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[2] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[1] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port A[0] in module fix_to_flt_conv_exp is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized83 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized83 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized83 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized85 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized85 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized85 is either unconnected or has no load
+INFO: [Synth 8-7129] Port B[11] in module carry_chain__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized81 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized81 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized81 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized81 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized81 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized79 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized79 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized79 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized79 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized79 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized25 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized25 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized25 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized25 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized25 is either unconnected or has no load
+INFO: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+INFO: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+INFO: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized51 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized51 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized51 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized51 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized51 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized43 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized43 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized43 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized43 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized43 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized29 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized29 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized29 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1687.605 ; gain = 912.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1687.605 ; gain = 912.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 1687.605 ; gain = 912.441
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1687.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/constraints/filter_afbeelding_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ip/design_1_filter_afbeelding_0_0/constraints/filter_afbeelding_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/design_1_filter_afbeelding_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/design_1_filter_afbeelding_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2352.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FDE => FDRE: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.665 . Memory (MB): peak = 2352.574 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:26 ; elapsed = 00:01:38 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:26 ; elapsed = 00:01:38 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:38 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'filter_afbeelding_vitis_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'filter_afbeelding_vitis_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'filter_afbeelding_vitis_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'filter_afbeelding_vitis_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_invoer_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'filter_afbeelding_gmem_uitvoer_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:31 ; elapsed = 00:01:44 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U1/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U1/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U1/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U1/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U1/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fadd_32ns_32ns_32_5_full_dsp_1_U1/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U2/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U2/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U2/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/fmul_32ns_32ns_32_4_max_dsp_1_U2/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/uitofp_32ns_32_6_no_dsp_1_U3/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [c:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.gen/sources_1/bd/design_1/ipshared/418d/hdl/verilog/filter_afbeelding_gmem_uitvoer_m_axi.v:2731]
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module filter_afbeelding_vitis_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module filter_afbeelding_vitis_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[47]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[46]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[45]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[44]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[43]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[42]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[41]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[40]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[39]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[38]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[37]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[36]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[35]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[34]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[33]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[32]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[31]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[30]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[29]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[28]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[27]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[26]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[25]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[24]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[23]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[22]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[21]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[20]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[19]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[18]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[17]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[16]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[15]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[14]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[13]) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[47]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[46]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[45]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[44]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[43]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[42]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[41]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[40]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[39]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[38]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[37]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[36]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[35]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[34]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[33]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[32]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[31]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[30]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[29]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[28]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[27]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[26]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[25]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[24]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[23]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[22]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[21]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[20]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[19]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[18]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[17]__0) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[47]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[46]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[45]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[44]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[43]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[42]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[41]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[40]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[39]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[38]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[37]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[36]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[35]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[34]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[33]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[32]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[31]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[30]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[29]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[28]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[27]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[26]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[25]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[24]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[23]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[22]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[21]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[20]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[19]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[18]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32ns_64_5_1_U5/buff1_reg[17]__1) is unused and will be removed from module filter_afbeelding.
+INFO: [Synth 8-3332] Sequential element (mul_63ns_32s_64_5_1_U6/buff1_reg[47]) is unused and will be removed from module filter_afbeelding.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:16 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_10 : 0 0 : 3221 9384 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_10 : 0 1 : 2894 9384 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_10 : 0 2 : 3269 9384 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_21 : 0 0 : 3221 9368 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_21 : 0 1 : 2878 9368 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_21 : 0 2 : 3269 9368 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_b : 0 0 : 3203 9203 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_b : 0 1 : 2749 9203 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_b : 0 2 : 3251 9203 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_0 : 0 0 : 3203 9203 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_0 : 0 1 : 2749 9203 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_0 : 0 2 : 3251 9203 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_14 : 0 0 : 2875 9038 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_14 : 0 1 : 3221 9038 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_14 : 0 2 : 2942 9038 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_23 : 0 0 : 2859 9006 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_23 : 0 1 : 3221 9006 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_23 : 0 2 : 2926 9006 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_c : 0 0 : 2730 8730 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_c : 0 1 : 3203 8730 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_c : 0 2 : 2797 8730 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_4 : 0 0 : 2730 8730 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_4 : 0 1 : 3203 8730 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_4 : 0 2 : 2797 8730 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U4/tmp_product_1b : 0 0 : 3137 5981 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U4/tmp_product_1b : 0 1 : 2844 5981 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U4/tmp_product_1e : 0 0 : 2777 5484 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U4/tmp_product_1e : 0 1 : 2707 5484 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_18 : 0 0 : 2393 4757 : Used 1 time 0
+ Sort Area is  mul_63ns_32ns_64_5_1_U5/buff0_reg_18 : 0 1 : 2364 4757 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_26 : 0 0 : 2393 4741 : Used 1 time 0
+ Sort Area is  mul_64s_32ns_64_5_1_U8/buff0_reg_26 : 0 1 : 2348 4741 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_d : 0 0 : 2380 4683 : Used 1 time 0
+ Sort Area is  mul_63ns_32s_64_5_1_U6/buff0_reg_d : 0 1 : 2303 4683 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_8 : 0 0 : 2182 4293 : Used 1 time 0
+ Sort Area is  mul_63s_32s_64_5_1_U7/buff0_reg_8 : 0 1 : 2111 4293 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:13 ; elapsed = 00:02:28 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:34 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_invoer_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:30 ; elapsed = 00:02:45 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:39 ; elapsed = 00:02:55 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:39 ; elapsed = 00:02:55 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:41 ; elapsed = 00:02:57 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:41 ; elapsed = 00:02:57 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:02:59 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:43 ; elapsed = 00:02:59 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper                 | Dynamic                | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0 | C+A'*B'                | 24     | 16     | 35     | -      | 35     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1 | (A*B)'                 | 24     | 0      | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2 | PCIN>>17+(A*B)'        | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3 | PCIN+A:B+C             | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|filter_afbeelding               | (A'*B')'               | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | A'*B'                  | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|filter_afbeelding               | (PCIN>>17+A'*B')'      | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | ((A''*B'')')'          | 17     | 12     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A''*B'')'             | 17     | 15     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN+(A''*B'')'        | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN>>17+(A''*B'')')' | 17     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A''*B'')'             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN>>17+(A''*B'')'    | 17     | 15     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN+(A''*B'')')'     | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | ((A''*B')')'           | 17     | 12     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A'*B'')'              | 17     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN+(A'*B'')'         | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN>>17+(A*B'')')'   | 0      | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A'*B'')'              | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN>>17+(A*B'')'      | 0      | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN+(A'*B'')')'      | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | ((A''*B')')'           | 17     | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A'*B'')'              | 17     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN+(A'*B'')'         | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN>>17+(A*B'')')'   | 0      | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A'*B'')'              | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN>>17+(A*B'')'      | 0      | 18     | -      | -      | 0      | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN+(A'*B'')')'      | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|filter_afbeelding               | (A''*B'')'             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|filter_afbeelding               | PCIN>>17+(A''*B'')'    | 17     | 15     | -      | -      | 0      | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|filter_afbeelding               | (PCIN+(A''*B'')')'     | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++--------------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   576|
+|2     |DSP48E1  |    32|
+|18    |LUT1     |   264|
+|19    |LUT2     |  1754|
+|20    |LUT3     |   825|
+|21    |LUT4     |  1403|
+|22    |LUT5     |  1182|
+|23    |LUT6     |  2141|
+|24    |MUXCY    |   116|
+|25    |MUXF7    |    22|
+|26    |RAMB18E1 |     1|
+|27    |SRL16E   |   437|
+|28    |SRLC32E  |    18|
+|29    |XORCY    |    49|
+|30    |FDE      |     3|
+|31    |FDRE     |  8819|
+|32    |FDSE     |    31|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:02:59 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:02:18 . Memory (MB): peak = 2352.574 ; gain = 912.441
+Synthesis Optimization Complete : Time (s): cpu = 00:02:43 ; elapsed = 00:02:59 . Memory (MB): peak = 2352.574 ; gain = 1577.410
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.391 . Memory (MB): peak = 2352.574 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 799 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2352.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 34 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 31 instances
+  FDE => FDRE: 3 instances
+
+Synth Design complete | Checksum: b03f2773
+INFO: [Common 17-83] Releasing license: Synthesis
+379 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:55 ; elapsed = 00:03:15 . Memory (MB): peak = 2352.574 ; gain = 1805.887
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2352.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/design_1_filter_afbeelding_0_0_synth_1/design_1_filter_afbeelding_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_filter_afbeelding_0_0, cache-ID = b7a0619a3b582055
+INFO: [Coretcl 2-1174] Renamed 204 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2352.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_VIVADO/2D_Convolutie_VIVADO.runs/design_1_filter_afbeelding_0_0_synth_1/design_1_filter_afbeelding_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_filter_afbeelding_0_0_utilization_synth.rpt -pb design_1_filter_afbeelding_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 23 02:42:20 2026...
