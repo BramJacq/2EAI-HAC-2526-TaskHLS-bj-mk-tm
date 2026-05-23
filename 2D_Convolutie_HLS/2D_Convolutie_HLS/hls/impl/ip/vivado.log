@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat May 23 02:29:35 2026
+# Process ID         : 6332
+# Current directory  : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/vivado.log
+# Journal file       : C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip\vivado.jou
+# Running On         : ELITE
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 125U
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 14
+# Host memory        : 16605 MB
+# Swap memory        : 16642 MB
+# Total Virtual      : 33248 MB
+# Available Virtual  : 10622 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/hls_data.json outdir=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip srcdir=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/misc
+INFO: Copied 13 verilog file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/verilog
+INFO: Copied 13 vhdl file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/drivers
+Generating 3 subcores in C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/subcore_prj:
+impl/misc/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.tcl
+impl/misc/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl
+impl/misc/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.tcl
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/subcore_prj'
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 526.344 ; gain = 220.035
+INFO: Using COE_DIR=C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/verilog
+INFO: Generating filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip via file impl/misc/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: Done generating filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip via file impl/misc/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.tcl
+INFO: Generating filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip via file impl/misc/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip'...
+INFO: Done generating filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip via file impl/misc/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.tcl
+INFO: Generating filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip via file impl/misc/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: Done generating filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip via file impl/misc/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.tcl
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+INFO: Copied 3 subcore files: C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip/filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip.xci C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip/filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip.xci C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip/filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip.xci
+INFO: Import ports from HDL: C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/hdl/vhdl/filter_afbeelding.vhd (filter_afbeelding)
+INFO: Add axi4lite interface s_axi_vitis_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
+INFO: Add axi4full interface m_axi_gmem_invoer
+INFO: Add axi4full interface m_axi_gmem_uitvoer
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/component.xml
+INFO: Created IP archive C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/impl/ip/xilinx_com_hls_filter_afbeelding_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat May 23 02:29:57 2026...

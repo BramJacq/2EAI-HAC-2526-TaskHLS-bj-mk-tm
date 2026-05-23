@@ -49,56 +49,5 @@
         "source": "2D_Convolutie_HLS::package"
       }
     ]
-  },
-  {
-    "uri": "file:///warnings_without_file",
-    "owner": "Edges::synthesis",
-    "data": [
-      {
-        "message": "WARNING: [HLS 200-871] Estimated clock period (15.780 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "Edges::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1016] The critical path in module 'vitis_convolution' consists of the following:",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "Edges::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "Edges::synthesis"
-      }
-    ]
   }
 ]

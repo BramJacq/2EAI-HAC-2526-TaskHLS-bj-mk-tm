@@ -1,0 +1,329 @@
+
+
+================================================================
+== Synthesis Summary Report of 'filter_afbeelding'
+================================================================
++ General Information: 
+    * Date:           Sat May 23 02:29:00 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        2D_Convolutie_HLS
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
+* Performance & Resource Estimates: 
++---------------------------+--------+---------------+----------+---------+------+----------+---------+-----+-------+---------+----------+------------+-------------+-----+
+|          Modules          |  Issue |               | Iteration|         | Trip |          |    Latency    |       |         |          |            |             |     |
+|          & Loops          |  Type  | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)| (ns)| Slack |  BRAM   |    DSP   |     FF     |     LUT     | URAM|
++---------------------------+--------+---------------+----------+---------+------+----------+---------+-----+-------+---------+----------+------------+-------------+-----+
+|+ filter_afbeelding        |  Timing|              -|         -|        -|     -|        no|        -|    -|  -2.00|  2 (~0%)|  37 (16%)|  10201 (9%)|  11131 (20%)|    -|
+| o Lus_Y                   |       -|              -|         -|        -|     -|        no|        -|    -|   7.30|        -|         -|           -|            -|    -|
+|  o Lus_X                  |       -|              -|         -|        -|     -|        no|        -|    -|   7.30|        -|         -|           -|            -|    -|
+|   o Kanalen_Wegschrijven  |       -|              -|         5|        -|     -|        no|        -|    -|   7.30|        -|         -|           -|            -|    -|
++---------------------------+--------+---------------+----------+---------+------+----------+---------+-----+-------+---------+----------+------------+-------------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++--------------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface          | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|                    |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++--------------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem_invoer  | READ_ONLY  | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem_uitvoer | WRITE_ONLY | 8 -> 8     | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |                   |
++--------------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------------+------------+---------------+--------+----------+
+| Interface           | Data Width | Address Width | Offset | Register |
++---------------------+------------+---------------+--------+----------+
+| s_axi_vitis_control | 32         | 6             | 16     | 0        |
++---------------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------------+------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface           | Register         | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------------+------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_vitis_control | CTRL             | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_vitis_control | GIER             | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_vitis_control | IP_IER           | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_vitis_control | IP_ISR           | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_vitis_control | invoer_pixels_1  | 0x10   | 32    | W      | Data signal of invoer_pixels     |                                                                      |
+| s_axi_vitis_control | invoer_pixels_2  | 0x14   | 32    | W      | Data signal of invoer_pixels     |                                                                      |
+| s_axi_vitis_control | uitvoer_pixels_1 | 0x1c   | 32    | W      | Data signal of uitvoer_pixels    |                                                                      |
+| s_axi_vitis_control | uitvoer_pixels_2 | 0x20   | 32    | W      | Data signal of uitvoer_pixels    |                                                                      |
+| s_axi_vitis_control | breedte          | 0x28   | 32    | W      | Data signal of breedte           |                                                                      |
+| s_axi_vitis_control | hoogte           | 0x30   | 32    | W      | Data signal of hoogte            |                                                                      |
+| s_axi_vitis_control | kanalen          | 0x38   | 32    | W      | Data signal of kanalen           |                                                                      |
++---------------------+------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+----------------+
+| Argument       | Direction | Datatype       |
++----------------+-----------+----------------+
+| invoer_pixels  | in        | unsigned char* |
+| uitvoer_pixels | out       | unsigned char* |
+| breedte        | in        | int            |
+| hoogte         | in        | int            |
+| kanalen        | in        | int            |
++----------------+-----------+----------------+
+
+* SW-to-HW Mapping
++----------------+---------------------+-----------+----------+--------------------------------------------+
+| Argument       | HW Interface        | HW Type   | HW Usage | HW Info                                    |
++----------------+---------------------+-----------+----------+--------------------------------------------+
+| invoer_pixels  | m_axi_gmem_invoer   | interface |          | channel=0                                  |
+| invoer_pixels  | s_axi_vitis_control | register  | offset   | name=invoer_pixels_1 offset=0x10 range=32  |
+| invoer_pixels  | s_axi_vitis_control | register  | offset   | name=invoer_pixels_2 offset=0x14 range=32  |
+| uitvoer_pixels | m_axi_gmem_uitvoer  | interface |          | channel=0                                  |
+| uitvoer_pixels | s_axi_vitis_control | register  | offset   | name=uitvoer_pixels_1 offset=0x1c range=32 |
+| uitvoer_pixels | s_axi_vitis_control | register  | offset   | name=uitvoer_pixels_2 offset=0x20 range=32 |
+| breedte        | s_axi_vitis_control | register  |          | name=breedte offset=0x28 range=32          |
+| hoogte         | s_axi_vitis_control | register  |          | name=hoogte offset=0x30 range=32           |
+| kanalen        | s_axi_vitis_control | register  |          | name=kanalen offset=0x38 range=32          |
++----------------+---------------------+-----------+----------+--------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------------+-----------+----------+-------+----------------------+-------------------------+
+| HW Interface       | Direction | Length   | Width | Loop                 | Loop Location           |
++--------------------+-----------+----------+-------+----------------------+-------------------------+
+| m_axi_gmem_invoer  | read      | variable | 8     | Kanalen_Wegschrijven | convolutie_2d.cpp:59:35 |
+| m_axi_gmem_uitvoer | write     | variable | 8     | Lus_Y                | convolutie_2d.cpp:30:12 |
++--------------------+-----------+----------+-------+----------------------+-------------------------+
+
+* All M_AXI Variable Accesses
++--------------------+----------------+-------------------------+-----------+--------------+----------+----------------------+-------------------------+------------+------------------------------------------------------------------------------------------------------+
+| HW Interface       | Variable       | Access Location         | Direction | Burst Status | Length   | Loop                 | Loop Location           | Resolution | Problem                                                                                              |
++--------------------+----------------+-------------------------+-----------+--------------+----------+----------------------+-------------------------+------------+------------------------------------------------------------------------------------------------------+
+| m_axi_gmem_invoer  | invoer_pixels  | convolutie_2d.cpp:49:73 | read      | Fail         |          | Lus_X                | convolutie_2d.cpp:31:16 | 214-232    | Access load is in the conditional branch                                                             |
+| m_axi_gmem_invoer  | invoer_pixels  | convolutie_2d.cpp:49:73 | read      | Fail         |          | Lus_X                | convolutie_2d.cpp:31:16 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem_invoer  | invoer_pixels  | convolutie_2d.cpp:70:55 | read      | Fail         |          | Lus_X                | convolutie_2d.cpp:31:16 | 214-230    | Stride is incompatible                                                                               |
+| m_axi_gmem_invoer  | invoer_pixels  | convolutie_2d.cpp:70:55 | read      | Inferred     | variable | Kanalen_Wegschrijven | convolutie_2d.cpp:59:35 |            |                                                                                                      |
+| m_axi_gmem_uitvoer | uitvoer_pixels | convolutie_2d.cpp:30:12 | write     | Widen Fail   |          | Kanalen_Wegschrijven | convolutie_2d.cpp:59:35 | 214-353    | Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem_uitvoer | uitvoer_pixels | convolutie_2d.cpp:30:12 | write     | Inferred     | variable | Lus_Y                | convolutie_2d.cpp:30:12 |            |                                                                                                      |
++--------------------+----------------+-------------------------+-----------+--------------+----------+----------------------+-------------------------+------------+------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+--------------------+-----------+------------------------+---------+
+| Name                                | DSP | Pragma | Variable           | Op        | Impl                   | Latency |
++-------------------------------------+-----+--------+--------------------+-----------+------------------------+---------+
+| + filter_afbeelding                 | 37  |        |                    |           |                        |         |
+|   icmp_ln30_fu_1043_p2              |     |        | icmp_ln30          | setgt     | auto                   | 0       |
+|   icmp_ln31_fu_1098_p2              |     |        | icmp_ln31          | setgt     | auto                   | 0       |
+|   icmp_ln59_fu_1103_p2              |     |        | icmp_ln59          | setgt     | auto                   | 0       |
+|   icmp_ln48_fu_1059_p2              |     |        | icmp_ln48          | setgt     | auto                   | 0       |
+|   icmp_ln48_1_fu_1128_p2            |     |        | icmp_ln48_1        | setgt     | auto                   | 0       |
+|   add_ln30_fu_1145_p2               |     |        | add_ln30           | add       | fabric                 | 0       |
+|   icmp_ln30_1_fu_1155_p2            |     |        | icmp_ln30_1        | setgt     | auto                   | 0       |
+|   select_ln30_fu_1161_p3            |     |        | select_ln30        | select    | auto_sel               | 0       |
+|   mul_32ns_32ns_64_2_1_U4           | 4   |        | mul_ln30           | mul       | auto                   | 1       |
+|   mul_64s_32ns_64_5_1_U8            | 7   |        | mul_ln30_1         | mul       | auto                   | 4       |
+|   and_ln30_fu_1108_p2               |     |        | and_ln30           | and       | auto                   | 0       |
+|   select_ln30_1_fu_1114_p3          |     |        | select_ln30_1      | select    | auto_sel               | 0       |
+|   empty_fu_1121_p3                  |     |        | empty              | select    | auto_sel               | 0       |
+|   add_ln30_2_fu_1189_p2             |     |        | add_ln30_2         | add       | fabric                 | 0       |
+|   add_ln30_3_fu_1194_p2             |     |        | add_ln30_3         | add       | fabric                 | 0       |
+|   icmp_ln30_2_fu_1203_p2            |     |        | icmp_ln30_2        | setlt     | auto                   | 0       |
+|   add_ln30_1_fu_1208_p2             |     |        | add_ln30_1         | add       | fabric                 | 0       |
+|   add_ln40_fu_1218_p2               |     |        | add_ln40           | add       | fabric                 | 0       |
+|   sub_ln44_fu_1232_p2               |     |        | sub_ln44           | sub       | fabric                 | 0       |
+|   icmp_ln43_fu_1237_p2              |     |        | icmp_ln43          | setlt     | auto                   | 0       |
+|   xor_ln43_fu_1242_p2               |     |        | xor_ln43           | xor       | auto                   | 0       |
+|   add_ln44_fu_1248_p2               |     |        | add_ln44           | add       | fabric                 | 0       |
+|   icmp_ln43_1_fu_1257_p2            |     |        | icmp_ln43_1        | setlt     | auto                   | 0       |
+|   add_ln39_1_fu_1262_p2             |     |        | add_ln39_1         | add       | fabric                 | 0       |
+|   tmp_fu_1272_p2                    |     |        | tmp                | add       | fabric                 | 0       |
+|   mul_63ns_32ns_64_5_1_U5           | 7   |        | tmp1               | mul       | auto                   | 4       |
+|   add_ln39_fu_1277_p2               |     |        | add_ln39           | add       | fabric                 | 0       |
+|   or_ln43_fu_1291_p2                |     |        | or_ln43            | or        | auto                   | 0       |
+|   add_ln44_1_fu_1333_p2             |     |        | add_ln44_1         | add       | fabric                 | 0       |
+|   mul_63s_32s_64_5_1_U7             | 7   |        | mul_ln44           | mul       | auto                   | 4       |
+|   grp_fu_917_p2                     |     |        | add_ln49           | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde       | uitofp    | auto                   | 5       |
+|   xor_ln50_9_fu_1363_p2             |     |        | xor_ln50_9         | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som          | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_1     | uitofp    | auto                   | 5       |
+|   xor_ln50_fu_1400_p2               |     |        | xor_ln50           | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_1        | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_2     | uitofp    | auto                   | 5       |
+|   xor_ln50_10_fu_1437_p2            |     |        | xor_ln50_10        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_2        | fadd      | fulldsp                | 4       |
+|   add_ln44_2_fu_1453_p2             |     |        | add_ln44_2         | add       | fabric                 | 0       |
+|   mul_63s_32s_64_5_1_U7             | 7   |        | mul_ln44_1         | mul       | auto                   | 4       |
+|   grp_fu_917_p2                     |     |        | add_ln49_5         | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_3     | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_4            | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_3        | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_4     | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_164_1        | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_4        | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_5     | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_164_2        | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_5        | fadd      | fulldsp                | 4       |
+|   icmp_ln43_2_fu_1482_p2            |     |        | icmp_ln43_2        | setlt     | auto                   | 0       |
+|   xor_ln43_1_fu_1487_p2             |     |        | xor_ln43_1         | xor       | auto                   | 0       |
+|   or_ln43_1_fu_1493_p2              |     |        | or_ln43_1          | or        | auto                   | 0       |
+|   add_ln44_3_fu_1498_p2             |     |        | add_ln44_3         | add       | fabric                 | 0       |
+|   mul_63s_32s_64_5_1_U7             | 7   |        | mul_ln44_2         | mul       | auto                   | 4       |
+|   grp_fu_917_p2                     |     |        | add_ln49_10        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_6     | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_6        | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_7     | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_7        | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_8     | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_8        | fadd      | fulldsp                | 4       |
+|   add_ln44_4_fu_1522_p2             |     |        | add_ln44_4         | add       | fabric                 | 0       |
+|   mul_63ns_32s_64_5_1_U6            | 7   |        | mul_ln44_3         | mul       | auto                   | 4       |
+|   grp_fu_962_p2                     |     |        | add_ln49_15        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_9     | uitofp    | auto                   | 5       |
+|   xor_ln50_11_fu_1551_p2            |     |        | xor_ln50_11        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_9        | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_10    | uitofp    | auto                   | 5       |
+|   xor_ln50_12_fu_1588_p2            |     |        | xor_ln50_12        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_10       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_11    | uitofp    | auto                   | 5       |
+|   xor_ln50_13_fu_1625_p2            |     |        | xor_ln50_13        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_11       | fadd      | fulldsp                | 4       |
+|   add_ln44_5_fu_1641_p2             |     |        | add_ln44_5         | add       | fabric                 | 0       |
+|   mul_63ns_32s_64_5_1_U6            | 7   |        | mul_ln44_4         | mul       | auto                   | 4       |
+|   grp_fu_962_p2                     |     |        | add_ln49_20        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_12    | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_1_1          | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_12       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_13    | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_1_1_1        | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_13       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_14    | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_1_1_2        | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_14       | fadd      | fulldsp                | 4       |
+|   add_ln44_6_fu_1664_p2             |     |        | add_ln44_6         | add       | fabric                 | 0       |
+|   mul_63ns_32s_64_5_1_U6            | 7   |        | mul_ln44_5         | mul       | auto                   | 4       |
+|   grp_fu_962_p2                     |     |        | add_ln49_25        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_15    | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_15       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_16    | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_16       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_17    | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_17       | fadd      | fulldsp                | 4       |
+|   or_ln43_2_fu_1687_p2              |     |        | or_ln43_2          | or        | auto                   | 0       |
+|   add_ln44_7_fu_1691_p2             |     |        | add_ln44_7         | add       | fabric                 | 0       |
+|   mul_63s_32s_64_5_1_U7             | 7   |        | mul_ln44_6         | mul       | auto                   | 4       |
+|   grp_fu_917_p2                     |     |        | add_ln49_30        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_18    | uitofp    | auto                   | 5       |
+|   xor_ln50_14_fu_1720_p2            |     |        | xor_ln50_14        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_18       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_19    | uitofp    | auto                   | 5       |
+|   xor_ln50_15_fu_1757_p2            |     |        | xor_ln50_15        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_19       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_20    | uitofp    | auto                   | 5       |
+|   xor_ln50_16_fu_1794_p2            |     |        | xor_ln50_16        | xor       | auto                   | 0       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_20       | fadd      | fulldsp                | 4       |
+|   add_ln44_8_fu_1810_p2             |     |        | add_ln44_8         | add       | fabric                 | 0       |
+|   mul_63s_32s_64_5_1_U7             | 7   |        | mul_ln44_7         | mul       | auto                   | 4       |
+|   grp_fu_917_p2                     |     |        | add_ln49_35        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_21    | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_2_1          | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_21       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_22    | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_2_1_1        | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_22       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_23    | uitofp    | auto                   | 5       |
+|   fmul_32ns_32ns_32_4_max_dsp_1_U2  | 3   |        | mul35_2_1_2        | fmul      | maxdsp                 | 3       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_23       | fadd      | fulldsp                | 4       |
+|   or_ln43_3_fu_1833_p2              |     |        | or_ln43_3          | or        | auto                   | 0       |
+|   add_ln44_9_fu_1837_p2             |     |        | add_ln44_9         | add       | fabric                 | 0       |
+|   mul_63s_32s_64_5_1_U7             | 7   |        | mul_ln44_8         | mul       | auto                   | 4       |
+|   grp_fu_917_p2                     |     |        | add_ln49_40        | add       | fabric                 | 0       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_24    | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_24       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_25    | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_25       | fadd      | fulldsp                | 4       |
+|   uitofp_32ns_32_6_no_dsp_1_U3      |     |        | pixel_waarde_26    | uitofp    | auto                   | 5       |
+|   fadd_32ns_32ns_32_5_full_dsp_1_U1 | 2   |        | kleur_som_26       | fadd      | fulldsp                | 4       |
+|   empty_26_fu_1865_p3               |     |        | empty_26           | select    | auto_sel               | 0       |
+|   icmp_ln59_1_fu_1879_p2            |     |        | icmp_ln59_1        | setlt     | auto                   | 0       |
+|   add_ln59_fu_1884_p2               |     |        | add_ln59           | add       | fabric                 | 0       |
+|   icmp_ln60_fu_1894_p2              |     |        | icmp_ln60          | setlt     | auto                   | 0       |
+|   sparsemux_7_2_32_1_1_U9           |     |        | dc                 | sparsemux | onehotencoding_realdef | 0       |
+|   add_ln317_fu_1948_p2              |     |        | add_ln317          | add       | fabric                 | 0       |
+|   sub_ln18_fu_1962_p2               |     |        | sub_ln18           | sub       | fabric                 | 0       |
+|   select_ln18_fu_1972_p3            |     |        | select_ln18        | select    | auto_sel               | 0       |
+|   lshr_ln18_fu_2000_p2              |     |        | lshr_ln18          | lshr      | auto_pipe              | 0       |
+|   shl_ln18_fu_2006_p2               |     |        | shl_ln18           | shl       | auto_pipe              | 0       |
+|   val_fu_2032_p3                    |     |        | val                | select    | auto_sel               | 0       |
+|   result_2_fu_2039_p2               |     |        | result_2           | sub       | fabric                 | 0       |
+|   result_fu_2044_p3                 |     |        | result             | select    | auto_sel               | 0       |
+|   icmp_ln64_fu_2060_p2              |     |        | icmp_ln64          | setgt     | auto                   | 0       |
+|   afgeronde_waarde_1_fu_2066_p3     |     |        | afgeronde_waarde_1 | select    | auto_sel               | 0       |
+|   select_ln67_fu_2086_p3            |     |        | select_ln67        | select    | auto_sel               | 0       |
++-------------------------------------+-----+--------+--------------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                    | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                         |           |           |      |      |        |          |      |         | Banks            |
++-------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + filter_afbeelding     |           |           | 2    | 0    |        |          |      |         |                  |
+|   vitis_control_s_axi_U | interface | s_axilite |      |      |        |          |      |         |                  |
+|   gmem_invoer_m_axi_U   | interface | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem_uitvoer_m_axi_U  | interface | m_axi     |      |      |        |          |      |         |                  |
++-------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Inferred Pragmas
++-----------------+----------------------------------------+----------------------------------------------------------------+------------------------------------------+
+| Type            | Options                                | Location                                                       | Inferred From                            |
++-----------------+----------------------------------------+----------------------------------------------------------------+------------------------------------------+
+| ARRAY_PARTITION | dim=1 type=complete variable=kleur_som | variable kleur_som in filter_afbeelding (convolutie_2d.cpp:34) | syn.array_partition.complete_threshold=4 |
++-----------------+----------------------------------------+----------------------------------------------------------------+------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+------------------------------------------------------------------------+---------------------------------------------+
+| Type      | Options                                                                | Location                                    |
++-----------+------------------------------------------------------------------------+---------------------------------------------+
+| INTERFACE | s_axilite port=return bundle=vitis_control                             | in filter_afbeelding (convolutie_2d.cpp:11) |
+| INTERFACE | s_axilite port=breedte bundle=vitis_control                            | in filter_afbeelding (convolutie_2d.cpp:12) |
+| INTERFACE | s_axilite port=hoogte bundle=vitis_control                             | in filter_afbeelding (convolutie_2d.cpp:13) |
+| INTERFACE | s_axilite port=kanalen bundle=vitis_control                            | in filter_afbeelding (convolutie_2d.cpp:14) |
+| INTERFACE | m_axi port=invoer_pixels offset=slave bundle=gmem_invoer depth=65536   | in filter_afbeelding (convolutie_2d.cpp:17) |
+| INTERFACE | m_axi port=uitvoer_pixels offset=slave bundle=gmem_uitvoer depth=65536 | in filter_afbeelding (convolutie_2d.cpp:18) |
+| INTERFACE | s_axilite port=invoer_pixels bundle=vitis_control                      | in filter_afbeelding (convolutie_2d.cpp:19) |
+| INTERFACE | s_axilite port=uitvoer_pixels bundle=vitis_control                     | in filter_afbeelding (convolutie_2d.cpp:20) |
+| PIPELINE  | ii=2                                                                   | in filter_afbeelding (convolutie_2d.cpp:32) |
++-----------+------------------------------------------------------------------------+---------------------------------------------+
+
+

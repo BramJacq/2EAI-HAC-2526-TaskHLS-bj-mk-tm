@@ -1,0 +1,31 @@
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=name=filter_afbeelding_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=filter_afbeelding
+^
+convolutie_2d.cpp:11:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=vitis_control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=vitis_control
+^
+convolutie_2d.cpp:12:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=s_axilite port=breedte bundle=vitis_control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=breedte bundle=vitis_control
+^
+convolutie_2d.cpp:13:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=s_axilite port=hoogte bundle=vitis_control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=hoogte bundle=vitis_control
+^
+convolutie_2d.cpp:14:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=s_axilite port=kanalen bundle=vitis_control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=kanalen bundle=vitis_control
+^
+convolutie_2d.cpp:17:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=m_axi port=invoer_pixels offset=slave bundle=gmem_invoer depth=65536_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=invoer_pixels offset=slave bundle=gmem_invoer depth=65536
+^
+convolutie_2d.cpp:18:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=m_axi port=uitvoer_pixels offset=slave bundle=gmem_uitvoer depth=65536_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=uitvoer_pixels offset=slave bundle=gmem_uitvoer depth=65536
+^
+convolutie_2d.cpp:19:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=s_axilite port=invoer_pixels bundle=vitis_control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=invoer_pixels bundle=vitis_control
+^
+convolutie_2d.cpp:20:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=s_axilite port=uitvoer_pixels bundle=vitis_control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=uitvoer_pixels bundle=vitis_control
+^
+convolutie_2d.cpp:32:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=filter_afbeelding_XLX_SEP_ PragmaOptions=II=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS PIPELINE II=2
+^
+10 warnings generated.

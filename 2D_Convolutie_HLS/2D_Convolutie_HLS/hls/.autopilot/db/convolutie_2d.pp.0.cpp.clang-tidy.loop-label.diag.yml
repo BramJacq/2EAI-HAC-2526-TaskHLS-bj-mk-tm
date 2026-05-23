@@ -1,0 +1,52 @@
+---
+MainSourceFile:  'C:/2EAI-HAC-2526-TaskHLS-bj-mk-tm/2D_Convolutie_HLS/2D_Convolutie_HLS/hls/.autopilot/db/convolutie_2d.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          280136
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          280607
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          281079
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS\2D_Convolutie_HLS\hls\.autopilot\db\convolutie_2d.pp.0.cpp'
+          Offset:          626482
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS'
+...

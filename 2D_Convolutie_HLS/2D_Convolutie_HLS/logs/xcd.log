@@ -1,0 +1,75 @@
+05/23/26 02:28:02: Running xcd server. This server was built by gradle.
+05/23/26 02:28:02: Server was asked to start on port: '54020'
+05/23/26 02:28:02: Server is using token UUID: '621868d6-7908-464a-bc0d-9080911b9d99'
+05/23/26 02:28:02: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+05/23/26 02:28:02: Attempting to start server on port '54020'
+05/23/26 02:28:02: Running Dispatch Server
+05/23/26 02:28:02: Version 2.2.0
+05/23/26 02:28:04: Dispatch Server: Accepted socket connection from client
+05/23/26 02:28:04: Starting Socket connection
+05/23/26 02:28:04: EXCHANGE_TOKEN received, server token: 621868d6-7908-464a-bc0d-9080911b9d99, passed token: 621868d6-7908-464a-bc0d-9080911b9d99
+05/23/26 02:28:04: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+05/23/26 02:28:04: SESSION_MGR: creating session with session uuid: 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:04: KERNEL_SVC: creating session with uuid: 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:04: GUIDANCE_SMGR: creating guidance session with uuid: 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:04: SYSTEM_DIAGRAM: creating session with uuid: 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:11: Dispatch Server: Accepted socket connection from client
+05/23/26 02:28:11: Starting Socket connection
+05/23/26 02:28:17: SESSION_MGR: closing session for UUID 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:17: KERNEL_SVC: closing session for UUID 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:17: GUIDANCE_SMGR: closing session for UUID 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:17: SYSTEM_DIAGRAM: closing session for UUID 'd9b3481a-ea9e-4ade-9e64-0d9917c17b09' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:28:17: STOP_SERVER received, server token: 621868d6-7908-464a-bc0d-9080911b9d99, passed token: 621868d6-7908-464a-bc0d-9080911b9d99
+05/23/26 02:28:17: Socket received request to stop server.
+05/23/26 02:28:17: Dispatch Server: do_await_stop
+05/23/26 02:28:17: SERVER: destructor for server bound to port 54020
+05/23/26 02:28:29: Running xcd server. This server was built by gradle.
+05/23/26 02:28:29: Server was asked to start on port: '54027'
+05/23/26 02:28:29: Server is using token UUID: '514b6ab5-39c6-4386-8496-6cf672ea2e00'
+05/23/26 02:28:29: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+05/23/26 02:28:29: Attempting to start server on port '54027'
+05/23/26 02:28:29: Running Dispatch Server
+05/23/26 02:28:29: Version 2.2.0
+05/23/26 02:28:31: Dispatch Server: Accepted socket connection from client
+05/23/26 02:28:31: Starting Socket connection
+05/23/26 02:28:31: EXCHANGE_TOKEN received, server token: 514b6ab5-39c6-4386-8496-6cf672ea2e00, passed token: 514b6ab5-39c6-4386-8496-6cf672ea2e00
+05/23/26 02:28:31: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+05/23/26 02:28:31: SESSION_MGR: creating session with session uuid: '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' and name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:28:31: KERNEL_SVC: creating session with uuid: '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' and name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:28:31: GUIDANCE_SMGR: creating guidance session with uuid: '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' and name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:28:31: SYSTEM_DIAGRAM: creating session with uuid: '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' and name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:28:35: Dispatch Server: Accepted socket connection from client
+05/23/26 02:28:35: Starting Socket connection
+05/23/26 02:29:02: SESSION_MGR: closing session for UUID '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' with name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:29:02: KERNEL_SVC: closing session for UUID '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' with name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:29:02: GUIDANCE_SMGR: closing session for UUID '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' with name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:29:02: SYSTEM_DIAGRAM: closing session for UUID '6bf09c2d-5f47-420d-8ea6-cc2107fc6c0c' with name 'v++_compile_2D_Convolutie_HLS'
+05/23/26 02:29:02: STOP_SERVER received, server token: 514b6ab5-39c6-4386-8496-6cf672ea2e00, passed token: 514b6ab5-39c6-4386-8496-6cf672ea2e00
+05/23/26 02:29:02: Socket received request to stop server.
+05/23/26 02:29:02: Dispatch Server: do_await_stop
+05/23/26 02:29:02: SERVER: destructor for server bound to port 54027
+05/23/26 02:29:26: Running xcd server. This server was built by gradle.
+05/23/26 02:29:26: Server was asked to start on port: '56432'
+05/23/26 02:29:26: Server is using token UUID: '1489fcc0-5c42-4dbd-9277-28704861ee40'
+05/23/26 02:29:26: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+05/23/26 02:29:26: Attempting to start server on port '56432'
+05/23/26 02:29:26: Running Dispatch Server
+05/23/26 02:29:26: Version 2.2.0
+05/23/26 02:29:28: Dispatch Server: Accepted socket connection from client
+05/23/26 02:29:28: Starting Socket connection
+05/23/26 02:29:28: EXCHANGE_TOKEN received, server token: 1489fcc0-5c42-4dbd-9277-28704861ee40, passed token: 1489fcc0-5c42-4dbd-9277-28704861ee40
+05/23/26 02:29:28: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+05/23/26 02:29:29: SESSION_MGR: creating session with session uuid: '413df103-744b-44b8-9fc0-0d721bd76a32' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:29: KERNEL_SVC: creating session with uuid: '413df103-744b-44b8-9fc0-0d721bd76a32' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:29: GUIDANCE_SMGR: creating guidance session with uuid: '413df103-744b-44b8-9fc0-0d721bd76a32' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:29: SYSTEM_DIAGRAM: creating session with uuid: '413df103-744b-44b8-9fc0-0d721bd76a32' and name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:32: Dispatch Server: Accepted socket connection from client
+05/23/26 02:29:32: Starting Socket connection
+05/23/26 02:29:57: SESSION_MGR: closing session for UUID '413df103-744b-44b8-9fc0-0d721bd76a32' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:57: KERNEL_SVC: closing session for UUID '413df103-744b-44b8-9fc0-0d721bd76a32' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:57: GUIDANCE_SMGR: closing session for UUID '413df103-744b-44b8-9fc0-0d721bd76a32' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:57: SYSTEM_DIAGRAM: closing session for UUID '413df103-744b-44b8-9fc0-0d721bd76a32' with name 'vitis-run_compile_2D_Convolutie_HLS'
+05/23/26 02:29:57: STOP_SERVER received, server token: 1489fcc0-5c42-4dbd-9277-28704861ee40, passed token: 1489fcc0-5c42-4dbd-9277-28704861ee40
+05/23/26 02:29:57: Socket received request to stop server.
+05/23/26 02:29:57: Dispatch Server: do_await_stop
+05/23/26 02:29:57: SERVER: destructor for server bound to port 56432
