@@ -2,7 +2,6 @@
 
 # Vitis HLS Beeldverwerking op de Pynq-Z2
 
-![Overzicht](./resources/media/Overview.svg)
 
 ## Over het project
 
