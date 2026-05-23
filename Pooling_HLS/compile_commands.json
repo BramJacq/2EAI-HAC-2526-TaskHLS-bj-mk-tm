@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Pooling_HLS",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=apply_hardware_pooling",
+      "-c",
+      "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Pooling_HLS\\pooling.cpp"
+    ],
+    "file": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Pooling_HLS\\pooling.cpp"
+  },
+  {
+    "directory": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Pooling_HLS",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Pooling_HLS\\pooling_tb.cpp"
+    ],
+    "file": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm\\Pooling_HLS\\pooling_tb.cpp"
+  }
+]

@@ -1,284 +1,8 @@
 [
   {
     "uri": "file:///warnings_without_file",
-    "owner": "2D_Convolutie_HLS::package",
-    "data": [
-      {
-        "message": "WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::package"
-      },
-      {
-        "message": "WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::package"
-      },
-      {
-        "message": "WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::package"
-      }
-    ]
-  },
-  {
-    "uri": "file:///warnings_without_file",
     "owner": "2D_Convolutie_HLS::synthesis",
     "data": [
-      {
-        "message": "WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for loop 'Lus_X': contains subloop(s) that are not unrolled or flattened.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWVALID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWADDR' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWLEN' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWSIZE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWBURST' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWLOCK' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWCACHE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWPROT' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWQOS' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWREGION' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_AWUSER' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Lus_Y_Lus_X/m_axi_gmem_uitvoer_0_BREADY' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "2D_Convolutie_HLS::synthesis"
-      },
       {
         "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'filter_afbeelding_Pipeline_Loop_Rows_Loop_Cols/m_axi_gmem_invoer_0_ARVALID' to 0.",
         "range": {
@@ -458,15 +182,684 @@
         },
         "severity": 2,
         "source": "2D_Convolutie_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "2D_Convolutie_HLS::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///warnings_without_file",
+    "owner": "Edges::co-simulation",
+    "data": [
+      {
+        "message": "WARNING: [XSIM 43-4099] \"/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv\" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Edges::co-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///warnings_without_file",
+    "owner": "Edges::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Edges::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///warnings_without_file",
+    "owner": "Pooling_HLS::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 511 for loop 'Read_Rij1' in function 'apply_hardware_pooling'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARVALID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARADDR' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARLEN' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARSIZE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARBURST' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARLOCK' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARCACHE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARPROT' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARQOS' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARREGION' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij0/m_axi_gmem_in_0_ARUSER' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARVALID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARADDR' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARLEN' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARSIZE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARBURST' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARLOCK' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARCACHE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARPROT' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARQOS' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARREGION' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Read_Rij1/m_axi_gmem_in_0_ARUSER' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWVALID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWADDR' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWLEN' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWSIZE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWBURST' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWLOCK' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWCACHE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWPROT' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWQOS' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWREGION' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_AWUSER' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'apply_hardware_pooling_Pipeline_Pool_X/m_axi_gmem_out_0_BREADY' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Pooling_HLS::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///c%3A/2EAI-HAC-2526-TaskHLS-bj-mk-tm/Edges/vitis_convolution.cpp",
+    "owner": "Edges::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 214-385] Cannot apply INTERFACE pragma on a global variable. In function 'vitis_convolution(unsigned char volatile*, char volatile*)' (vitis_convolution.cpp:13:1)",
+        "range": {
+          "start": {
+            "line": 12,
+            "character": 0
+          },
+          "end": {
+            "line": 12,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Edges::synthesis"
       }
     ]
   },
   {
     "uri": "file:///errors_without_file",
-    "owner": "2D_Convolutie_HLS::synthesis",
+    "owner": "Pooling_HLS::synthesis",
     "data": [
       {
-        "message": "Top function is not specified for component '2D_Convolutie_HLS'.",
+        "message": "Top function is not specified for component 'Pooling_HLS'.",
         "range": {
           "start": {
             "line": 0,
@@ -478,7 +871,7 @@
           }
         },
         "severity": 1,
-        "source": "2D_Convolutie_HLS::synthesis"
+        "source": "Pooling_HLS::synthesis"
       }
     ]
   }

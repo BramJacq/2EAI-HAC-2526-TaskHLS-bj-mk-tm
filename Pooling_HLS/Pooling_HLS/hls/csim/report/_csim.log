@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../pooling_tb.cpp in debug mode
+   Compiling ../../../../pooling.cpp in debug mode
+   Generating csim.exe
+--- Start HLS Pooling Testbench ---
+Top-Left Max: 20 (Verwacht: 20)
+Top-Right Max: 30 (Verwacht: 30)
+Bottom-Left Max: 112 (Verwacht: 112)
+Bottom-Right Max: 37 (Verwacht: 37)
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

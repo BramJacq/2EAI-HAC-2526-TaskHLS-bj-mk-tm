@@ -1,0 +1,24 @@
+[
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "apply_hardware_pooling",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "apply_hardware_pooling"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

@@ -1,0 +1,35 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& ap_int_base<32, false>::operator|=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& operator|=<32, false>(ap_int_base<32, false>&, unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDB33_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, true>::logic operator&<32, false, 32, true>(ap_int_base<32, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint(unsigned char)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="pooling.cpp" line="29" pragmaType="pipeline" parentfunction="apply_hardware_pooling" off="0" ii="1" rewind="0" style=""/>
+<pragma file="pooling.cpp" line="33" pragmaType="pipeline" parentfunction="apply_hardware_pooling" off="0" ii="1" rewind="0" style=""/>
+<pragma file="pooling.cpp" line="41" pragmaType="pipeline" parentfunction="apply_hardware_pooling" off="0" ii="1" rewind="0" style=""/>
+<pragma file="pooling.cpp" line="53" pragmaType="unroll" parentfunction="apply_hardware_pooling" factor="-1" skip_exit_check="0"/>
+<pragma file="pooling.cpp" line="11" pragmaType="interface" parentfunction="apply_hardware_pooling" mode="m_axi" port="invoer_pixels" bundle="gmem_in" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="pooling.cpp" line="12" pragmaType="interface" parentfunction="apply_hardware_pooling" mode="m_axi" port="uitvoer_pixels" bundle="gmem_out" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="pooling.cpp" line="13" pragmaType="interface" parentfunction="apply_hardware_pooling" mode="s_axilite" port="breedte" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="pooling.cpp" line="14" pragmaType="interface" parentfunction="apply_hardware_pooling" mode="s_axilite" port="hoogte" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="pooling.cpp" line="15" pragmaType="interface" parentfunction="apply_hardware_pooling" mode="s_axilite" port="mode" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="pooling.cpp" line="16" pragmaType="interface" parentfunction="apply_hardware_pooling" mode="s_axilite" port="" bundle="CONTROL_BUS" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<($_0)32, true>::logic operator&<32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::arg1 operator<<<32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned char)" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -1,0 +1,433 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: pooling.cpp, Line: 52, Column: 30 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_1
+  - String:          ''' ('
+  - LoopLoc:         'pooling.cpp:52:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          apply_hardware_pooling
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_apply_hardware_pooling_ir
+Args:            
+  - Callee:          'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_apply_hardware_pooling_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       invoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Read_Rij0
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:28:20'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: pooling.cpp, Line: 30, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.8
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep48seq
+  - ArrayName:       invoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Read_Rij1
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:32:20'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: pooling.cpp, Line: 34, Column: 29 }
+  - OrigDirection:   read
+  - OrigID:          for.inc19.load.8
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep49seq
+  - ArrayName:       uitvoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_out
+  - String:          ' '
+  - LoopName:        Pool_X
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:40:17'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: pooling.cpp, Line: 86, Column: 63 }
+  - OrigDirection:   write
+  - OrigID:          for.inc109.2.store.18
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       invoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Loop_Y
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:25:13'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          scevgep48seq
+  - ArrayName:       invoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Loop_Y
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:25:13'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+  - OrigDirection:   write
+  - OrigID:          scevgep49seq
+  - ArrayName:       uitvoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_out
+  - String:          ' '
+  - LoopName:        Loop_Y
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:25:13'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+  - OrigDirection:   write
+  - OrigID:          scevgep49seq
+  - ArrayName:       uitvoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_out
+  - String:          ' '
+  - LoopName:        Pool_X
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:40:17'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          scevgep48seq
+  - ArrayName:       invoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Read_Rij1
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:32:20'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       invoer_pixels
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Read_Rij0
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:28:20'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Read_Rij0
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:28:20'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: pooling.cpp, Line: 28, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        Read_Rij0
+  - String:          '''('
+  - LoopLoc:         'pooling.cpp:28:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem_in
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_in
+  - String:          ' '
+  - LoopName:        Read_Rij1
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:32:20'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: pooling.cpp, Line: 32, Column: 20 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        Read_Rij1
+  - String:          '''('
+  - LoopLoc:         'pooling.cpp:32:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem_in
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem_out
+  - String:          ' '
+  - LoopName:        Pool_X
+  - String:          ' '
+  - LoopLoc:         'pooling.cpp:40:17'
+  - String:          ' '
+  - Function:        'apply_hardware_pooling(ap_uint<32>*, ap_uint<32>*, int, int, int)'
+    DebugLoc:        { File: pooling.cpp, Line: 9, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: pooling.cpp, Line: 40, Column: 17 }
+Function:        _Z22apply_hardware_poolingP7ap_uintILi32EES1_iii
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        Pool_X
+  - String:          '''('
+  - LoopLoc:         'pooling.cpp:40:17'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem_out
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

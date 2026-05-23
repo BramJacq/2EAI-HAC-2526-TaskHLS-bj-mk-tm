@@ -251,3 +251,17 @@
 03:51:14 INFO  : Terminating Vitis C++ Server
 03:51:14 INFO  : Vitis C++ Server terminated
 03:51:14 INFO  : Vitis C++ Server terminated
+04:01:28 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+04:01:28 INFO  : [INFO]: Initializing repositories
+04:01:28 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+04:01:28 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17431461045605064419
+04:01:28 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram16449930465307615023 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17431461045605064419\.repo.yaml
+04:01:29 INFO  : Embedded Template List generated successfully
+04:01:29 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram6216406302425638190 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+04:01:30 INFO  : Embedded Template List generated successfully
+04:03:18 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\Pooling_HLS
+05:21:53 INFO  : connection terminated
+05:21:53 INFO  : connection terminated
+05:21:53 INFO  : scheduling shutdown timer for 2 seconds ...
+05:21:55 INFO  : Terminating Vitis C++ Server
+05:21:55 INFO  : Vitis C++ Server terminated

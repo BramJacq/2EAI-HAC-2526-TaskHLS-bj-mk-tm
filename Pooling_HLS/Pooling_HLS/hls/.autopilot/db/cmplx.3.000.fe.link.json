@@ -1,0 +1,22 @@
+{
+  "0": {
+    "basicblocks": 55,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 8,
+    "file": "pooling.cpp",
+    "fileloc": 3,
+    "instructions": 282,
+    "loads": {
+      "L": 5,
+      "T": 2
+    },
+    "memory_accesses": 19,
+    "name": "apply_hardware_pooling",
+    "stores": {
+      "L": 6,
+      "T": 1
+    },
+    "total_instructions": 943
+  }
+}
