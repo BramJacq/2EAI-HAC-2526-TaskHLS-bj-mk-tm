@@ -1,0 +1,104 @@
+[
+  {
+    "uri": "file:///warnings_without_file",
+    "owner": "2D_Convolutie_HLS::package",
+    "data": [
+      {
+        "message": "WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "2D_Convolutie_HLS::package"
+      },
+      {
+        "message": "WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "2D_Convolutie_HLS::package"
+      },
+      {
+        "message": "WARNING: [IP_Flow 19-4832] The IP name 'filter_afbeelding_uitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "2D_Convolutie_HLS::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///warnings_without_file",
+    "owner": "Edges::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-871] Estimated clock period (15.780 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Edges::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1016] The critical path in module 'vitis_convolution' consists of the following:",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Edges::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "Edges::synthesis"
+      }
+    ]
+  }
+]

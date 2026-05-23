@@ -1,0 +1,10 @@
+{
+  "workspaceRoot": "C:\\2EAI-HAC-2526-TaskHLS-bj-mk-tm",
+  "mapping": {
+    "Edges\\vitis_convolution.cpp": "Edges",
+    "Edges\\vitis_convolution_tb.cpp": "Edges",
+    "Edges\\vitis_convolution.h": "Edges",
+    "2D_Convolutie_HLS\\convolutie_2d.cpp": "2D_Convolutie_HLS",
+    "2D_Convolutie_HLS\\convolutie_tb.cpp": "2D_Convolutie_HLS"
+  }
+}

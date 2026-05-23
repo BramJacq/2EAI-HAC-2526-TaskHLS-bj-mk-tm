@@ -1,0 +1,244 @@
+02:45:11 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+02:45:11 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie
+02:45:13 INFO  : [INFO]: Initializing repositories
+02:45:13 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+02:45:13 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17469621358400879047
+02:45:13 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram4179154221219986537 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17469621358400879047\.repo.yaml
+02:45:14 INFO  : Embedded Template List generated successfully
+02:45:14 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw
+02:45:16 INFO  : [INFO]: Initializing repositories
+02:45:16 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+02:45:16 INFO  : Successfully created repository data at C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm/_ide\.wsdata
+02:45:16 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram230523800639278272 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+02:45:17 INFO  : Embedded Template List generated successfully
+03:08:03 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:08:03 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram16435578997714218055 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:08:04 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:08:04 INFO  : Embedded Template List generated successfully
+03:08:04 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram6760512856249548941 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:08:04 INFO  : Embedded Template List generated successfully
+03:09:28 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram8396460080216660815 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:09:28 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:09:29 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:09:29 INFO  : Embedded Template List generated successfully
+03:09:29 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5456663685761446277 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:09:30 INFO  : Embedded Template List generated successfully
+03:11:31 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram12598755964469538189 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:11:31 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:11:31 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:11:31 INFO  : Embedded Template List generated successfully
+03:11:31 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram2591148871332427582 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:11:32 INFO  : Embedded Template List generated successfully
+10:54:09 INFO  : connection terminated
+10:54:09 INFO  : connection terminated
+10:54:09 INFO  : scheduling shutdown timer for 2 seconds ...
+10:54:09 INFO  : scheduling shutdown timer for 2 seconds ...
+10:54:11 INFO  : Terminating Vitis C++ Server
+10:54:11 INFO  : Terminating Vitis C++ Server
+10:54:11 INFO  : Vitis C++ Server terminated
+10:54:11 INFO  : Vitis C++ Server terminated
+13:45:30 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:45:38 INFO  : [INFO]: Initializing repositories
+13:45:38 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+13:45:38 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5855733226986879534
+13:45:38 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1923466244877465191 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5855733226986879534\.repo.yaml
+13:45:38 INFO  : Embedded Template List generated successfully
+13:45:38 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram2704081670230155863 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:45:39 INFO  : Embedded Template List generated successfully
+14:15:36 INFO  : connection terminated
+16:21:28 INFO  : connection terminated
+16:21:28 INFO  : scheduling shutdown timer for 2 seconds ...
+16:21:30 INFO  : Terminating Vitis C++ Server
+16:21:31 INFO  : Vitis C++ Server terminated
+16:29:19 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+16:29:19 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\Edges
+16:29:21 INFO  : [INFO]: Initializing repositories
+16:29:21 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+16:29:21 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5245399573668399273
+16:29:21 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram14509062344875325676 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5245399573668399273\.repo.yaml
+16:29:22 INFO  : Embedded Template List generated successfully
+16:29:22 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram15708296543538841372 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+16:29:23 INFO  : Embedded Template List generated successfully
+17:08:34 INFO  : connection terminated
+17:08:34 INFO  : connection terminated
+17:08:34 INFO  : scheduling shutdown timer for 2 seconds ...
+17:08:36 INFO  : Terminating Vitis C++ Server
+17:08:37 INFO  : Vitis C++ Server terminated
+14:08:25 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+14:08:26 INFO  : [INFO]: Initializing repositories
+14:08:26 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+14:08:26 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram14814972832377695886
+14:08:26 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram11505693150572905049 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram14814972832377695886\.repo.yaml
+14:08:26 INFO  : Embedded Template List generated successfully
+14:08:26 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1738540285739751373 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+14:08:27 INFO  : Embedded Template List generated successfully
+14:39:26 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+14:39:26 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram10359738606674122853 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+14:39:27 INFO  : Embedded Template List generated successfully
+14:39:28 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+14:39:28 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram13497521669998341044 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+14:39:29 INFO  : Embedded Template List generated successfully
+14:47:04 INFO  : connection terminated
+14:47:04 INFO  : connection terminated
+14:47:04 INFO  : scheduling shutdown timer for 2 seconds ...
+14:47:06 INFO  : Terminating Vitis C++ Server
+14:47:06 INFO  : Vitis C++ Server terminated
+00:34:16 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:34:17 INFO  : [INFO]: Initializing repositories
+00:34:17 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+00:34:17 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram8037703710660068022
+00:34:17 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram9157297110890151740 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram8037703710660068022\.repo.yaml
+00:34:17 INFO  : Embedded Template List generated successfully
+00:34:18 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1854045579030502458 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:34:19 INFO  : Embedded Template List generated successfully
+02:22:59 INFO  : connection terminated
+02:22:59 INFO  : connection terminated
+02:22:59 INFO  : scheduling shutdown timer for 2 seconds ...
+02:23:02 INFO  : Terminating Vitis C++ Server
+02:23:02 INFO  : Vitis C++ Server terminated
+02:24:31 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+02:24:35 INFO  : [INFO]: Initializing repositories
+02:24:35 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+02:24:35 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5762376472528463153
+02:24:35 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram9563164974356325113 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5762376472528463153\.repo.yaml
+02:24:36 INFO  : Embedded Template List generated successfully
+02:24:37 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram11016715574662752585 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+02:24:38 INFO  : Embedded Template List generated successfully
+03:30:30 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:30:30 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram14230408239708126997 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:30:33 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+03:30:33 INFO  : Embedded Template List generated successfully
+03:30:34 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram3439694245923256554 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+03:30:34 INFO  : Embedded Template List generated successfully
+10:14:14 INFO  : connection terminated
+10:14:14 INFO  : connection terminated
+10:14:14 INFO  : scheduling shutdown timer for 2 seconds ...
+10:14:14 INFO  : scheduling shutdown timer for 2 seconds ...
+10:14:16 INFO  : Terminating Vitis C++ Server
+10:14:16 INFO  : Terminating Vitis C++ Server
+10:14:16 INFO  : Vitis C++ Server terminated
+10:14:16 INFO  : Vitis C++ Server terminated
+10:14:50 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+10:14:51 INFO  : [INFO]: Initializing repositories
+10:14:51 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+10:14:51 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1567250980655942994
+10:14:51 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram10869173936977070618 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1567250980655942994\.repo.yaml
+10:14:52 INFO  : Embedded Template List generated successfully
+10:14:52 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram14977125496145305872 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+10:14:52 INFO  : Embedded Template List generated successfully
+13:20:02 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:20:02 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram15698954203504824555 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:20:04 INFO  : Embedded Template List generated successfully
+13:20:04 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:20:04 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1486151197333196476 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:20:05 INFO  : Embedded Template List generated successfully
+13:22:41 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:22:42 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:22:42 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram7051027410946702126 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:22:43 INFO  : Embedded Template List generated successfully
+13:22:43 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram12190558900966762725 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:22:44 INFO  : Embedded Template List generated successfully
+13:29:18 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram6013973749777479881 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:29:18 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:29:19 INFO  : Embedded Template List generated successfully
+13:29:20 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:29:20 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram13904608952006540280 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:29:21 INFO  : Embedded Template List generated successfully
+13:35:47 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1504394692274250785 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:35:47 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:35:47 INFO  : Embedded Template List generated successfully
+13:35:48 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:35:48 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5839508708906655370 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:35:49 INFO  : Embedded Template List generated successfully
+13:39:31 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram10921466227296447370 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:39:31 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:39:32 INFO  : Embedded Template List generated successfully
+13:39:33 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+13:39:33 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram247051009686273593 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+13:39:33 INFO  : Embedded Template List generated successfully
+00:23:36 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:23:37 INFO  : [INFO]: Initializing repositories
+00:23:37 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+00:23:37 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram4154316800720420141
+00:23:37 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram5314242199170031443 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram4154316800720420141\.repo.yaml
+00:23:37 INFO  : Embedded Template List generated successfully
+00:23:38 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17569288689063040888 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:23:38 INFO  : Embedded Template List generated successfully
+00:42:43 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:42:46 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:42:46 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram4190793979003787646 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:42:47 INFO  : Embedded Template List generated successfully
+00:42:47 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram4018443987001257768 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:42:48 INFO  : Embedded Template List generated successfully
+00:49:16 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram2260366077740793341 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:49:16 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:49:17 INFO  : Embedded Template List generated successfully
+00:49:18 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:49:18 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram7618131424072451245 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:49:19 INFO  : Embedded Template List generated successfully
+00:52:33 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram1673262067563129601 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:52:33 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:52:34 INFO  : Embedded Template List generated successfully
+00:52:35 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+00:52:35 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17215779321558182538 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+00:52:35 INFO  : Embedded Template List generated successfully
+01:02:54 INFO  : connection terminated
+01:02:54 INFO  : connection terminated
+01:02:54 INFO  : scheduling shutdown timer for 2 seconds ...
+01:02:56 INFO  : Terminating Vitis C++ Server
+01:02:56 INFO  : Vitis C++ Server terminated
+01:03:26 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+01:03:27 INFO  : [INFO]: Initializing repositories
+01:03:27 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+01:03:27 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17618866529579767864
+01:03:27 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram6281316087977459398 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram17618866529579767864\.repo.yaml
+01:03:29 INFO  : Embedded Template List generated successfully
+01:03:29 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram6208363807374169098 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+01:03:32 INFO  : Embedded Template List generated successfully
+01:35:34 INFO  : connection terminated
+01:35:34 INFO  : connection terminated
+01:35:34 INFO  : scheduling shutdown timer for 2 seconds ...
+01:35:36 INFO  : Terminating Vitis C++ Server
+01:35:36 INFO  : Vitis C++ Server terminated
+01:36:04 INFO  : updated workspace path: C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm
+01:36:06 INFO  : [INFO]: Initializing repositories
+01:36:06 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+01:36:06 INFO  : Successfully created repository data at C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram2136704861632058634
+01:36:06 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram9044818268267600533 -r C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram2136704861632058634\.repo.yaml
+01:36:06 INFO  : Embedded Template List generated successfully
+01:36:06 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\Bram\AppData\Local\Temp\rigel_lopper_Bram6280914449248924746 -r C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\_ide\.wsdata\.repo.yaml
+01:36:07 INFO  : Embedded Template List generated successfully
+01:41:32 INFO  : created .gitignore file for the project C:\2EAI-HAC-2526-TaskHLS-bj-mk-tm\2D_Convolutie_HLS
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:38 ERROR : HLS config file path is blank.
+02:16:39 ERROR : HLS config file path is blank.
+02:16:39 ERROR : HLS config file path is blank.
+02:16:39 ERROR : HLS config file path is blank.
+02:16:39 ERROR : HLS config file path is blank.
+02:16:39 ERROR : HLS config file path is blank.
+02:16:39 ERROR : HLS config file path is blank.
+02:16:40 ERROR : HLS config file path is blank.
+02:16:40 ERROR : HLS config file path is blank.
+02:16:40 ERROR : HLS config file path is blank.
+02:16:40 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:50 ERROR : HLS config file path is blank.
+02:16:51 ERROR : HLS config file path is blank.
+02:16:51 ERROR : HLS config file path is blank.
+02:16:51 ERROR : HLS config file path is blank.
+02:16:51 ERROR : HLS config file path is blank.
+02:16:51 ERROR : HLS config file path is blank.
+02:16:51 ERROR : HLS config file path is blank.
